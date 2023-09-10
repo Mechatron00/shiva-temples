@@ -1,0 +1,57 @@
+<div style="margin-top: 60px" class="d-flex">
+  <!-- <div
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="active"
+    class="nav-pills flex-column"
+    orientation="vertical"
+  >
+    <ng-container ngbNavItem="top">
+      <button ngbNavLink>Top</button>
+    </ng-container>
+    <ng-container ngbNavItem="middle">
+      <button ngbNavLink>Middle</button>
+    </ng-container>
+    <ng-container ngbNavItem="bottom">
+      <button ngbNavLink>Bottom</button>
+    </ng-container>
+  </div> -->
+</div>
+
+
+<div *ngFor="let temple of templesData" class="aligning">
+    <div class="card">
+      <div class="inner_part">
+        <div
+          class="img"
+          style="
+            background-image: url(../../assets/shiva-4810614.jpg);
+            background-position: center;
+            background-size: cover;
+          "
+        ></div>
+        <div class="content content_1">
+          <div class="title">{{temple.basic.name}}, {{temple.basic.location.state}}</div>
+          <div class="text">
+            {{temple.about.basic_info}}
+          </div>
+          <button >Read More</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+
+  <ng-template  #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+    <p></p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
