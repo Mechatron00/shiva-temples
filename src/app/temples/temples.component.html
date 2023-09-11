@@ -1,55 +1,162 @@
-<div style="margin-top: 60px" class="d-flex">
-  <!-- <div
-    ngbNav
-    #nav="ngbNav"
-    [(activeId)]="active"
-    class="nav-pills flex-column"
-    orientation="vertical"
-  >
-    <ng-container ngbNavItem="top">
-      <button ngbNavLink>Top</button>
-    </ng-container>
-    <ng-container ngbNavItem="middle">
-      <button ngbNavLink>Middle</button>
-    </ng-container>
-    <ng-container ngbNavItem="bottom">
-      <button ngbNavLink>Bottom</button>
-    </ng-container>
-  </div> -->
-</div>
-
-
-<div *ngFor="let temple of templesData" class="aligning">
+<div style="margin-top: 80px">
+  <div *ngFor="let temple of templesData" class="aligning">
     <div class="card">
       <div class="inner_part">
         <div
-          class="img"
+          class="card-img"
           style="
-            background-image: url(../../assets/shiva-4810614.jpg);
-            background-position: center;
-            background-size: cover;
-          "
+          background-image: url('{{ temple.photos.cover }}' );
+          
+        "
         ></div>
-        <div class="content content_1">
-          <div class="title">{{temple.basic.name}}, {{temple.basic.location.state}}</div>
-          <div class="text">
-            {{temple.about.basic_info}}
+        <div class="content">
+          <div class="title">
+            {{ temple.basic.name }}, {{ temple.basic.location.state }}
           </div>
-          <button (click)="open(content)" >Read More</button>
+          <div class="text">
+            {{ temple.basic.bio }}
+          </div>
+         <div class="card-btn">
+          <button (click)="open(content)">Read More</button>
+         </div>
         </div>
       </div>
     </div>
 
-  <ng-template  #content let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">{{temple.basic.name}}</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-    </div>
-    <div class="modal-body">
-    <p>{{temple.about.basic_info}}</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close click')">Close</button>
-    </div>
-  </ng-template>
+    <ng-template  #content let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">
+          {{ temple.basic.name | titlecase }}
+        </h4>
+
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          (click)="modal.close('Close click')"
+        >
+          Close
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="padding-left: 20px; padding-right: 20px;">
+          
+            <div class="card-inner">
+              <div style="padding: 15px;">
+               <div>
+               <h4>About</h4>
+              <div>
+                <span style="font-weight: 600;">Style:</span>{{temple.Architecture.style}}
+              </div>
+                
+               
+               <div>
+                <span style="font-weight: 600;">Creator:</span> {{temple.Architecture.creator}}
+               </div>
+               <div>
+                <span style="font-weight: 600;">Completed:</span>{{temple.Architecture.completed}}
+               </div>
+               <div>
+                <span style="font-weight: 600;">Inscriptions:</span>{{temple.Architecture.inscriptions}}
+               </div>
+               <div>
+                <span style="font-weight: 600;">Elevation:</span>{{temple.Architecture.elevation}}
+               </div>
+               <div>
+                <span style="font-weight: 600;">Co-ordinates:</span>{{temple.basic.coordinates | json}}
+               </div>
+               </div>
+              </div>
+            </div>
+            <div
+              style="
+          
+    width: 500px;
+    height: 800px;
+    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+    background-image: url('{{ temple.photos.profile }}');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 300px;
+    
+    
+  "
+            ></div>
+            <div
+              style="
+                font-family: 'Noto Sans Nabataean', sans-serif;
+                text-align: left;
+                font-size: 18px;
+              "
+            >
+              <div>{{ temple.about.basic_info }}</div>
+              <div>
+                <h2>History</h2>
+                <p>
+                  {{ temple.about.history }}
+                </p>
+              </div>
+              <div>
+                <h2>Architecture</h2>
+                <p>
+                  {{ temple.about.architecture }}
+                </p>
+              </div>
+            </div>
+        
+    
+        <div >
+          <div class="gallery-lightbox-container">
+            <div  class="gallery">
+              <div *ngFor="let data of temple.gallery; let i = index"  class="gallery-img">
+                <img
+                  (click)="onPreviewImage(i)"
+                  loading="eager"
+                  [src]="data"
+                  [alt]="i"
+                />
+              </div>
+            </div>
+            <div *ngIf="showMask" class="lightbox" @animation2>
+            
+              <button
+                *ngIf="previewImage"
+                type="button"
+                class="close-btn"
+                (click)="onClosePreview()"
+                mat-icon-button
+                color="warn"
+              >
+                <mat-icon><fa-icon class="fa-solid" [icon]="faClose"></fa-icon></mat-icon>
+              </button>
+           
+           
+              <div
+                *ngIf="previewImage"
+                [@animation]="{ value: 'visible' }"
+                (@animation.done)="onAnimationEnd($event)"
+                class="lightbox-img"
+              >
+                <img loading="eager" [src]="temple.gallery[num]" [alt]="" />
+                <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
+                <div  class="bottom-left"
+                   style="color: rgb(0, 255, 132);" mat-flat-button >
+                    
+                      <fa-icon  class="fa-solid" [icon]="faCopyright"></fa-icon>
+                      {{num}}
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">Footer items...</div>
+    </ng-template>
+  </div>
 </div>

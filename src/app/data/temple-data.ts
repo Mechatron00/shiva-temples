@@ -3,6 +3,7 @@ export interface temples
     basic:
     {
         name:string,
+        bio:string,
         location:{
             pin:string;
             dist:string;
@@ -26,6 +27,15 @@ export interface temples
         basic_info:string;
         history:string;
         architecture:string;
-    }
+    },
+    photos:{
+        cover:string;
+        profile:string;
+
+    },
+    gallery:string[
+
+    ]
+
 }
 
