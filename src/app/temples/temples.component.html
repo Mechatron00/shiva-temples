@@ -46,28 +46,30 @@
                   <h4>Architecture</h4>
                   <div>
                     <span style="font-weight: 600">Style:</span
-                    >{{ temple.Architecture.style }}
+                    ><span style="margin-left: 10px;">{{ temple.Architecture.style }}</span>
                   </div>
 
                   <div>
                     <span style="font-weight: 600">Creator:</span>
-                    {{ temple.Architecture.creator }}
+                    <span style="margin-left: 10px;">{{ temple.Architecture.creator }}</span>
                   </div>
                   <div>
                     <span style="font-weight: 600">Completed:</span
-                    >{{ temple.Architecture.completed }}
+                    ><span style="margin-left: 10px;">{{ temple.Architecture.completed }}</span>
                   </div>
                   <div>
                     <span style="font-weight: 600">Inscriptions:</span
-                    >{{ temple.Architecture.inscriptions }}
+                    ><span style="margin-left: 10px;">{{ temple.Architecture.inscriptions }}</span>
                   </div>
                   <div>
                     <span style="font-weight: 600">Elevation:</span
-                    >{{ temple.Architecture.elevation }}m
+                    ><span style="margin-left: 10px;">
+                      {{ temple.Architecture.elevation }}m
+                    </span>
                   </div>
                   <div>
                     <span style="font-weight: 600">Co-ordinates:</span
-                    >{{ temple.basic.coordinates | json }}
+                    > <span style="margin-left: 10px;">x: {{     temple.basic.coordinates.x }}</span> <span style="margin-left: 10px;"> y: {{     temple.basic.coordinates.y }} </span>
                   </div>
                 </div>
               </div>
@@ -97,18 +99,18 @@
             </div>
           </div>
 
-          <div style="display: flex; justify-content: space-around;">
+          <div class="info-card" >
             <div class="trip-card">
               <div style="padding: 10px">
-                <div style="margin-left: 10px; margin-right: 10px">
-                  <h4 style="text-align: center">HOW TO REACH</h4>
-                  <div style="display: flex; margin-bottom: 5px">
+                <div class="info-card-container" >
+                  <h5 style="text-align: center">HOW TO REACH</h5>
+                  <div class="info-card-text">
                     <div><fa-icon placement="bottom" ngbTooltip="By Road" [icon]="faRoad"></fa-icon></div>
                     <div style="margin-left: 5px">
                       {{ temple.trip.nearest_road }}
                     </div>
                   </div>
-                  <div style="display: flex; margin-bottom: 5px">
+                  <div class="info-card-text">
                     <div>
                       <fa-icon placement="bottom" ngbTooltip="By Train" [icon]="faTrain"></fa-icon>
                     </div>
@@ -116,34 +118,61 @@
                       {{ temple.trip.nearest_railway }}
                     </div>
                   </div>
-                  <div style="display: flex; margin-bottom: 5px">
+                  <div   class="info-card-text ">
                     <div>
                       <fa-icon placement="bottom" ngbTooltip="By Plane" [icon]="faPlane"></fa-icon>
                     </div>
-                    <div style="margin-left: 5px">
+                    <div style="margin-left: 5px;" class="extra-text">
                       {{ temple.trip.by_air }}
                     </div>
                   </div>
+                 
+                  
+                 
                 </div>
               </div>
             </div>
             <div class="trip-card">
               <div style="padding: 10px">
-                <div style="margin-left: 10px; margin-right: 10px">
-                  <h4 style="text-align: center">Contact</h4>
-                  <div style="display: flex; margin-bottom: 5px">
-                    <div><fa-icon placement="bottom" ngbTooltip="By Road" [icon]="faLocation"></fa-icon></div>
+                <div class="info-card-container" >
+                  <h5 style="text-align: center">BEST TIME TO VISIT</h5>
+                 
+                  <div class="info-card-text">
+                    <div>
+                    <h6> Best Time To Visit:</h6> 
+                    </div>
                     <div style="margin-left: 5px">
-                      Murudeshwar Temple, NH 7, Bhatkal Taluk, Murudeshwar, North Canara, Karnataka- 581350
+                      {{ temple.trip.best_time}}
+                    </div>
+                  </div>
+                  <div class="info-card-text">
+                    <div>
+                    <h6> Festival:</h6> 
+                    </div>
+                    <div class="festival-text" style="margin-left: 5px">
+                      {{ temple.trip.festivals}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div style="padding: 10px">
+                <div style="margin-left: 10px; margin-right: 10px">
+                  <h5 style="text-align: center">CONTACT</h5>
+                  <div class="info-card-text" >
+                    <div><fa-icon placement="bottom" ngbTooltip="Address" [icon]="faLocation"></fa-icon></div>
+                    <div style="margin-left: 5px">
+                      {{temple.contact.address}}
                     </div>
                   </div>
                  
-                  <div style="display: flex; margin-bottom: 5px">
+                  <div class="info-card-text">
                     <div>
-                      <fa-icon placement="bottom" ngbTooltip="By Plane" [icon]="faPhone"></fa-icon>
+                      <fa-icon placement="bottom" ngbTooltip="Phone" [icon]="faPhone"></fa-icon>
                     </div>
                     <div style="margin-left: 5px">
-                      9987998735
+                      {{temple.contact.phone}}
                     </div>
                   </div>
                 </div>
@@ -153,7 +182,7 @@
           <div>
             <div>
               <hr />
-              <div style="text-align: center;">Gallery</div>
+              <div class="gallery-heading" >Gallery</div>
               <hr />
             </div>
             <div class="gallery-lightbox-container">

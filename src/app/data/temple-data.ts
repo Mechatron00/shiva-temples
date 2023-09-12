@@ -42,6 +42,11 @@ export interface temples
         festivals:string;
     }
     ,
+    contact:{
+        address:string;
+        phone:string;
+    },
+
     gallery:string[
 
     ]
