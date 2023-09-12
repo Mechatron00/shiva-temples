@@ -111,26 +111,27 @@
   /* font-family: 'Noto Sans Nabataean', sans-serif; */
   font-family: "Cairo Play", sans-serif;
   text-align: left;
-  font-size: 15px;
+  font-size: 19px;
 }
 .trip-card {
-  height: 210px;
-  width: 450px;
+  height: 250px;
+  width: 500px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  font-size: 16px;
 }
 .contact-card {
-  height: 210px;
-  width: 450px;
+  height: 250px;
+  width: 500px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-  font-size: 14px;
+  font-size: 16px;
 }
 .info-card {
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
 }
@@ -144,7 +145,7 @@
 }
 .extra-text {
   overflow: scroll;
-  height: 72px;
+  height: 150px;
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }
@@ -153,7 +154,7 @@
 }
 .festival-text{
   overflow: scroll;
-  height: 137px;
+  height: 150px;
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }
@@ -452,7 +453,7 @@
   }
   .extra-text {
     overflow: scroll;
-    height: 95px;
+    height: 120px;
     scrollbar-width: 0;
     -ms-overflow-style: none;
   }
@@ -478,55 +479,11 @@
   /* width: 180px; */
   text-align: left;
 
-  font-family: "Cedarville Cursive", "IBM Plex Serif", serif;
-  font-size: 0.9em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
 
   color: #00ff91;
   letter-spacing: 0.25em;
-  /* text-shadow: 
-      -1px -1px 1px #00ff91, 
-      0px 1px 0 #2e2e2e, 
-      0px 2px 0 #2c2c2c, 
-      0px 3px 0 #2a2a2a, 
-      0px 4px 0 #282828, 
-      0px 5px 0 #262626, 
-      0px 6px 0 #242424, 
-      0px 7px 0 #222, 
-      0px 8px 0 #202020, 
-      0px 9px 0 #1e1e1e, 
-      0px 5px 0 #1c1c1c, 
-      0px 5px 0 #1a1a1a, 
-      0px 6px 0 #181818, 
-      0px 5px 0 #161616, 
-      0px 6px 0 #141414, 
-      0px 6px 0 #121212,
-      2px 7px 5px rgba(0, 0, 0, 0.9),
-      5px 7px 5px rgba(0, 0, 0, 0.3),
-      8px 8px 8px rgba(0, 0, 0, 0.5),
-      8px 8px 10px rgba(0, 0, 0, 0.9); */
-}
-.top-right {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  right: 10px;
-  z-index: 50;
-  opacity: 0.6;
-  /* width: 180px; */
-  text-align: left;
 
-  text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 0.9em;
-
-  color: #00ff8c;
-  letter-spacing: 0.25em;
-  text-shadow: -1px -1px 1px #efede3, 0px 1px 0 #2e2e2e, 0px 2px 0 #2c2c2c,
-    0px 3px 0 #2a2a2a, 0px 4px 0 #282828, 0px 5px 0 #262626, 0px 6px 0 #242424,
-    0px 4px 0 #222, 0px 4px 0 #202020, 0px 4px 0 #1e1e1e, 0px 5px 0 #1c1c1c,
-    0px 5px 0 #1a1a1a, 0px 6px 0 #181818, 0px 5px 0 #161616, 0px 6px 0 #141414,
-    0px 6px 0 #121212, 2px 4px 5px rgba(0, 0, 0, 0.9),
-    5px 5px 5px rgba(0, 0, 0, 0.3), 5px 4px 5px rgba(0, 0, 0, 0.5),
-    5px 4px 5px rgba(0, 0, 0, 0.9);
 }
+

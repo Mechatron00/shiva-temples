@@ -43,33 +43,52 @@
             <div class="card-inner">
               <div style="padding: 10px">
                 <div>
-                  <h4>Architecture</h4>
+                  <h4 style="text-align: center;">Architecture</h4>
                   <div>
-                    <span style="font-weight: 600">Style:</span
-                    ><span style="margin-left: 10px;">{{ temple.Architecture.style }}</span>
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Style" [icon]="faGopuram"></fa-icon></span
+                    ><span style="margin-left: 10px">{{
+                      temple.Architecture.style
+                    }}</span>
                   </div>
 
                   <div>
-                    <span style="font-weight: 600">Creator:</span>
-                    <span style="margin-left: 10px;">{{ temple.Architecture.creator }}</span>
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Creator" [icon]="faCreator"></fa-icon></span>
+                    <span style="margin-left: 10px">{{
+                      temple.Architecture.creator
+                    }}</span>
                   </div>
                   <div>
-                    <span style="font-weight: 600">Completed:</span
-                    ><span style="margin-left: 10px;">{{ temple.Architecture.completed }}</span>
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Completed" [icon]="faCalendar"></fa-icon></span
+                    ><span style="margin-left: 10px">{{
+                      temple.Architecture.completed
+                    }}</span>
                   </div>
                   <div>
-                    <span style="font-weight: 600">Inscriptions:</span
-                    ><span style="margin-left: 10px;">{{ temple.Architecture.inscriptions }}</span>
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Inscriptions" [icon]="faInscriptions"></fa-icon></span
+                    ><span style="margin-left: 10px">{{
+                      temple.Architecture.inscriptions
+                    }}</span>
                   </div>
                   <div>
-                    <span style="font-weight: 600">Elevation:</span
-                    ><span style="margin-left: 10px;">
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Elevation" [icon]="faElevation"></fa-icon></span
+                    ><span style="margin-left: 10px">
                       {{ temple.Architecture.elevation }}m
                     </span>
                   </div>
                   <div>
-                    <span style="font-weight: 600">Co-ordinates:</span
-                    > <span style="margin-left: 10px;">x: {{     temple.basic.coordinates.x }}</span> <span style="margin-left: 10px;"> y: {{     temple.basic.coordinates.y }} </span>
+                    <span style="font-weight: 600"><fa-icon placement="left"
+                      ngbTooltip="Co-ordinates" [icon]="faMapLocation"></fa-icon></span>
+                    <span style="margin-left: 10px"
+                      >x: {{ temple.basic.coordinates.x }}</span
+                    >
+                    <span style="margin-left: 10px">
+                      y: {{ temple.basic.coordinates.y }}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -98,59 +117,73 @@
               </p>
             </div>
           </div>
-
-          <div class="info-card" >
+          <div>
+            <hr />
+            
+          </div>
+          <div class="info-card">
             <div class="trip-card">
               <div style="padding: 10px">
-                <div class="info-card-container" >
+                <div class="info-card-container">
                   <h5 style="text-align: center">HOW TO REACH</h5>
                   <div class="info-card-text">
-                    <div><fa-icon placement="bottom" ngbTooltip="By Road" [icon]="faRoad"></fa-icon></div>
+                    <div>
+                      <fa-icon
+                        placement="bottom"
+                        ngbTooltip="By Road"
+                        [icon]="faRoad"
+                      ></fa-icon>
+                    </div>
                     <div style="margin-left: 5px">
                       {{ temple.trip.nearest_road }}
                     </div>
                   </div>
                   <div class="info-card-text">
                     <div>
-                      <fa-icon placement="bottom" ngbTooltip="By Train" [icon]="faTrain"></fa-icon>
+                      <fa-icon
+                        placement="bottom"
+                        ngbTooltip="By Train"
+                        [icon]="faTrain"
+                      ></fa-icon>
                     </div>
                     <div style="margin-left: 5px">
                       {{ temple.trip.nearest_railway }}
                     </div>
                   </div>
-                  <div   class="info-card-text ">
+                  <div class="info-card-text">
                     <div>
-                      <fa-icon placement="bottom" ngbTooltip="By Plane" [icon]="faPlane"></fa-icon>
+                      <fa-icon
+                        placement="bottom"
+                        ngbTooltip="By Plane"
+                        [icon]="faPlane"
+                      ></fa-icon>
                     </div>
-                    <div style="margin-left: 5px;" class="extra-text">
+                    <div style="margin-left: 5px" class="extra-text">
                       {{ temple.trip.by_air }}
                     </div>
                   </div>
-                 
-                  
-                 
                 </div>
               </div>
             </div>
             <div class="trip-card">
               <div style="padding: 10px">
-                <div class="info-card-container" >
+                <div class="info-card-container">
                   <h5 style="text-align: center">BEST TIME TO VISIT</h5>
-                 
+
                   <div class="info-card-text">
                     <div>
-                    <h6> Best Time To Visit:</h6> 
+                      <h6>Best Time To Visit:</h6>
                     </div>
                     <div style="margin-left: 5px">
-                      {{ temple.trip.best_time}}
+                      {{ temple.trip.best_time }}
                     </div>
                   </div>
                   <div class="info-card-text">
                     <div>
-                    <h6> Festival:</h6> 
+                      <h6>Festival:</h6>
                     </div>
                     <div class="festival-text" style="margin-left: 5px">
-                      {{ temple.trip.festivals}}
+                      {{ temple.trip.festivals }}
                     </div>
                   </div>
                 </div>
@@ -160,19 +193,29 @@
               <div style="padding: 10px">
                 <div style="margin-left: 10px; margin-right: 10px">
                   <h5 style="text-align: center">CONTACT</h5>
-                  <div class="info-card-text" >
-                    <div><fa-icon placement="bottom" ngbTooltip="Address" [icon]="faLocation"></fa-icon></div>
-                    <div style="margin-left: 5px">
-                      {{temple.contact.address}}
-                    </div>
-                  </div>
-                 
                   <div class="info-card-text">
                     <div>
-                      <fa-icon placement="bottom" ngbTooltip="Phone" [icon]="faPhone"></fa-icon>
+                      <fa-icon
+                        placement="bottom"
+                        ngbTooltip="Address"
+                        [icon]="faLocation"
+                      ></fa-icon>
                     </div>
                     <div style="margin-left: 5px">
-                      {{temple.contact.phone}}
+                      {{ temple.contact.address }}
+                    </div>
+                  </div>
+
+                  <div class="info-card-text">
+                    <div>
+                      <fa-icon
+                        placement="bottom"
+                        ngbTooltip="Phone"
+                        [icon]="faPhone"
+                      ></fa-icon>
+                    </div>
+                    <div style="margin-left: 5px">
+                      {{ temple.contact.phone }}
                     </div>
                   </div>
                 </div>
@@ -180,9 +223,8 @@
             </div>
           </div>
           <div>
-            <div>
-              <hr />
-              <div class="gallery-heading" >Gallery</div>
+            <div style="margin-top: 30px;">
+              <div class="gallery-heading">Gallery</div>
               <hr />
             </div>
             <div class="gallery-lightbox-container">
@@ -191,12 +233,7 @@
                   *ngFor="let data of temple.gallery; let i = index"
                   class="gallery-img"
                 >
-                  <img
-                    (click)="onPreviewImage(i)"
-                    
-                    [src]="data"
-                    [alt]="i"
-                  />
+                  <img (click)="onPreviewImage(i)" [src]="data" [alt]="i" />
                 </div>
               </div>
               <div *ngIf="showMask" class="lightbox" @animation2>
@@ -219,14 +256,14 @@
                   (@animation.done)="onAnimationEnd($event)"
                   class="lightbox-img"
                 >
-                  <img  [src]="temple.gallery[num]" />
+                  <img [src]="temple.gallery[num]" />
                   <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
                   <div
                     class="bottom-left"
                     style="color: rgb(0, 255, 132)"
                     mat-flat-button
                   >
-                    {{ num + 1 }}
+                    {{ num + 1 }}/{{temple.gallery.length}}
                   </div>
                 </div>
               </div>
