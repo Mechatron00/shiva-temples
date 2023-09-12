@@ -8,6 +8,7 @@ export interface temples
             pin:string;
             dist:string;
             state:string;
+            iframe:string;
         },
         coordinates:{
             x:number;
@@ -33,6 +34,14 @@ export interface temples
         profile:string;
 
     },
+    trip:{
+        best_time:string
+        nearest_road:string;
+        nearest_railway:string;
+        by_air:string;
+        festivals:string;
+    }
+    ,
     gallery:string[
 
     ]

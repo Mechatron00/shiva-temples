@@ -16,14 +16,14 @@
           <div class="text">
             {{ temple.basic.bio }}
           </div>
-         <div class="card-btn">
-          <button (click)="open(content)">Read More</button>
-         </div>
+          <div class="card-btn">
+            <button (click)="open(content)">Read More</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <ng-template  #content let-modal>
+    <ng-template #content let-modal>
       <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">
           {{ temple.basic.name | titlecase }}
@@ -32,128 +32,177 @@
         <button
           type="button"
           class="btn btn-outline-dark"
-          (click)="modal.close('Close click')"
+          (click)="modal.close()"
         >
           Close
         </button>
       </div>
       <div class="modal-body">
-        <div style="padding-left: 20px; padding-right: 20px;">
-          
+        <div style="padding-left: 0px; padding-right: 0px">
+          <div class="align-inner-card">
             <div class="card-inner">
-              <div style="padding: 15px;">
-               <div>
-               <h4>About</h4>
-              <div>
-                <span style="font-weight: 600;">Style:</span>{{temple.Architecture.style}}
-              </div>
-                
-               
-               <div>
-                <span style="font-weight: 600;">Creator:</span> {{temple.Architecture.creator}}
-               </div>
-               <div>
-                <span style="font-weight: 600;">Completed:</span>{{temple.Architecture.completed}}
-               </div>
-               <div>
-                <span style="font-weight: 600;">Inscriptions:</span>{{temple.Architecture.inscriptions}}
-               </div>
-               <div>
-                <span style="font-weight: 600;">Elevation:</span>{{temple.Architecture.elevation}}
-               </div>
-               <div>
-                <span style="font-weight: 600;">Co-ordinates:</span>{{temple.basic.coordinates | json}}
-               </div>
-               </div>
-              </div>
-            </div>
-            <div
-              style="
-          
-    width: 500px;
-    height: 800px;
-    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
-    background-image: url('{{ temple.photos.profile }}');
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
-    float: right;
-    margin-left: 15px;
-    margin-top: 300px;
-    
-    
-  "
-            ></div>
-            <div
-              style="
-                font-family: 'Noto Sans Nabataean', sans-serif;
-                text-align: left;
-                font-size: 18px;
-              "
-            >
-              <div>{{ temple.about.basic_info }}</div>
-              <div>
-                <h2>History</h2>
-                <p>
-                  {{ temple.about.history }}
-                </p>
-              </div>
-              <div>
-                <h2>Architecture</h2>
-                <p>
-                  {{ temple.about.architecture }}
-                </p>
-              </div>
-            </div>
-        
-    
-        <div >
-          <div class="gallery-lightbox-container">
-            <div  class="gallery">
-              <div *ngFor="let data of temple.gallery; let i = index"  class="gallery-img">
-                <img
-                  (click)="onPreviewImage(i)"
-                  loading="eager"
-                  [src]="data"
-                  [alt]="i"
-                />
-              </div>
-            </div>
-            <div *ngIf="showMask" class="lightbox" @animation2>
-            
-              <button
-                *ngIf="previewImage"
-                type="button"
-                class="close-btn"
-                (click)="onClosePreview()"
-                mat-icon-button
-                color="warn"
-              >
-                <mat-icon><fa-icon class="fa-solid" [icon]="faClose"></fa-icon></mat-icon>
-              </button>
-           
-           
-              <div
-                *ngIf="previewImage"
-                [@animation]="{ value: 'visible' }"
-                (@animation.done)="onAnimationEnd($event)"
-                class="lightbox-img"
-              >
-                <img loading="eager" [src]="temple.gallery[num]" [alt]="" />
-                <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
-                <div  class="bottom-left"
-                   style="color: rgb(0, 255, 132);" mat-flat-button >
-                    
-                      <fa-icon  class="fa-solid" [icon]="faCopyright"></fa-icon>
-                      {{num}}
-                  
+              <div style="padding: 10px">
+                <div>
+                  <h4>Architecture</h4>
+                  <div>
+                    <span style="font-weight: 600">Style:</span
+                    >{{ temple.Architecture.style }}
+                  </div>
+
+                  <div>
+                    <span style="font-weight: 600">Creator:</span>
+                    {{ temple.Architecture.creator }}
+                  </div>
+                  <div>
+                    <span style="font-weight: 600">Completed:</span
+                    >{{ temple.Architecture.completed }}
+                  </div>
+                  <div>
+                    <span style="font-weight: 600">Inscriptions:</span
+                    >{{ temple.Architecture.inscriptions }}
+                  </div>
+                  <div>
+                    <span style="font-weight: 600">Elevation:</span
+                    >{{ temple.Architecture.elevation }}m
+                  </div>
+                  <div>
+                    <span style="font-weight: 600">Co-ordinates:</span
+                    >{{ temple.basic.coordinates | json }}
+                  </div>
                 </div>
-               
               </div>
             </div>
           </div>
-          
-        </div>
+          <div
+            class="profile-image"
+            style="
+    background-image: url('{{ temple.photos.profile }}');
+    
+    
+  "
+          ></div>
+          <div class="info">
+            <div>{{ temple.about.basic_info }}</div>
+            <div>
+              <h2>History</h2>
+              <p>
+                {{ temple.about.history }}
+              </p>
+            </div>
+            <div>
+              <h2>Architecture</h2>
+              <p>
+                {{ temple.about.architecture }}
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-around;">
+            <div class="trip-card">
+              <div style="padding: 10px">
+                <div style="margin-left: 10px; margin-right: 10px">
+                  <h4 style="text-align: center">HOW TO REACH</h4>
+                  <div style="display: flex; margin-bottom: 5px">
+                    <div><fa-icon placement="bottom" ngbTooltip="By Road" [icon]="faRoad"></fa-icon></div>
+                    <div style="margin-left: 5px">
+                      {{ temple.trip.nearest_road }}
+                    </div>
+                  </div>
+                  <div style="display: flex; margin-bottom: 5px">
+                    <div>
+                      <fa-icon placement="bottom" ngbTooltip="By Train" [icon]="faTrain"></fa-icon>
+                    </div>
+                    <div style="margin-left: 5px">
+                      {{ temple.trip.nearest_railway }}
+                    </div>
+                  </div>
+                  <div style="display: flex; margin-bottom: 5px">
+                    <div>
+                      <fa-icon placement="bottom" ngbTooltip="By Plane" [icon]="faPlane"></fa-icon>
+                    </div>
+                    <div style="margin-left: 5px">
+                      {{ temple.trip.by_air }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trip-card">
+              <div style="padding: 10px">
+                <div style="margin-left: 10px; margin-right: 10px">
+                  <h4 style="text-align: center">Contact</h4>
+                  <div style="display: flex; margin-bottom: 5px">
+                    <div><fa-icon placement="bottom" ngbTooltip="By Road" [icon]="faLocation"></fa-icon></div>
+                    <div style="margin-left: 5px">
+                      Murudeshwar Temple, NH 7, Bhatkal Taluk, Murudeshwar, North Canara, Karnataka- 581350
+                    </div>
+                  </div>
+                 
+                  <div style="display: flex; margin-bottom: 5px">
+                    <div>
+                      <fa-icon placement="bottom" ngbTooltip="By Plane" [icon]="faPhone"></fa-icon>
+                    </div>
+                    <div style="margin-left: 5px">
+                      9987998735
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <hr />
+              <div style="text-align: center;">Gallery</div>
+              <hr />
+            </div>
+            <div class="gallery-lightbox-container">
+              <div class="gallery">
+                <div
+                  *ngFor="let data of temple.gallery; let i = index"
+                  class="gallery-img"
+                >
+                  <img
+                    (click)="onPreviewImage(i)"
+                    
+                    [src]="data"
+                    [alt]="i"
+                  />
+                </div>
+              </div>
+              <div *ngIf="showMask" class="lightbox" @animation2>
+                <button
+                  *ngIf="previewImage"
+                  type="button"
+                  class="close-btn"
+                  (click)="onClosePreview()"
+                  mat-icon-button
+                  color="warn"
+                >
+                  <mat-icon
+                    ><fa-icon class="fa-solid" [icon]="faClose"></fa-icon
+                  ></mat-icon>
+                </button>
+
+                <div
+                  *ngIf="previewImage"
+                  [@animation]="{ value: 'visible' }"
+                  (@animation.done)="onAnimationEnd($event)"
+                  class="lightbox-img"
+                >
+                  <img  [src]="temple.gallery[num]" />
+                  <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
+                  <div
+                    class="bottom-left"
+                    style="color: rgb(0, 255, 132)"
+                    mat-flat-button
+                  >
+                    {{ num + 1 }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="modal-footer">Footer items...</div>

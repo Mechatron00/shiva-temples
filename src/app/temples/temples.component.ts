@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { temples } from '../data/temple-data';
 import { templesData } from '../data/data';
-import { faArrowLeft, faArrowRight, faCopyright, faLocationDot, faXmark } from '@fortawesome/free-solid-svg-icons';
+import {  faLocationDot, faPhone, faPlane, faRoad, faTrain, faXmark } from '@fortawesome/free-solid-svg-icons';
 import {
 	animate,
 	style,
@@ -10,6 +10,7 @@ import {
 	trigger,
 	AnimationEvent,
   } from '@angular/animations';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -43,11 +44,14 @@ export class TemplesComponent implements OnInit {
   showMask = false;
 
   galleryData: string[] = [];
-  faLeft = faArrowLeft;
-  faRight = faArrowRight;
+ 
   faClose = faXmark;
-  faCopyright = faCopyright;
+  faRoad = faRoad;
+  faTrain =faTrain;
+  faPlane = faPlane;
+  faClock = faClock;
   faLocation = faLocationDot;
+  faPhone = faPhone;
   currentLightboxImage: string = this.galleryData[0];
   currentIndex = 0;
   controls = true;
