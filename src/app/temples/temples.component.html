@@ -1,5 +1,7 @@
-<div style="margin-top: 80px">
-  <div *ngFor="let temple of templesData" class="aligning">
+<div class="temple-list" >
+  <div class="img-overlay" ></div>
+ <div style="padding-top: 70px;">
+  <div  *ngFor="let temple of templesData" class="aligning">
     <div class="card">
       <div class="inner_part">
         <div
@@ -103,17 +105,17 @@
   "
           ></div>
           <div class="info">
-            <div>{{ temple.about.basic_info }}</div>
+            <div> <span class="tab"></span>{{ temple.about.basic_info }}</div>
             <div>
               <h2>History</h2>
               <p>
-                {{ temple.about.history }}
+                <span class="tab"></span>{{ temple.about.history }}
               </p>
             </div>
             <div>
               <h2>Architecture</h2>
               <p>
-                {{ temple.about.architecture }}
+                <span class="tab"></span>{{ temple.about.architecture }}
               </p>
             </div>
           </div>
@@ -127,8 +129,9 @@
                 <div class="info-card-container">
                   <h5 style="text-align: center">HOW TO REACH</h5>
                   <div class="info-card-text">
-                    <div>
+                    <div  >
                       <fa-icon
+                     
                         placement="bottom"
                         ngbTooltip="By Road"
                         [icon]="faRoad"
@@ -139,8 +142,9 @@
                     </div>
                   </div>
                   <div class="info-card-text">
-                    <div>
+                    <div  >
                       <fa-icon
+                     
                         placement="bottom"
                         ngbTooltip="By Train"
                         [icon]="faTrain"
@@ -151,8 +155,9 @@
                     </div>
                   </div>
                   <div class="info-card-text">
-                    <div>
+                    <div  >
                       <fa-icon
+                      
                         placement="bottom"
                         ngbTooltip="By Plane"
                         [icon]="faPlane"
@@ -194,8 +199,9 @@
                 <div style="margin-left: 10px; margin-right: 10px">
                   <h5 style="text-align: center">CONTACT</h5>
                   <div class="info-card-text">
-                    <div>
+                    <div >
                       <fa-icon
+                      
                         placement="bottom"
                         ngbTooltip="Address"
                         [icon]="faLocation"
@@ -209,6 +215,7 @@
                   <div class="info-card-text">
                     <div>
                       <fa-icon
+                      
                         placement="bottom"
                         ngbTooltip="Phone"
                         [icon]="faPhone"
@@ -274,4 +281,5 @@
       <div class="modal-footer">Footer items...</div>
     </ng-template>
   </div>
+ </div>
 </div>

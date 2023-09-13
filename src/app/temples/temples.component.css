@@ -1,6 +1,8 @@
 .aligning {
+  width: 100%;
   display: flex;
   margin-top: 25px;
+  z-index: 10;
 }
 .card {
   height: 350px;
@@ -152,7 +154,7 @@
 .extra-text::-webkit-scrollbar {
   width: 0;
 }
-.festival-text{
+.festival-text {
   overflow: scroll;
   height: 150px;
   scrollbar-width: 0;
@@ -161,10 +163,39 @@
 .festival-text::-webkit-scrollbar {
   width: 0;
 }
-.gallery-heading{
+.gallery-heading {
   text-align: center;
   font-family: "Cairo Play", sans-serif;
   font-size: 30px;
+}
+.temple-list {
+  background-image: url(../../assets/kailash.jpg);
+  position: fixed;
+  overflow: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  height:100vh;
+  background-repaeat:no-repeat;
+  background-position: left center;
+  background-size: cover;
+  
+}
+.temple-list::-webkit-scrollbar {
+  width: 0;
+}
+.img-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  opacity: .5;
+  position: fixed;
+}
+.tab {
+  display: inline-block;
+  margin-left: 4em;
 }
 /* ***************************************************** */
 :host {
@@ -317,6 +348,8 @@
   .card {
     height: 350px;
     width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
@@ -324,23 +357,24 @@
 
   .card .inner_part {
     display: grid;
-    padding: 0px;
+    padding: 0;
     width: 100%;
-    height: 350px;
+    height: 100%;
     position: absolute;
-    margin-top: -6px;
+    justify-content: none;
+    align-items: none;
   }
 
   .inner_part .card-img {
-    height: 155px;
-    width: 100.5%;
-
-    padding: 0px;
-
-    border-radius: 10px;
-    box-shadow: 0 0px 0px;
+    height: 160px;
+    width: 100.1%;
+    border-radius: 25px 25px 8px 10px;
+    overflow: none;
+    flex-shrink: 0;
+    box-shadow: none;
     background-position: center;
     background-size: cover;
+    margin: -3px 0 0 0;
   }
 
   .content {
@@ -356,7 +390,7 @@
     font-size: 17px;
     font-weight: 600;
     color: #0d0925;
-    margin: 0 0 0px 0;
+    margin: 5px 0 0 0;
   }
 
   .content .text {
@@ -392,6 +426,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
   }
   .card-inner {
     height: 210px;
@@ -453,11 +488,11 @@
   }
   .extra-text {
     overflow: scroll;
-    height: 120px;
+    height: 84px;
     scrollbar-width: 0;
     -ms-overflow-style: none;
   }
-  .festival-text{
+  .festival-text {
     overflow: scroll;
     height: 160px;
     scrollbar-width: 0;
@@ -479,11 +514,9 @@
   /* width: 180px; */
   text-align: left;
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2em;
 
   color: #00ff91;
   letter-spacing: 0.25em;
-
 }
-

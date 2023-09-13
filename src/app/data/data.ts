@@ -149,4 +149,5 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/e/e6/Ta-scr.jpg',
     ],
   },
+  
 ];
