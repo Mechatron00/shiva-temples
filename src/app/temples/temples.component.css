@@ -117,15 +117,15 @@
 }
 .trip-card {
   height: 250px;
-  width: 500px;
+  width: 600px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  font-size: 14px;
 }
 .contact-card {
   height: 250px;
-  width: 500px;
+  width: 600px;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -147,7 +147,7 @@
 }
 .extra-text {
   overflow: scroll;
-  height: 150px;
+  height: 110px;
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }
@@ -156,7 +156,7 @@
 }
 .festival-text {
   overflow: scroll;
-  height: 150px;
+  height: 170px;
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }
@@ -179,7 +179,7 @@
   width:100vw;
   height:100vh;
   background-repaeat:no-repeat;
-  background-position: left center;
+  background-position: center;
   background-size: cover;
   
 }
@@ -191,11 +191,21 @@
   height: 100vh;
   background: rgb(0, 0, 0);
   opacity: .5;
+ 
+
   position: fixed;
 }
 .tab {
   display: inline-block;
   margin-left: 4em;
+}
+.modal-footer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+  padding: 0;
+  
 }
 /* ***************************************************** */
 :host {
@@ -363,11 +373,13 @@
     position: absolute;
     justify-content: none;
     align-items: none;
+    margin: 0;
   }
 
   .inner_part .card-img {
     height: 160px;
-    width: 100.1%;
+    width: 100%;
+    padding: 0;
     border-radius: 25px 25px 8px 10px;
     overflow: none;
     flex-shrink: 0;
@@ -455,13 +467,13 @@
     font-size: 15px;
   }
   .trip-card {
-    height: 220px;
+    height: 250px;
     width: 100%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .contact-card {
     height: 160px;

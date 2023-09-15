@@ -13,7 +13,8 @@ export interface temples
         coordinates:{
             x:number;
             y:number;
-        }
+        },
+        website:string
     },
     Architecture:
     {

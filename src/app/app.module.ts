@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { MantraSectionComponent } from './mantra-section/mantra-section.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TemplesComponent } from './temples/temples.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

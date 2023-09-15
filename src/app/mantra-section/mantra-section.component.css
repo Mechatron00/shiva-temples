@@ -3,3 +3,50 @@
     font-family: 'Amita', cursive;
     font-weight: 500;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+   
+   
+  }
+
+  @media screen and (max-width: 650px) {
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto  ;
+       
+       
+      }
+    
+
+  }
+  @media screen and (min-width: 1280px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+       
+       
+      }
+    
+  }
+  @media screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+       
+       
+      }
+    
+    
+  }
+  @media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto  auto  ;
+       
+       
+      }
+    
+  }

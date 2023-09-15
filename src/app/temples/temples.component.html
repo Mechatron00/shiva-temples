@@ -1,285 +1,327 @@
-<div class="temple-list" >
-  <div class="img-overlay" ></div>
- <div style="padding-top: 70px;">
-  <div  *ngFor="let temple of templesData" class="aligning">
-    <div class="card">
-      <div class="inner_part">
-        <div
-          class="card-img"
-          style="
+<div class="temple-list">
+  <div class="img-overlay"></div>
+  <div style="padding-top: 70px">
+    <div *ngFor="let temple of templesData" class="aligning">
+      <div class="card">
+        <div class="inner_part">
+          <div
+            class="card-img"
+            style="
           background-image: url('{{ temple.photos.cover }}' );
           
         "
-        ></div>
-        <div class="content">
-          <div class="title">
-            {{ temple.basic.name }}, {{ temple.basic.location.state }}
-          </div>
-          <div class="text">
-            {{ temple.basic.bio }}
-          </div>
-          <div class="card-btn">
-            <button (click)="open(content)">Read More</button>
+          ></div>
+          <div class="content">
+            <div class="title">
+              {{ temple.basic.name }}, {{ temple.basic.location.state }}
+            </div>
+            <div class="text">
+              {{ temple.basic.bio }}
+            </div>
+            <div class="card-btn">
+              <button (click)="open(content)">Read More</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <ng-template #content let-modal>
-      <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">
-          {{ temple.basic.name | titlecase }}
-        </h4>
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">
+            {{ temple.basic.name | titlecase }}
+          </h4>
 
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          (click)="modal.close()"
-        >
-          Close
-        </button>
-      </div>
-      <div class="modal-body">
-        <div style="padding-left: 0px; padding-right: 0px">
-          <div class="align-inner-card">
-            <div class="card-inner">
-              <div style="padding: 10px">
-                <div>
-                  <h4 style="text-align: center;">Architecture</h4>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            (click)="modal.close()"
+          >
+            Close
+          </button>
+        </div>
+        <div class="modal-body">
+          <div style="padding-left: 0px; padding-right: 0px">
+            <div class="align-inner-card">
+              <div class="card-inner">
+                <div style="padding: 10px">
                   <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Style" [icon]="faGopuram"></fa-icon></span
-                    ><span style="margin-left: 10px">{{
-                      temple.Architecture.style
-                    }}</span>
-                  </div>
+                    <h4 style="text-align: center">Architecture</h4>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Style"
+                          [icon]="faGopuram"
+                        ></fa-icon></span
+                      ><span style="margin-left: 10px">{{
+                        temple.Architecture.style
+                      }}</span>
+                    </div>
 
-                  <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Creator" [icon]="faCreator"></fa-icon></span>
-                    <span style="margin-left: 10px">{{
-                      temple.Architecture.creator
-                    }}</span>
-                  </div>
-                  <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Completed" [icon]="faCalendar"></fa-icon></span
-                    ><span style="margin-left: 10px">{{
-                      temple.Architecture.completed
-                    }}</span>
-                  </div>
-                  <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Inscriptions" [icon]="faInscriptions"></fa-icon></span
-                    ><span style="margin-left: 10px">{{
-                      temple.Architecture.inscriptions
-                    }}</span>
-                  </div>
-                  <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Elevation" [icon]="faElevation"></fa-icon></span
-                    ><span style="margin-left: 10px">
-                      {{ temple.Architecture.elevation }}m
-                    </span>
-                  </div>
-                  <div>
-                    <span style="font-weight: 600"><fa-icon placement="left"
-                      ngbTooltip="Co-ordinates" [icon]="faMapLocation"></fa-icon></span>
-                    <span style="margin-left: 10px"
-                      >x: {{ temple.basic.coordinates.x }}</span
-                    >
-                    <span style="margin-left: 10px">
-                      y: {{ temple.basic.coordinates.y }}
-                    </span>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Creator"
+                          [icon]="faCreator"
+                        ></fa-icon
+                      ></span>
+                      <span style="margin-left: 10px">{{
+                        temple.Architecture.creator
+                      }}</span>
+                    </div>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Completed"
+                          [icon]="faCalendar"
+                        ></fa-icon></span
+                      ><span style="margin-left: 10px">{{
+                        temple.Architecture.completed
+                      }}</span>
+                    </div>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Inscriptions"
+                          [icon]="faInscriptions"
+                        ></fa-icon></span
+                      ><span style="margin-left: 10px">{{
+                        temple.Architecture.inscriptions
+                      }}</span>
+                    </div>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Elevation"
+                          [icon]="faElevation"
+                        ></fa-icon></span
+                      ><span style="margin-left: 10px">
+                        {{ temple.Architecture.elevation }}m
+                      </span>
+                    </div>
+                    <div>
+                      <span style="font-weight: 600"
+                        ><fa-icon
+                          placement="left"
+                          ngbTooltip="Co-ordinates"
+                          [icon]="faMapLocation"
+                        ></fa-icon
+                      ></span>
+                      <span style="margin-left: 10px"
+                        >x: {{ temple.basic.coordinates.x }}</span
+                      >
+                      <span style="margin-left: 10px">
+                        y: {{ temple.basic.coordinates.y }}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="profile-image"
-            style="
+            <div
+              class="profile-image"
+              style="
     background-image: url('{{ temple.photos.profile }}');
     
     
   "
-          ></div>
-          <div class="info">
-            <div> <span class="tab"></span>{{ temple.about.basic_info }}</div>
+            ></div>
+            <div class="info">
+              <div><span class="tab"></span>{{ temple.about.basic_info }}</div>
+              <div>
+                <h2>History</h2>
+                <p><span class="tab"></span>{{ temple.about.history }}</p>
+              </div>
+              <div>
+                <h2>Architecture</h2>
+                <p><span class="tab"></span>{{ temple.about.architecture }}</p>
+              </div>
+            </div>
+            <div >
+              <hr style="margin-top: 40px;" />
+            </div>
+            <div class="info-card">
+              <div class="trip-card">
+                <div style="padding: 10px">
+                  <div class="info-card-container">
+                    <h5 style="text-align: center">HOW TO REACH</h5>
+                    <div class="info-card-text">
+                      <div>
+                        <fa-icon
+                          placement="bottom"
+                          ngbTooltip="By Road"
+                          [icon]="faRoad"
+                        ></fa-icon>
+                      </div>
+                      <div style="margin-left: 5px">
+                        {{ temple.trip.nearest_road }}
+                      </div>
+                    </div>
+                    <div class="info-card-text">
+                      <div>
+                        <fa-icon
+                          placement="bottom"
+                          ngbTooltip="By Train"
+                          [icon]="faTrain"
+                        ></fa-icon>
+                      </div>
+                      <div style="margin-left: 5px">
+                        {{ temple.trip.nearest_railway }}
+                      </div>
+                    </div>
+                    <div class="info-card-text">
+                      <div>
+                        <fa-icon
+                          placement="bottom"
+                          ngbTooltip="By Plane"
+                          [icon]="faPlane"
+                        ></fa-icon>
+                      </div>
+                      <div style="margin-left: 5px" class="extra-text">
+                        {{ temple.trip.by_air }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trip-card">
+                <div style="padding: 10px">
+                  <div class="info-card-container">
+                    <h5 style="text-align: center">BEST TIME TO VISIT</h5>
+
+                    <div class="info-card-text">
+                      <div>
+                        <h6>Best Time To Visit:</h6>
+                      </div>
+                      <div style="margin-left: 5px">
+                        {{ temple.trip.best_time }}
+                      </div>
+                    </div>
+                    <div class="info-card-text">
+                      <div>
+                        <h6>Festival:</h6>
+                      </div>
+                      <div class="festival-text" style="margin-left: 5px">
+                        {{ temple.trip.festivals }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div style="padding: 10px">
+                  <div style="margin-left: 10px; margin-right: 10px">
+                    <h5 style="text-align: center">CONTACT</h5>
+                    <div class="info-card-text">
+                      <div>
+                        <fa-icon
+                          placement="bottom"
+                          ngbTooltip="Address"
+                          [icon]="faLocation"
+                        ></fa-icon>
+                      </div>
+                      <div style="margin-left: 5px">
+                        {{ temple.contact.address }}
+                      </div>
+                    </div>
+
+                    <div class="info-card-text">
+                      <div>
+                        <fa-icon
+                          placement="bottom"
+                          ngbTooltip="Phone"
+                          [icon]="faPhone"
+                        ></fa-icon>
+                      </div>
+                      <div style="margin-left: 5px">
+                        {{ temple.contact.phone }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div>
-              <h2>History</h2>
-              <p>
-                <span class="tab"></span>{{ temple.about.history }}
-              </p>
-            </div>
-            <div>
-              <h2>Architecture</h2>
-              <p>
-                <span class="tab"></span>{{ temple.about.architecture }}
-              </p>
-            </div>
-          </div>
-          <div>
-            <hr />
-            
-          </div>
-          <div class="info-card">
-            <div class="trip-card">
-              <div style="padding: 10px">
-                <div class="info-card-container">
-                  <h5 style="text-align: center">HOW TO REACH</h5>
-                  <div class="info-card-text">
-                    <div  >
-                      <fa-icon
-                     
-                        placement="bottom"
-                        ngbTooltip="By Road"
-                        [icon]="faRoad"
-                      ></fa-icon>
-                    </div>
-                    <div style="margin-left: 5px">
-                      {{ temple.trip.nearest_road }}
-                    </div>
-                  </div>
-                  <div class="info-card-text">
-                    <div  >
-                      <fa-icon
-                     
-                        placement="bottom"
-                        ngbTooltip="By Train"
-                        [icon]="faTrain"
-                      ></fa-icon>
-                    </div>
-                    <div style="margin-left: 5px">
-                      {{ temple.trip.nearest_railway }}
-                    </div>
-                  </div>
-                  <div class="info-card-text">
-                    <div  >
-                      <fa-icon
-                      
-                        placement="bottom"
-                        ngbTooltip="By Plane"
-                        [icon]="faPlane"
-                      ></fa-icon>
-                    </div>
-                    <div style="margin-left: 5px" class="extra-text">
-                      {{ temple.trip.by_air }}
-                    </div>
-                  </div>
-                </div>
+              <div style="margin-top: 30px">
+                <div class="gallery-heading">Gallery</div>
+                <hr />
               </div>
-            </div>
-            <div class="trip-card">
-              <div style="padding: 10px">
-                <div class="info-card-container">
-                  <h5 style="text-align: center">BEST TIME TO VISIT</h5>
-
-                  <div class="info-card-text">
-                    <div>
-                      <h6>Best Time To Visit:</h6>
-                    </div>
-                    <div style="margin-left: 5px">
-                      {{ temple.trip.best_time }}
-                    </div>
-                  </div>
-                  <div class="info-card-text">
-                    <div>
-                      <h6>Festival:</h6>
-                    </div>
-                    <div class="festival-text" style="margin-left: 5px">
-                      {{ temple.trip.festivals }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="contact-card">
-              <div style="padding: 10px">
-                <div style="margin-left: 10px; margin-right: 10px">
-                  <h5 style="text-align: center">CONTACT</h5>
-                  <div class="info-card-text">
-                    <div >
-                      <fa-icon
-                      
-                        placement="bottom"
-                        ngbTooltip="Address"
-                        [icon]="faLocation"
-                      ></fa-icon>
-                    </div>
-                    <div style="margin-left: 5px">
-                      {{ temple.contact.address }}
-                    </div>
-                  </div>
-
-                  <div class="info-card-text">
-                    <div>
-                      <fa-icon
-                      
-                        placement="bottom"
-                        ngbTooltip="Phone"
-                        [icon]="faPhone"
-                      ></fa-icon>
-                    </div>
-                    <div style="margin-left: 5px">
-                      {{ temple.contact.phone }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div style="margin-top: 30px;">
-              <div class="gallery-heading">Gallery</div>
-              <hr />
-            </div>
-            <div class="gallery-lightbox-container">
-              <div class="gallery">
-                <div
-                  *ngFor="let data of temple.gallery; let i = index"
-                  class="gallery-img"
-                >
-                  <img (click)="onPreviewImage(i)" [src]="data" [alt]="i" />
-                </div>
-              </div>
-              <div *ngIf="showMask" class="lightbox" @animation2>
-                <button
-                  *ngIf="previewImage"
-                  type="button"
-                  class="close-btn"
-                  (click)="onClosePreview()"
-                  mat-icon-button
-                  color="warn"
-                >
-                  <mat-icon
-                    ><fa-icon class="fa-solid" [icon]="faClose"></fa-icon
-                  ></mat-icon>
-                </button>
-
-                <div
-                  *ngIf="previewImage"
-                  [@animation]="{ value: 'visible' }"
-                  (@animation.done)="onAnimationEnd($event)"
-                  class="lightbox-img"
-                >
-                  <img [src]="temple.gallery[num]" />
-                  <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
+              <div class="gallery-lightbox-container">
+                <div class="gallery">
                   <div
-                    class="bottom-left"
-                    style="color: rgb(0, 255, 132)"
-                    mat-flat-button
+                    *ngFor="let data of temple.gallery; let i = index"
+                    class="gallery-img"
                   >
-                    {{ num + 1 }}/{{temple.gallery.length}}
+                    <img (click)="onPreviewImage(i)" [src]="data" [alt]="i" />
+                  </div>
+                </div>
+                <div *ngIf="showMask" class="lightbox" @animation2>
+                  <button
+                    *ngIf="previewImage"
+                    type="button"
+                    class="close-btn"
+                    (click)="onClosePreview()"
+                    mat-icon-button
+                    color="warn"
+                  >
+                    <mat-icon
+                      ><fa-icon class="fa-solid" [icon]="faClose"></fa-icon
+                    ></mat-icon>
+                  </button>
+
+                  <div
+                    *ngIf="previewImage"
+                    [@animation]="{ value: 'visible' }"
+                    (@animation.done)="onAnimationEnd($event)"
+                    class="lightbox-img"
+                  >
+                    <img [src]="temple.gallery[num]" />
+                    <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
+                    <div
+                      class="bottom-left"
+                      style="color: rgb(0, 255, 132)"
+                      mat-flat-button
+                    >
+                      {{ num + 1 }}/{{ temple.gallery.length }}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">Footer items...</div>
-    </ng-template>
+        <div class="modal-footer">
+          <div
+            style="padding-left: 10px; display: flex;width: 150px;justify-content: space-around;"
+            > <a 
+           
+              href="{{temple.basic.location.iframe}}" target="_blank" rel="noopener noreferrer"><fa-icon
+              placement="top"
+             ngbTooltip="Open in map"
+             [icon]="faMapLocation"
+             class="fa-xl"
+             style="color:black"
+             ></fa-icon></a>
+         
+         
+              <a 
+              *ngIf="temple.basic.website"
+             
+              href="{{temple.basic.website}}" target="_blank" rel="noopener noreferrer"><fa-icon
+              placement="top"
+             ngbTooltip="Website"
+             [icon]="faGlobe"
+             class="fa-xl"
+             style="color:black"
+             ></fa-icon></a>
+           
+          </div>
+        </div>
+      </ng-template>
+    </div>
   </div>
- </div>
 </div>
