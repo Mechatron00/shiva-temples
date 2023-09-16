@@ -2,9 +2,10 @@
   <div class="img-overlay"></div>
   <div style="padding-top: 70px">
     <div *ngFor="let temple of templesData" class="aligning">
-      <div class="card">
+      <div class="card" (click)="open(content)">
         <div class="inner_part">
           <div
+          
             class="card-img"
             style="
           background-image: url('{{ temple.photos.cover }}' );
@@ -18,10 +19,11 @@
             <div class="text">
               {{ temple.basic.bio }}
             </div>
-            <div class="card-btn">
-              <button (click)="open(content)">Read More</button>
-            </div>
+            <button class="card-btn" (click)="open(content)">Read More</button>
           </div>
+          
+           
+         
         </div>
       </div>
 

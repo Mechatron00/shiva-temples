@@ -6,12 +6,12 @@
 }
 .card {
   height: 350px;
-  width: 100%;
-  max-width: 850px;
+  width: 850px;
   margin: auto;
   background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .card .inner_part {
@@ -22,7 +22,9 @@
   height: 350px;
   position: absolute;
 }
-
+.card-btn {
+  bottom: 0px;
+}
 .inner_part .card-img {
   height: 260px;
   width: 260px;
@@ -60,7 +62,7 @@
   text-align: justify;
 }
 
-.content button {
+.card-btn {
   padding: 15px 20px;
   border: none;
   font-size: 16px;
@@ -74,7 +76,7 @@
   float: right;
 }
 
-.content button:hover {
+.card-btn:hover {
   background: #cecece;
   color: #000000;
 }
@@ -176,12 +178,11 @@
   -ms-overflow-style: none;
   margin: 0;
   padding: 0;
-  width:100vw;
-  height:100vh;
-  background-repaeat:no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-repaeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 .temple-list::-webkit-scrollbar {
   width: 0;
@@ -190,8 +191,7 @@
   width: 100vw;
   height: 100vh;
   background: rgb(0, 0, 0);
-  opacity: .5;
- 
+  opacity: 0.5;
 
   position: fixed;
 }
@@ -199,13 +199,12 @@
   display: inline-block;
   margin-left: 4em;
 }
-.modal-footer{
+.modal-footer {
   display: flex;
   justify-content: start;
   align-items: center;
   height: 40px;
   padding: 0;
-  
 }
 /* ***************************************************** */
 :host {
@@ -358,43 +357,48 @@
   .card {
     height: 350px;
     width: 95%;
-    max-width: 95%;
-    margin: 0 auto;
+
+    margin: auto;
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
   }
 
   .card .inner_part {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     width: 100%;
     height: 100%;
     position: absolute;
-    justify-content: none;
-    align-items: none;
-    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
   }
 
   .inner_part .card-img {
     height: 160px;
     width: 100%;
-    padding: 0;
-    border-radius: 25px 25px 8px 10px;
+    padding: 0px;
+    border-radius: 25px 25px 8px 8px;
     overflow: none;
-    flex-shrink: 0;
+    flex-shrink: none;
     box-shadow: none;
     background-position: center;
     background-size: cover;
-    margin: -3px 0 0 0;
+    
   }
 
   .content {
     width: 100%;
-    padding-right: 20px;
-    margin-left: 10px;
+    padding-right: 12px;
+    margin:0px 0px 0px  0px;
+    padding-left: 10px;
     opacity: 1;
     transition: 0ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
   }
 
   .content .title {
@@ -406,6 +410,7 @@
   }
 
   .content .text {
+    max-height: 414px;
     font-size: 13px;
     font-weight: 400;
     font-family: "Cairo Play", sans-serif;
@@ -413,9 +418,10 @@
     margin: 0 auto 10px auto;
     line-height: 1.5em;
     text-align: justify;
+    overflow: scroll;
   }
 
-  .content button {
+  .card-btn {
     padding: 10px 15px;
     border: none;
     font-size: 13px;
@@ -426,20 +432,21 @@
     cursor: pointer;
     outline: none;
     background: #000000;
-    float: right;
+    margin: auto auto 10px auto;
   }
 
   .content button:hover {
     background: #cecece;
     color: #000000;
   }
-  .card-btn {
+  /* .card-btn {
+    bottom: -25px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
-  }
+    margin-bottom: 0px;
+  } */
   .card-inner {
     height: 210px;
     width: 94%;
@@ -509,6 +516,18 @@
     height: 160px;
     scrollbar-width: 0;
     -ms-overflow-style: none;
+  }
+  .temple-list {
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-repaeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
