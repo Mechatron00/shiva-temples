@@ -1,52 +1,43 @@
-<div
-  style="
-    background-image: url(../../assets/shubham-dhage-Lajz1oXLhdo-unsplash.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    overflow: scroll;
-  "
->
+<div class="container-box">
   <div
     style="margin: 70px 30px 0px 30px; height: max-content"
     class="grid-container"
   >
     <div *ngFor="let data of mantras; index as i">
-      <div
-        style="
-          height: 300px;
-          width: 260px;
-          background-color: white;
-          box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
-          border-radius: 12px;
-          color: rgb(0, 0, 0);
-          margin: auto auto 25px auto;
-          background-color: rgba(255, 255, 255, 0.3);
-        "
-      >
-        <div
-          style="
-            height: 100%;
-            width: 100%;
-            padding: 10px;
-            font-size: 3rem;
-
-            text-align: center;
-            background-image: url(../../assets/shiva.png);
-            background-position: top center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-          "
-        >
-          <div >
-            शिव तांडव  
-          </div>
+      <button class="card" (click)="open(content)" >
+        <div class="card-inner" style=" background-image: url({{data.cover}});">
+          <div>{{data.name}}</div>
         </div>
-      </div>
+      </button>
+
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">{{data.name}}</h4>
+          <button
+            type="button"
+            class="btn-close"
+            aria-label="Close"
+            (click)="modal.dismiss('Cross click')"
+          ></button>
+        </div>
+        <div class="modal-body  mod-body">
+          <ngx-extended-pdf-viewer
+         
+            [src]="'/assets/pdfs/shiva_tandav.pdf'"
+            [useBrowserLocale]="false"
+            [textLayer]="false"
+            [showHandToolButton]="true"
+            [showPresentationModeButton]="true"
+            [showBookModeButton]="true"
+            [showDrawEditor]="false"
+            [showOpenFileButton]="false"
+            [showTextEditor]="false"
+            [showRotateButton]="false"
+            [showStampEditor]="false"
+          >
+          </ngx-extended-pdf-viewer>
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>

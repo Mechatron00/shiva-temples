@@ -16,14 +16,15 @@ import { MantraSectionComponent } from './mantra-section/mantra-section.componen
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     MantraSectionComponent,
     NavBarComponent,
-    TemplesComponent
+    TemplesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
