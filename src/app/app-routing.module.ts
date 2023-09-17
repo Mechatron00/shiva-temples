@@ -6,9 +6,11 @@ import { TemplesComponent } from './temples/temples.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-  {path:'',component:LandingPageComponent},
+  {path:'home',component:LandingPageComponent},
+  {path:'',pathMatch:'full',redirectTo:'home'},
   {path:'mantra',component:MantraSectionComponent},
   {path:'temples',component:TemplesComponent},
+  {path:'about',component:LandingPageComponent},
 
 ];
 

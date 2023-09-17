@@ -8,7 +8,7 @@ export const mantras =[
     {
         name:"शिव तांडव ",
         src:"../../assets/pdfs/shiva_tandav.pdf",
-        cover:"../../assets/covers/shiva.png"
+        cover:"../../assets/covers/shivatandav.png"
     }
 ]
 

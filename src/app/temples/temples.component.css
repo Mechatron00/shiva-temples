@@ -373,32 +373,30 @@
     position: absolute;
     justify-content: flex-start;
     align-items: flex-start;
-   
   }
 
   .inner_part .card-img {
     height: 160px;
     width: 100%;
     padding: 0px;
-    border-radius: 25px 25px 8px 8px;
+    border-radius: 25px 25px 10px 10px;
     overflow: none;
     flex-shrink: none;
     box-shadow: none;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    
   }
 
   .content {
     width: 100%;
     padding-right: 12px;
-    margin:0px 0px 0px  0px;
+    margin: 0px 0px 0px 0px;
     padding-left: 10px;
     opacity: 1;
     transition: 0ms;
     display: flex;
     flex-direction: column;
-    justify-content: space-around
+    justify-content: space-around;
   }
 
   .content .title {
@@ -410,7 +408,7 @@
   }
 
   .content .text {
-    max-height: 414px;
+    min-height: 99px;
     font-size: 13px;
     font-weight: 400;
     font-family: "Cairo Play", sans-serif;
@@ -419,8 +417,12 @@
     line-height: 1.5em;
     text-align: justify;
     overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
   }
-
+  .content .text ::-webkit-scrollbar {
+    width: 0;
+  }
   .card-btn {
     padding: 10px 15px;
     border: none;
