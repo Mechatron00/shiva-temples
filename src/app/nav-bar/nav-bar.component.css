@@ -6,7 +6,7 @@
   width: 130px;
   text-align: center;
   padding: 10px;
-
+  margin-right: 0;
   color: rgb(255, 255, 255);
 
   font-size: x-large;
@@ -21,7 +21,6 @@
 
   font-size: x-large;
   transform: translateY(20px);
-  
 }
 .nav-item {
   width: 130px;
@@ -37,8 +36,9 @@
 
   .nav-link {
     color: black;
-    transition: 1s;
+    transition: 500ms;
   }
+  
 }
 .nav-item-active {
   padding: 5px;

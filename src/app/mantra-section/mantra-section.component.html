@@ -23,7 +23,7 @@
         <div class="modal-body  mod-body">
           <ngx-extended-pdf-viewer
          
-            [src]="'/assets/pdfs/shiva_tandav.pdf'"
+            src="{{data.src}}"
             [useBrowserLocale]="true"
             [textLayer]="false"
             [showHandToolButton]="true"
@@ -34,6 +34,7 @@
             [showTextEditor]="false"
             [showRotateButton]="false"
             [showStampEditor]="false"
+            
           >
           </ngx-extended-pdf-viewer>
         </div>
