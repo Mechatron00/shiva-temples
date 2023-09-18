@@ -1,13 +1,47 @@
-.media{
- width: 100%;
-
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/shiva-4810614.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  top: 0;
 }
 
-@media screen and (max-width:650px) 
-{
-    .media{
-        width: 100%;
-       margin-top: 0px;
-       }
-       
+* {
+  box-sizing: border-box;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+div#fashion {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Moderne Sans, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+  font-size: 8vmin;
+  text-align: center;
+  margin: 2rem 3rem 0;
+  opacity: .6;
+  color: #ffffff;
+  font-weight: 300;
 }
