@@ -6,13 +6,14 @@
     <a
       class="navbar-brand not-active"
       routerLinkActive="brand-active"
+      (click)="isMenuCollapsed = true"
       [routerLink]="'/home'"
       >Home</a
     >
 
     <button
-    style="color: white;"
-      class="navbar-toggler "
+      style="color: white"
+      class="navbar-toggler"
       type="button"
       (click)="isMenuCollapsed = !isMenuCollapsed"
     >
