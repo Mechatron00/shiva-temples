@@ -6,7 +6,7 @@
     <div *ngFor="let data of mantras; index as i">
       <button class="card" (click)="open(content)" >
         <div class="card-inner" style=" background-image: url({{data.cover}});">
-          <div>{{data.name}}</div>
+          <div class="text">{{data.name}}</div>
         </div>
       </button>
 

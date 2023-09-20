@@ -4,13 +4,14 @@ import { MantraSectionComponent } from './mantra-section/mantra-section.componen
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {path:'home',component:LandingPageComponent},
   {path:'',pathMatch:'full',redirectTo:'home'},
   {path:'mantra',component:MantraSectionComponent},
   {path:'temples',component:TemplesComponent},
-  {path:'about',component:LandingPageComponent},
+  {path:'about',component:AboutComponent},
 
 ];
 
