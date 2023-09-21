@@ -1,9 +1,8 @@
 .aligning {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   margin-top: 50px;
-  
 }
 .card {
   height: 350px;
@@ -216,15 +215,27 @@
   outline: none;
   border: none;
   text-align: center;
- font-size: 1.8rem;
- padding: 0;
- margin: auto;
- position: fixed;
- z-index: 99;
- box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+  font-size: 1.8rem;
+  padding: 0;
+  margin: auto;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
 }
 
-
+.search-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.not-found {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 3rem;
+}
 /* ***************************************************** */
 :host {
   display: block;
@@ -346,7 +357,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    
   }
 }
 @media screen and (max-width: 1024px) {
@@ -355,7 +365,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    
   }
   .gallery-lightbox-container {
     .gallery {
@@ -373,7 +382,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    
   }
   .gallery-lightbox-container {
     .gallery {
@@ -398,17 +406,15 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    
   }
   .card {
     height: 350px;
     width: 95%;
 
-    margin: auto;
+    margin: 40px auto;
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
-    margin-bottom: 25px;
   }
 
   .card .inner_part {
@@ -577,6 +583,38 @@
     background-repaeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  .input {
+    width: 10rem;
+    height: 35px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+   outline: 1px  black;
+   outline-offset: 2px;
+   outline-style: groove;
+ 
+    
+  }
+  .search-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .not-found {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 1.6rem;
   }
 }
 

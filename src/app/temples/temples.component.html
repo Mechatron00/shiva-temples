@@ -1,22 +1,20 @@
 <div class="temple-list" loading="eager">
   <!-- <div class="img-overlay"></div> -->
   <div style="padding-top: 100px">
-    <div style="display: flex;flex-direction: column; justify-content: center; align-items: center;width: 100%;padding: 0;">
-      
-        <input
-          matInput
-          (keyup)="filterTemple()"
-          [formControl]="inputControl"
-          class="input"
-          type="text"
-          placeholder="Search"
-        />
-      
-      <div *ngIf="!found" style="margin-top: 40px; text-align: center;font-size: 3rem;" >Not Found...</div>
+    <div class="search-div">
+      <input
+        matInput
+        (keyup)="filterTemple()"
+        [formControl]="inputControl"
+        class="input"
+        type="text"
+        placeholder="Search"
+      />
+
+      <div class="not-found" *ngIf="!found">Not Found...</div>
     </div>
-  
-    <div  class="aligning">
-      
+
+    <div class="aligning">
       <div *ngFor="let temple of templesData">
         <div class="card" (click)="open(content)">
           <div class="inner_part">
