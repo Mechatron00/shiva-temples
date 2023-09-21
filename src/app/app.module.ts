@@ -18,6 +18,8 @@ import { TemplesComponent } from './temples/temples.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { AboutComponent } from './about/about.component';
+import { SearchPipe } from './search-pipe/search.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import { AboutComponent } from './about/about.component';
     NavBarComponent,
     TemplesComponent,
     AboutComponent,
+    SearchPipe,
     
   ],
   imports: [
@@ -40,7 +43,10 @@ import { AboutComponent } from './about/about.component';
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    ReactiveFormsModule,
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

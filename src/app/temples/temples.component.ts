@@ -1,16 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { temples } from '../data/temple-data';
 import { templesData } from '../data/data';
-import {  faAudioDescription, faCalendarDay, faGlobe, faGopuram, faLocationDot, faMapLocationDot, faMountainSun, faPhone, faPlane, faRoad, faTrain, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import {
-	animate,
-	style,
-	transition,
-	trigger,
-	AnimationEvent,
-  } from '@angular/animations';
+  faAudioDescription,
+  faCalendarDay,
+  faGlobe,
+  faGopuram,
+  faLocationDot,
+  faMapLocationDot,
+  faMountainSun,
+  faPhone,
+  faPlane,
+  faRoad,
+  faTrain,
+  faUser,
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  animate,
+  style,
+  transition,
+  trigger,
+  AnimationEvent,
+} from '@angular/animations';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -39,15 +54,16 @@ export class TemplesComponent implements OnInit {
   active = 'top';
   closeResult = '';
   isCollapsed = false;
-  templesData!:temples[];
+  templesData: temples[] = [];
+  filteredData: temples[] = [];
   previewImage = false;
   showMask = false;
 
   galleryData: string[] = [];
- 
+
   faClose = faXmark;
   faRoad = faRoad;
-  faTrain =faTrain;
+  faTrain = faTrain;
   faPlane = faPlane;
   faClock = faClock;
   faLocation = faLocationDot;
@@ -64,51 +80,81 @@ export class TemplesComponent implements OnInit {
   currentIndex = 0;
   controls = true;
   totalImageCount = 0;
-  num=0
-	constructor(private modalService: NgbModal) {}
+  num = 0;
+  constructor(private modalService: NgbModal) {}
   ngOnInit(): void {
-   this.templesData = templesData
-  
-   
+    this.templesData = templesData;
   }
 
-	open(content:any) {
-		this.modalService.open(content, {   fullscreen: true, scrollable: true }).result.then(
-			(result) => {
-				this.closeResult = `Closed with: ${result}`;
-			},
-			(reason) => {
-				this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-			},
-		);
-	}
+  open(content: any) {
+    this.modalService
+      .open(content, { fullscreen: true, scrollable: true })
+      .result.then(
+        (result) => {
+          this.closeResult = `Closed with: ${result}`;
+        },
+        (reason) => {
+          this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+        }
+      );
+  }
 
-	private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-			return 'by pressing ESC';
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return 'by clicking on a backdrop';
-		} else {
-			return `with: ${reason}`;
-		}
-	}
-  
-	onPreviewImage(index: number) {
-		this.showMask = true;
-		this.previewImage = true;
-		this.currentIndex = index;
-		this.currentLightboxImage = this.galleryData[index];
-		this.num=index;
-	  }
-	
-	  onAnimationEnd(event: AnimationEvent) {
-		if (event.toState === 'void') {
-		  this.showMask = false;
-		}
-	  }
-	
-	  onClosePreview() {
-		this.previewImage = false;
-	  }
-	
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
+
+  onPreviewImage(index: number) {
+    this.showMask = true;
+    this.previewImage = true;
+    this.currentIndex = index;
+    this.currentLightboxImage = this.galleryData[index];
+    this.num = index;
+  }
+
+  onAnimationEnd(event: AnimationEvent) {
+    if (event.toState === 'void') {
+      this.showMask = false;
+    }
+  }
+
+  onClosePreview() {
+    this.previewImage = false;
+  }
+
+  inputControl = new FormControl('');
+  found:boolean =true;
+  filterTemple() {
+    if (this.inputControl.valueChanges) {
+      const input: string = this.inputControl.value as string;
+
+      if (input) {
+        this.filteredData = templesData.filter((data) => {
+          return (
+            data.basic.name.toLowerCase().match(input.toLowerCase()) ||
+            data.basic.location.dist.toLowerCase().match(input.toLowerCase()) ||
+            data.basic.location.state.toLowerCase().match(input.toLowerCase()) 
+          );
+        });
+
+        
+        if(this.filteredData.length === 0)
+        {
+          this.found = false;
+        }
+        else
+        {
+          this.found = true;
+          
+        }
+        this.templesData = this.filteredData;
+       
+      } else this.templesData = templesData;
+    }
+  }
 }

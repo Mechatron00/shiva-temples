@@ -1,5 +1,6 @@
 .nav-link {
   font-size: 20px;
+  padding: 5px;
   color: rgb(255, 255, 255);
 }
 .not-active {
@@ -12,27 +13,27 @@
   font-size: x-large;
 }
 .not-active:hover {
-  width: 130px;
+  width: 110px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 30px;
-  background-color: chocolate;
+  background-color: rgb(255, 187, 0);
   color: rgb(0, 0, 0);
 
   font-size: x-large;
-  transform: translateY(20px);
+  transform: translateY(20px) ;
 }
 .nav-item {
-  width: 130px;
+  width: 100px;
   text-align: center;
 }
 .nav-item:hover {
-  padding: 5px;
+  padding: 0px;
   border-radius: 40px;
   background-color: chocolate;
   color: rgb(255, 255, 255);
 
-  transform: translateY(20px);
+  transform: translateY(10px);
 
   .nav-link {
     color: black;
@@ -40,7 +41,7 @@
   }
 }
 .nav-item-active {
-  padding: 5px;
+  padding: 0px;
   border-radius: 40px;
   background-color: chocolate;
   color: rgb(0, 0, 0);
@@ -50,11 +51,11 @@
   }
 }
 .brand-active {
-  width: 130px;
+  width: 110px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 30px;
-  background-color: chocolate;
+  background-color: rgb(255, 187, 0);
   color: rgb(0, 0, 0);
 
   font-size: x-large;

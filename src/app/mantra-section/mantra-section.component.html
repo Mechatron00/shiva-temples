@@ -3,7 +3,7 @@
     style="margin: 150px 30px 0px 30px; "
     class="grid-container"
   >
-    <div *ngFor="let data of mantras; index as i">
+    <div *ngFor="let data of mantras ; index as i">
       <button class="card" (click)="open(content)" >
         <div class="card-inner" style=" background-image: url({{data.cover}});">
           <div class="text">{{data.name}}</div>
