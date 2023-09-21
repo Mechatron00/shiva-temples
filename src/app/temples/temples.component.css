@@ -597,10 +597,7 @@
     position: fixed;
     z-index: 99;
     box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
-   outline: 1px  black;
-   outline-offset: 2px;
-   outline-style: groove;
- 
+   
     
   }
   .search-div {

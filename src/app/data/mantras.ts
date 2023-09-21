@@ -23,6 +23,12 @@ export const mantras =[
         name:"काल भैरवाष्टकम",
         src:"../../assets/pdfs/kaalbhairavashtakam.pdf",
         cover:"../../assets/covers/kaalbharav.png"
+    },
+    {
+        
+        name:"शिव रुद्राष्टकम",
+        src:"../../assets/pdfs/rudrastkam.pdf",
+        cover:"../../assets/covers/rudrashtakam.png"
     }
 ]
 

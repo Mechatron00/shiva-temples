@@ -19,9 +19,9 @@
   border-radius: 30px;
   background-color: rgb(255, 187, 0);
   color: rgb(0, 0, 0);
-
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
   font-size: x-large;
-  transform: translateY(20px) ;
+  transform: translateY(20px);
 }
 .nav-item {
   width: 100px;
@@ -32,7 +32,7 @@
   border-radius: 40px;
   background-color: chocolate;
   color: rgb(255, 255, 255);
-
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
   transform: translateY(10px);
 
   .nav-link {
@@ -44,6 +44,7 @@
   padding: 0px;
   border-radius: 40px;
   background-color: chocolate;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
   color: rgb(0, 0, 0);
   transition: 0s;
   .nav-link {
@@ -56,21 +57,13 @@
   padding: 5px;
   border-radius: 30px;
   background-color: rgb(255, 187, 0);
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
   color: rgb(0, 0, 0);
 
   font-size: x-large;
 }
 @media screen and (max-width: 650px) {
-  .brand-active {
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 30px;
-    background-color: chocolate;
-    color: rgb(0, 0, 0);
 
-    font-size: large;
-  }
   .not-active {
     width: 100px;
     text-align: center;
@@ -82,22 +75,22 @@
   }
   .nav-item {
     width: 100px;
-    
-   
   }
   .nav-link {
     padding: 0;
     font-size: 16px;
     color: rgb(255, 255, 255);
     text-align: center;
+    transform: none;
   }
   .nav-item-active {
     padding: 5px;
     border-radius: 30px;
     background-color: chocolate;
+    box-shadow:none;
     margin-top: 5px;
     color: rgb(0, 0, 0);
-    
+    transform: none;
     .nav-link {
       color: black;
       transition: 0ms;
@@ -109,10 +102,11 @@
     padding: 5px;
     border-radius: 30px;
     background-color: rgb(255, 187, 0);
+    box-shadow:none;
     color: rgb(0, 0, 0);
     transition: 0s;
     font-size: large;
-    transform: translateY(0px);
+    transform: none;
   }
   .brand-active {
     width: 100px;
@@ -120,26 +114,24 @@
     padding: 5px;
     border-radius: 30px;
     background-color: rgb(255, 187, 0);
+    box-shadow:none;
     color: rgb(0, 0, 0);
     font-size: large;
   }
+ 
   .nav-item:hover {
     padding: 5px;
     border-radius: 40px;
     background-color: chocolate;
+    box-shadow:none;
     color: rgb(255, 255, 255);
-    margin-top: 20px;
-    transform: translateY(0px);
+    margin-top: 5px;
+    transform: none;
 
     .nav-link {
       color: black;
       transition: 0s;
     }
-    
   }
-  .nav-list{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+
 }
