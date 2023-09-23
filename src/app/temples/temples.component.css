@@ -1,6 +1,4 @@
 .aligning {
- 
-  
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
@@ -185,7 +183,7 @@
   padding: 0 0 0 0;
   width: 100vw;
   height: 100vh;
-  top: 4rem;
+  /* top: 8rem; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -233,13 +231,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 0;
 }
 .not-found {
   margin-top: 40px;
   text-align: center;
   font-size: 3rem;
+}
+.outer-container {
+  background-image: url(../../assets/kailash.jpg);
+  position: fixed;
+  overflow: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  scrollbar-width: 0;
+
+  -ms-overflow-style: none;
+}
+.outer-container::-webkit-scrollbar {
+  width: 0;
 }
 /* ***************************************************** */
 :host {
@@ -363,6 +377,22 @@
     flex-direction: column;
     margin-top: 25px;
   }
+  .temple-list {
+    /* background-image: url(../../assets/kailash.jpg); */
+    background-color: transparent;
+    position: fixed;
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    top: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 1024px) {
   .aligning {
@@ -380,6 +410,22 @@
       }
     }
   }
+  .temple-list {
+    /* background-image: url(../../assets/kailash.jpg); */
+    background-color: transparent;
+    position: fixed;
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    top: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 800px) {
   .aligning {
@@ -395,6 +441,22 @@
         max-width: 100%;
       }
     }
+  }
+  .temple-list {
+    /* background-image: url(../../assets/kailash.jpg); */
+    background-color: transparent;
+    position: fixed;
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    top: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 650px) {
@@ -578,6 +640,7 @@
     -ms-overflow-style: none;
   }
   .temple-list {
+    top: 5.4rem;
     overflow: scroll;
     scrollbar-width: 0;
     -ms-overflow-style: none;
@@ -608,10 +671,8 @@
     top: 3rem;
     opacity: 0.6;
   }
-  .input:focus{
+  .input:focus {
     opacity: 1;
-    
-  
   }
   ::placeholder {
     color: rgb(0, 0, 0);
