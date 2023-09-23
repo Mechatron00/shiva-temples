@@ -81,6 +81,7 @@ export class TemplesComponent implements OnInit {
   controls = true;
   totalImageCount = 0;
   num = 0;
+
   constructor(private modalService: NgbModal) {}
   ngOnInit(): void {
     this.templesData = templesData;
@@ -98,7 +99,9 @@ export class TemplesComponent implements OnInit {
         }
       );
   }
-
+  closeModal(reason: any) {
+    this.modalService.dismissAll(reason);
+  }
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
@@ -128,7 +131,7 @@ export class TemplesComponent implements OnInit {
   }
 
   inputControl = new FormControl('');
-  found:boolean =true;
+  found: boolean = true;
   filterTemple() {
     if (this.inputControl.valueChanges) {
       const input: string = this.inputControl.value as string;
@@ -138,22 +141,16 @@ export class TemplesComponent implements OnInit {
           return (
             data.basic.name.toLowerCase().match(input.toLowerCase()) ||
             data.basic.location.dist.toLowerCase().match(input.toLowerCase()) ||
-            data.basic.location.state.toLowerCase().match(input.toLowerCase()) 
+            data.basic.location.state.toLowerCase().match(input.toLowerCase())
           );
         });
 
-        
-        if(this.filteredData.length === 0)
-        {
+        if (this.filteredData.length === 0) {
           this.found = false;
-        }
-        else
-        {
+        } else {
           this.found = true;
-          
         }
         this.templesData = this.filteredData;
-       
       } else this.templesData = templesData;
     }
   }
