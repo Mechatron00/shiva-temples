@@ -20,6 +20,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { AboutComponent } from './about/about.component';
 import { SearchPipe } from './search-pipe/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DockModule } from 'primeng/dock';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgxExtendedPdfViewerModule,
     ReactiveFormsModule,
     FormsModule,
+    DockModule,
    
   ],
   providers: [],

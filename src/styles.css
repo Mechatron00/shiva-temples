@@ -1,15 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-  @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Cairo+Play&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Nabataean&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nabataean&display=swap');
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body{
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body {
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }

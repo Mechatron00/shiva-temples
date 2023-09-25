@@ -13,6 +13,7 @@ import {
   faPhone,
   faPlane,
   faRoad,
+  faSearch,
   faTrain,
   faUser,
   faXmark,
@@ -26,6 +27,7 @@ import {
 } from '@angular/animations';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FormControl } from '@angular/forms';
+import { MenuItem, PrimeIcons } from 'primeng/api';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -75,16 +77,37 @@ export class TemplesComponent implements OnInit {
   faInscriptions = faAudioDescription;
   faElevation = faMountainSun;
   faGlobe = faGlobe;
+  faSearch = faSearch;
 
   currentLightboxImage: string = this.galleryData[0];
   currentIndex = 0;
   controls = true;
   totalImageCount = 0;
   num = 0;
-
+  items: MenuItem[] | undefined;
+  position: string = 'top';
   constructor(private modalService: NgbModal) {}
   ngOnInit(): void {
     this.templesData = templesData;
+
+    this.items = [
+      {
+        label: 'Finder',
+        icon: PrimeIcons.MAP,
+      },
+      {
+        label: 'App Store',
+        icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+      },
+      {
+        label: 'Photos',
+        icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+      },
+      {
+        label: 'Trash',
+        icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+      },
+    ];
   }
 
   open(content: any) {
@@ -147,11 +170,12 @@ export class TemplesComponent implements OnInit {
 
         if (this.filteredData.length === 0) {
           this.found = false;
-        } else {
-          this.found = true;
-        }
+        } else this.found = true;
         this.templesData = this.filteredData;
-      } else this.templesData = templesData;
+      } else {
+        this.found = true;
+        this.templesData = templesData;
+      }
     }
   }
 }
