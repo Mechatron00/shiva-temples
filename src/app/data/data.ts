@@ -20,7 +20,7 @@ export const templesData = [
       creator: 'Rama Nagappa Shetty',
       completed: '2008',
       inscriptions: 'None',
-      elevation: 75,
+      elevation: 38,
     },
     about: {
       basic_info:
@@ -172,7 +172,7 @@ export const templesData = [
       creator: '		Krishna I , Rashtrakuta Empire',
       completed: '756–773 CE',
       inscriptions: '	None',
-      elevation: 32.6,
+      elevation: 637,
     },
     about: {
       basic_info:
@@ -233,7 +233,7 @@ export const templesData = [
       creator: ' Velanati Chola king Kulottunga Chola',
       completed: '1172 A.D',
       inscriptions: 'Telugu',
-      elevation: 183,
+      elevation: 484,
     },
     about: {
       basic_info:
@@ -288,7 +288,7 @@ export const templesData = [
       creator: 'The Chaulukya (Solanki) king Mularaja',
       completed: ' 997 CE',
       inscriptions: 'None',
-      elevation: 47.3,
+      elevation: 7,
     },
     about: {
       basic_info:

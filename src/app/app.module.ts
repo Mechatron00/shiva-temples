@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpeedDialModule } from 'primeng/speeddial';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     ReactiveFormsModule,
     FormsModule,
     MatAutocompleteModule,
-    SpeedDialModule
+    SpeedDialModule,
+    MatExpansionModule,
   
    
   ],

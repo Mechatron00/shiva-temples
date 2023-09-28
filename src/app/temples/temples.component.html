@@ -20,11 +20,10 @@
       buttonClassName="p-button-secondary "
       class="button-small"
       [mask]="true"
-      
     ></p-speedDial>
   </div>
   <div class="not-found" *ngIf="!found">Not Found</div>
-  <div class="temple-list" style="padding-bottom: 80px;">
+  <div class="temple-list" style="padding-bottom: 80px">
     <!-- <div class="img-overlay"></div> -->
     <div style="padding-top: 0px">
       <div class="aligning">
@@ -53,7 +52,10 @@
           <ng-template #content let-modal>
             <div class="modal-header">
               <h4 class="modal-title" id="modal-basic-title">
-                {{ temple.basic.name | titlecase }}
+                {{ temple.basic.name | titlecase }} -
+                {{ temple.basic.location.pin | titlecase }},{{
+                  temple.basic.location.dist | titlecase
+                }},{{ temple.basic.location.state | titlecase }}
               </h4>
               <button
                 type="button"
@@ -170,11 +172,11 @@
                   <hr style="margin-top: 40px" />
                 </div>
                 <div class="info-card">
-                  <div class="trip-card">
+                  <!-- <div class="trip-card">
                     <div style="padding: 10px">
-                      <div class="info-card-container">
+                      <!-- <div class="info-card-container">
                         <h5 style="text-align: center">HOW TO REACH</h5>
-                        <div class="info-card-text">
+                        <!-- <div class="info-card-text">
                           <div>
                             <fa-icon
                               placement="bottom"
@@ -209,11 +211,124 @@
                           <div style="margin-left: 5px" class="extra-text">
                             {{ temple.trip.by_air }}
                           </div>
-                        </div>
-                      </div>
+                        </div> 
+                        
+
+                      </div> 
                     </div>
-                  </div>
-                  <div class="trip-card">
+                  </div> -->
+                    <div style="width: 600px; margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
+                      <h5 style="text-align: center; padding: 10px;">HOW TO REACH</h5>
+                      <mat-accordion>
+                        <mat-expansion-panel  hideToggle>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <fa-icon
+                              class="fa fa-xl"
+                              [icon]="faRoad"
+                            ></fa-icon>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              By Road
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.trip.nearest_road }}</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel  hideToggle >
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <fa-icon
+                              class="fa fa-xl"
+                              [icon]="faTrain"
+                            ></fa-icon>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              By Train
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.trip.nearest_railway }}</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel  hideToggle >
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <fa-icon
+                              class="fa fa-xl"
+                              [icon]="faPlane"
+                            ></fa-icon>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                             By Plane
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>{{ temple.trip.by_air }}</p>
+                        </mat-expansion-panel>
+                      </mat-accordion>                  
+                     </div>
+                     <div style="width: 600px;margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
+                       <h5 style="text-align: center;padding: 10px;">Best Time to Visit</h5>
+                      <mat-accordion>
+                        <mat-expansion-panel  hideToggle >
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                             Best Time
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.trip.best_time }}</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel  hideToggle>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Festival
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.trip.festivals }}</p>
+                        </mat-expansion-panel>
+
+                      </mat-accordion>                  
+                     </div>
+                     <div style="width: 600px;margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
+                       <h5 style="text-align: center;padding: 10px;">Contact</h5>
+                      <mat-accordion>
+                        <mat-expansion-panel  hideToggle>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <fa-icon
+                              class="fa fa-lg"
+                              [icon]="faLocation"
+                            ></fa-icon>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              Address
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.contact.address }}</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel  hideToggle>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <fa-icon
+                              class="fa fa-lg"
+                              [icon]="faPhone"
+                            ></fa-icon>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              Phone
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p> {{ temple.contact.phone }}</p>
+                        </mat-expansion-panel>
+  
+                      </mat-accordion>                  
+                     </div>
+                  
+              
+                  <!-- <div class="trip-card">
                     <div style="padding: 10px">
                       <div class="info-card-container">
                         <h5 style="text-align: center">BEST TIME TO VISIT</h5>
@@ -268,7 +383,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div>
                   <div style="margin-top: 30px">
