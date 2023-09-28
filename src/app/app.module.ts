@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,7 +19,9 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { AboutComponent } from './about/about.component';
 import { SearchPipe } from './search-pipe/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DockModule } from 'primeng/dock';
+import { SpeedDialModule } from 'primeng/speeddial';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,9 @@ import { DockModule } from 'primeng/dock';
     NgxExtendedPdfViewerModule,
     ReactiveFormsModule,
     FormsModule,
-    DockModule,
+    MatAutocompleteModule,
+    SpeedDialModule
+  
    
   ],
   providers: [],

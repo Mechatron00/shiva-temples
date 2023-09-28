@@ -27,11 +27,13 @@ import {
 } from '@angular/animations';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FormControl } from '@angular/forms';
-import { MenuItem, PrimeIcons } from 'primeng/api';
+import { MenuItem, } from 'primeng/api';
+import { jyotirlingas } from '../data/jyotirling';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
   styleUrls: ['./temples.component.css'],
+  
   animations: [
     trigger('animation', [
       transition('void => visible', [
@@ -84,31 +86,89 @@ export class TemplesComponent implements OnInit {
   controls = true;
   totalImageCount = 0;
   num = 0;
-  items: MenuItem[] | undefined;
-  position: string = 'top';
-  constructor(private modalService: NgbModal) {}
+ 
+  items: MenuItem[]=[];
+  constructor(private modalService: NgbModal,
+   
+   
+    ) {}
+   
   ngOnInit(): void {
-    this.templesData = templesData;
+    this.templesData = 
+    templesData.sort((a, b) => {
+      const nameA = a.basic.name.toUpperCase();
+      const nameB = b.basic.name.toUpperCase();
+    
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    });
+
 
     this.items = [
       {
-        label: 'Finder',
-        icon: PrimeIcons.MAP,
+        tooltipOptions: {
+          tooltipLabel: '12 Jyotirlingas'
+      },
+        label:"12 Jyotirlingas",
+        icon: 'src/assets/shiva-lingam.svg',
+          command: () => {
+              this.templesData = jyotirlingas;
+          }
       },
       {
-        label: 'App Store',
-        icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+        tooltipOptions: {
+          tooltipLabel: 'Pancha Bhooth Temples'
+      },
+          icon: 'pi pi-refresh',
+          command: () => {
+             
+          }
       },
       {
-        label: 'Photos',
-        icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+        tooltipOptions: {
+          tooltipLabel: 'Panchaaraama Temples'
+      },
+          icon: 'pi pi-refresh',
+          command: () => {
+             
+          }
       },
       {
-        label: 'Trash',
-        icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+        tooltipOptions: {
+          tooltipLabel: 'Sabha Temples'
       },
-    ];
+          icon: 'pi pi-trash',
+          command: () => {
+             
+          }
+      },
+      {
+        tooltipOptions: {
+          tooltipLabel: 'Ashta Veeratta Temples'
+      },
+          icon: 'pi pi-upload',
+          command: () => {
+             
+          }
+      },
+      {
+        tooltipOptions: {
+          tooltipLabel: 'Shani parihara temples'
+      },
+          icon: 'pi pi-external-link',
+          command: () => {
+             
+          }
+      }
+  ];
+   
   }
+ 
 
   open(content: any) {
     this.modalService

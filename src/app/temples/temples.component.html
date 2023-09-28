@@ -1,13 +1,30 @@
 <div class="outer-container">
   <div class="search-div">
-    <div style="z-index: 2;" class="search-box">
-      <button  class="btn-search"><fa-icon [icon]="faSearch"></fa-icon></button>
-      <input matInput (keyup)="filterTemple()"
-      [formControl]="inputControl" type="text" class="input-search" placeholder="Type to Search...">
+    <div style="z-index: 2" class="search-box">
+      <button class="btn-search"><fa-icon [icon]="faSearch"></fa-icon></button>
+      <input
+        matInput
+        (keyup)="filterTemple()"
+        [formControl]="inputControl"
+        type="text"
+        class="input-search"
+        placeholder="Type to Search..."
+      />
     </div>
-    <div class="not-found" *ngIf="!found">Not Found</div>
+    <p-speedDial
+      [model]="items"
+      direction="down"
+      showIcon="pi pi-caret-down "
+      [transitionDelay]="100"
+      hideIcon="pi pi-caret-up"
+      buttonClassName="p-button-secondary "
+      class="button-small"
+      [mask]="true"
+      
+    ></p-speedDial>
   </div>
-  <div class="temple-list" loading="eager">
+  <div class="not-found" *ngIf="!found">Not Found</div>
+  <div class="temple-list" style="padding-bottom: 80px;">
     <!-- <div class="img-overlay"></div> -->
     <div style="padding-top: 0px">
       <div class="aligning">
@@ -17,8 +34,7 @@
               <div
                 class="card-img"
                 style="
-          background-image: url('{{ temple.photos.cover }}' );
-          
+          background-image: url('{{ temple.photos.cover }}' );    
         "
               ></div>
               <div class="content">
@@ -34,13 +50,11 @@
               </div>
             </div>
           </div>
-
           <ng-template #content let-modal>
             <div class="modal-header">
               <h4 class="modal-title" id="modal-basic-title">
                 {{ temple.basic.name | titlecase }}
               </h4>
-
               <button
                 type="button"
                 class="btn btn-outline-dark"
@@ -67,7 +81,6 @@
                             temple.Architecture.style
                           }}</span>
                         </div>
-
                         <div>
                           <span style="font-weight: 600"
                             ><fa-icon
@@ -136,8 +149,6 @@
                   class="profile-image"
                   style="
     background-image: url('{{ temple.photos.profile }}');
-    
-    
   "
                 ></div>
                 <div class="info">
@@ -258,7 +269,6 @@
                       </div>
                     </div>
                   </div>
-               
                 </div>
                 <div>
                   <div style="margin-top: 30px">
@@ -349,7 +359,6 @@
                   ></fa-icon
                 ></a>
               </div>
-            
             </div>
           </ng-template>
         </div>
