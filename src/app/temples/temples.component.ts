@@ -27,13 +27,13 @@ import {
 } from '@angular/animations';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FormControl } from '@angular/forms';
-import { MenuItem, } from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 import { jyotirlingas } from '../data/jyotirling';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
   styleUrls: ['./temples.component.css'],
-  
+
   animations: [
     trigger('animation', [
       transition('void => visible', [
@@ -86,19 +86,15 @@ export class TemplesComponent implements OnInit {
   controls = true;
   totalImageCount = 0;
   num = 0;
- 
-  items: MenuItem[]=[];
-  constructor(private modalService: NgbModal,
-   
-   
-    ) {}
-   
+
+  items: MenuItem[] = [];
+  constructor(private modalService: NgbModal) {}
+
   ngOnInit(): void {
-    this.templesData = 
-    templesData.sort((a, b) => {
+    this.templesData = templesData.sort((a, b) => {
       const nameA = a.basic.name.toUpperCase();
       const nameB = b.basic.name.toUpperCase();
-    
+
       if (nameA < nameB) {
         return -1;
       }
@@ -108,67 +104,56 @@ export class TemplesComponent implements OnInit {
       return 0;
     });
 
-
     this.items = [
       {
+        icon: 'one',
+        styleClass: 'jyot',
         tooltipOptions: {
-          tooltipLabel: '12 Jyotirlingas'
+          tooltipLabel: '12 Jyotirlingas',
+        },
+
+        command: () => {
+          this.templesData = jyotirlingas;
+        },
       },
-        label:"12 Jyotirlingas",
-        icon: 'src/assets/shiva-lingam.svg',
-          command: () => {
-              this.templesData = jyotirlingas;
-          }
+      {
+        icon: 'two',
+        tooltipOptions: {
+          tooltipLabel: 'Pancha Bhooth Temples',
+        },
+
+        command: () => {},
       },
       {
         tooltipOptions: {
-          tooltipLabel: 'Pancha Bhooth Temples'
-      },
-          icon: 'pi pi-refresh',
-          command: () => {
-             
-          }
+          tooltipLabel: 'Panchaaraama Temples',
+        },
+        icon: 'three',
+        command: () => {},
       },
       {
         tooltipOptions: {
-          tooltipLabel: 'Panchaaraama Temples'
-      },
-          icon: 'pi pi-refresh',
-          command: () => {
-             
-          }
+          tooltipLabel: 'Sabha Temples',
+        },
+        icon: 'four',
+        command: () => {},
       },
       {
         tooltipOptions: {
-          tooltipLabel: 'Sabha Temples'
-      },
-          icon: 'pi pi-trash',
-          command: () => {
-             
-          }
+          tooltipLabel: 'Ashta Veeratta Temples',
+        },
+        icon: 'five',
+        command: () => {},
       },
       {
         tooltipOptions: {
-          tooltipLabel: 'Ashta Veeratta Temples'
+          tooltipLabel: 'Shani parihara temples',
+        },
+        icon: 'six',
+        command: () => {},
       },
-          icon: 'pi pi-upload',
-          command: () => {
-             
-          }
-      },
-      {
-        tooltipOptions: {
-          tooltipLabel: 'Shani parihara temples'
-      },
-          icon: 'pi pi-external-link',
-          command: () => {
-             
-          }
-      }
-  ];
-   
+    ];
   }
- 
 
   open(content: any) {
     this.modalService

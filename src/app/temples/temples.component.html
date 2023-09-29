@@ -17,10 +17,14 @@
       showIcon="pi pi-caret-down "
       [transitionDelay]="100"
       hideIcon="pi pi-caret-up"
-      buttonClassName="p-button-secondary "
-      class="button-small"
+      buttonClassName="p-button-secondary"
+      class="button-small "
       [mask]="true"
-    ></p-speedDial>
+    >
+    <ng-template let-item pTemplate="item">
+      <button [ngClass]="'custom-speed-dial-button'" pButton type="button">{{ item.label }}</button>
+  </ng-template>
+  </p-speedDial>
   </div>
   <div class="not-found" *ngIf="!found">Not Found</div>
   <div class="temple-list" style="padding-bottom: 80px">
@@ -169,221 +173,118 @@
                   </div>
                 </div>
                 <div>
-                  <hr style="margin-top: 40px" />
+                  <hr style="margin-top: 60px" />
                 </div>
                 <div class="info-card">
-                  <!-- <div class="trip-card">
-                    <div style="padding: 10px">
-                      <!-- <div class="info-card-container">
-                        <h5 style="text-align: center">HOW TO REACH</h5>
-                        <!-- <div class="info-card-text">
-                          <div>
+                  <div
+                  class="acco-card"
+                    
+                  >
+                    <h5 style="text-align: center; padding: 10px">
+                      HOW TO REACH
+                    </h5>
+                    <mat-accordion>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <fa-icon class="fa fa-xl" [icon]="faRoad"></fa-icon>
+                          </mat-panel-title>
+                          <mat-panel-description>
+                            By Road
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.trip.nearest_road }}</p>
+                      </mat-expansion-panel>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
                             <fa-icon
-                              placement="bottom"
-                              ngbTooltip="By Road"
-                              [icon]="faRoad"
-                            ></fa-icon>
-                          </div>
-                          <div style="margin-left: 5px">
-                            {{ temple.trip.nearest_road }}
-                          </div>
-                        </div>
-                        <div class="info-card-text">
-                          <div>
-                            <fa-icon
-                              placement="bottom"
-                              ngbTooltip="By Train"
-                              [icon]="faTrain"
-                            ></fa-icon>
-                          </div>
-                          <div style="margin-left: 5px">
-                            {{ temple.trip.nearest_railway }}
-                          </div>
-                        </div>
-                        <div class="info-card-text">
-                          <div>
-                            <fa-icon
-                              placement="bottom"
-                              ngbTooltip="By Plane"
-                              [icon]="faPlane"
-                            ></fa-icon>
-                          </div>
-                          <div style="margin-left: 5px" class="extra-text">
-                            {{ temple.trip.by_air }}
-                          </div>
-                        </div> 
-                        
-
-                      </div> 
-                    </div>
-                  </div> -->
-                    <div style="width: 600px; margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
-                      <h5 style="text-align: center; padding: 10px;">HOW TO REACH</h5>
-                      <mat-accordion>
-                        <mat-expansion-panel  hideToggle>
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              <fa-icon
-                              class="fa fa-xl"
-                              [icon]="faRoad"
-                            ></fa-icon>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              By Road
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.trip.nearest_road }}</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel  hideToggle >
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              <fa-icon
                               class="fa fa-xl"
                               [icon]="faTrain"
                             ></fa-icon>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              By Train
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.trip.nearest_railway }}</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel  hideToggle >
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              <fa-icon
+                          </mat-panel-title>
+                          <mat-panel-description>
+                            By Train
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.trip.nearest_railway }}</p>
+                      </mat-expansion-panel>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <fa-icon
                               class="fa fa-xl"
                               [icon]="faPlane"
                             ></fa-icon>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                             By Plane
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p>{{ temple.trip.by_air }}</p>
-                        </mat-expansion-panel>
-                      </mat-accordion>                  
-                     </div>
-                     <div style="width: 600px;margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
-                       <h5 style="text-align: center;padding: 10px;">Best Time to Visit</h5>
-                      <mat-accordion>
-                        <mat-expansion-panel  hideToggle >
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                             Best Time
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.trip.best_time }}</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel  hideToggle>
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              Festival
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.trip.festivals }}</p>
-                        </mat-expansion-panel>
-
-                      </mat-accordion>                  
-                     </div>
-                     <div style="width: 600px;margin-bottom: 30px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;height: fit-content;">
-                       <h5 style="text-align: center;padding: 10px;">Contact</h5>
-                      <mat-accordion>
-                        <mat-expansion-panel  hideToggle>
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              <fa-icon
-                              class="fa fa-lg"
-                              [icon]="faLocation"
-                            ></fa-icon>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              Address
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.contact.address }}</p>
-                        </mat-expansion-panel>
-                        <mat-expansion-panel  hideToggle>
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                              <fa-icon
-                              class="fa fa-lg"
-                              [icon]="faPhone"
-                            ></fa-icon>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                              Phone
-                            </mat-panel-description>
-                          </mat-expansion-panel-header>
-                          <p> {{ temple.contact.phone }}</p>
-                        </mat-expansion-panel>
-  
-                      </mat-accordion>                  
-                     </div>
-                  
-              
-                  <!-- <div class="trip-card">
-                    <div style="padding: 10px">
-                      <div class="info-card-container">
-                        <h5 style="text-align: center">BEST TIME TO VISIT</h5>
-
-                        <div class="info-card-text">
-                          <div>
-                            <h6>Best Time To Visit:</h6>
-                          </div>
-                          <div style="margin-left: 5px">
-                            {{ temple.trip.best_time }}
-                          </div>
-                        </div>
-                        <div class="info-card-text">
-                          <div>
-                            <h6>Festival:</h6>
-                          </div>
-                          <div class="festival-text" style="margin-left: 5px">
-                            {{ temple.trip.festivals }}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                          </mat-panel-title>
+                          <mat-panel-description>
+                            By Plane
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.trip.by_air }}</p>
+                      </mat-expansion-panel>
+                    </mat-accordion>
                   </div>
-                  <div class="contact-card">
-                    <div style="padding: 10px">
-                      <div style="margin-left: 10px; margin-right: 10px">
-                        <h5 style="text-align: center">CONTACT</h5>
-                        <div class="info-card-text">
-                          <div>
+                  <div
+                  class="acco-card"
+                  >
+                    <h5 style="text-align: center; padding: 10px">
+                      Best Time to Visit
+                    </h5>
+                    <mat-accordion>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title> Best Time </mat-panel-title>
+                          <mat-panel-description> </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.trip.best_time }}</p>
+                      </mat-expansion-panel>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title> Festival </mat-panel-title>
+                          <mat-panel-description> </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.trip.festivals }}</p>
+                      </mat-expansion-panel>
+                    </mat-accordion>
+                  </div>
+                  <div
+                  class="acco-card"
+                  >
+                    <h5 style="text-align: center; padding: 10px">Contact</h5>
+                    <mat-accordion>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
                             <fa-icon
-                              placement="bottom"
-                              ngbTooltip="Address"
+                              class="fa fa-lg"
                               [icon]="faLocation"
                             ></fa-icon>
-                          </div>
-                          <div style="margin-left: 5px">
-                            {{ temple.contact.address }}
-                          </div>
-                        </div>
-
-                        <div class="info-card-text">
-                          <div>
+                          </mat-panel-title>
+                          <mat-panel-description>
+                            Address
+                          </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.contact.address }}</p>
+                      </mat-expansion-panel>
+                      <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
                             <fa-icon
-                              placement="bottom"
-                              ngbTooltip="Phone"
+                              class="fa fa-lg"
                               [icon]="faPhone"
                             ></fa-icon>
-                          </div>
-                          <div style="margin-left: 5px">
-                            {{ temple.contact.phone }}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
+                          </mat-panel-title>
+                          <mat-panel-description> Phone </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>{{ temple.contact.phone }}</p>
+                      </mat-expansion-panel>
+                    </mat-accordion>
+                  </div>
+
+                 
+
+                  
                 </div>
                 <div>
                   <div style="margin-top: 30px">
