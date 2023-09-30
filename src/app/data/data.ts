@@ -329,7 +329,7 @@ export const templesData = [
   },
   {
     basic: {
-      name: 'Mallikarjuna Temple',
+      name: 'Mallikarjuna Jyotirlinga',
       bio: "Mallikarjun Temple is situated on Shri Shaila Mountain by the banks of the Patal Ganga, Krishna River in the southern state of Andhra Pradesh. Also known as Kailash of the South, Mallikarjuna constitutes one of the 12 Jyotirlingam shrines of Shiva and is one of the greatest Shaivaite shrines in India.",
       location: {
         pin: ' Srisailam',
@@ -352,13 +352,13 @@ export const templesData = [
     },
     about: {
       basic_info:
-        "      Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess.[1] Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.Srisailam Sri Mallikarjuna Swamy Temple is located around 180 kilometers from the Kurnool district headquarters, and 213 kilometers from Hyderabad. Pilgrims coming by train would need to alight at the railway station in either Markapur or Tarlupadu. These stations are between 2 and 2.5 hours by road. The Kacheguda-Guntur passenger passes through the Giddalur railway station that is 139 kilometers from the temple",
+        "      Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess. Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.Srisailam Sri Mallikarjuna Swamy Temple is located around 180 kilometers from the Kurnool district headquarters, and 213 kilometers from Hyderabad. Pilgrims coming by train would need to alight at the railway station in either Markapur or Tarlupadu. These stations are between 2 and 2.5 hours by road. The Kacheguda-Guntur passenger passes through the Giddalur railway station that is 139 kilometers from the temple",
 
       history:
-        "Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess.[1] Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.There are inscriptional evidence from the Satavahana dynasty which place the temple to be existent from the 2nd century. Most modern additions were done during the time of king Harihara I of Vijayanagara Empire.[3] The veerasheromandapam and paathalaganga steps was constructed during the time of Reddi Kingdom.",
+        "Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess. Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.There are inscriptional evidence from the Satavahana dynasty which place the temple to be existent from the 2nd century. Most modern additions were done during the time of king Harihara I of Vijayanagara Empire. The veerasheromandapam and paathalaganga steps was constructed during the time of Reddi Kingdom.",
 
       architecture:
-        "The temple complex covers 2 hectares and houses four gateway towers known as gopurams. The temple has numerous shrines, with those of Mallikarjuna and Bhramaramba being the most prominent. The temple complex houses many halls; the most notable is the Mukha Mandapa built during the Vijayanagar period. The temple is situated facing East. The center mandapam has several pillars, with a huge idol of Nadikeshwara. The temple is enclosed by tall walls measuring 183 m (600 ft) by 152 m (499 ft) and 8.5 m (28 ft) tall. There are a number of sculptures in the precinct each rising above another. The Mukamandapa, the hall leading to the sanctum, has intricately sculpted pillars. The shrine where Mallikarjuna is housed is considered the oldest in the temple, dating back to the 7th century. There is a Sahasra linga (1000 linga), believed to have been commissioned by Rama and five other lingams believed to have been commissioned by Pandavas. A mirror hall in the first precinct has images of Nataraja.[3]Bhramaramba Shrine is Located adjacent to the Mallikarjun Temple is a shrine dedicated to Goddess Jagdamba who is known as Bhramaramba here. The Bhramaramba shrine is considered to be of great significance. Legend has it that Durga is said to have assumed the shape of a bee and worshipped Shiva here, and chose this place as her abode.",
+        "The temple complex covers 2 hectares and houses four gateway towers known as gopurams. The temple has numerous shrines, with those of Mallikarjuna and Bhramaramba being the most prominent. The temple complex houses many halls; the most notable is the Mukha Mandapa built during the Vijayanagar period. The temple is situated facing East. The center mandapam has several pillars, with a huge idol of Nadikeshwara. The temple is enclosed by tall walls measuring 183 m (600 ft) by 152 m (499 ft) and 8.5 m (28 ft) tall. There are a number of sculptures in the precinct each rising above another. The Mukamandapa, the hall leading to the sanctum, has intricately sculpted pillars. The shrine where Mallikarjuna is housed is considered the oldest in the temple, dating back to the 7th century. There is a Sahasra linga (1000 linga), believed to have been commissioned by Rama and five other lingams believed to have been commissioned by Pandavas. A mirror hall in the first precinct has images of Nataraja.Bhramaramba Shrine is Located adjacent to the Mallikarjun Temple is a shrine dedicated to Goddess Jagdamba who is known as Bhramaramba here. The Bhramaramba shrine is considered to be of great significance. Legend has it that Durga is said to have assumed the shape of a bee and worshipped Shiva here, and chose this place as her abode.",
     },
     photos: {
       cover:
@@ -368,18 +368,75 @@ export const templesData = [
     },
     trip:{
       best_time:"November to February",
-      nearest_road:"165km from Mangalore and 455km from Bangalore.",
-      nearest_railway:"Murudeshwara station is only 2 km away from the temple.",
-      by_air:"The nearest airport from the temple is Mangalore International airport which is situated at a distance of about 165km from the temple.",
+      nearest_road:"From your city to Hyderabad. Hyderabad is the nearest major rail head. The Mallikarjuna Temple is located at Srisailam. The distance from Hyderabad to Sri Sailam is 240 kms by road.",
+      nearest_railway:"There is no railway station in the vicinity of Sri Bhramaramba Mallikarjuna Temple, however, there are few railway stations near to it. Let’s have a look at a few of these railway stations. ",
+      by_air:"The nearest airport to Mallikarjuna Jyotirlinga is Rajiv Gandhi International Airport, which is located at a distance of about 200 kilometers from Mallikarjuna Jyotirlinga. Rajiv Gandhi International Airport is connected to Delhi, Mumbai, Kolkata, Ahmedabad and Chandigarh as well as many other major and minor airports in the country.",
       festivals:"Maha Shivaratri (February or March) and Karthik (November to December) Purnima is celebrated in the temple with full fervour and enthusiasm."
   },
   contact:{
-    address:"Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat 362268",
-    phone:"9428214914"
+    address:"Srisailam, Andhra Pradesh 528101",
+    phone:"8333901351"
 },
     gallery: [
       'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
      
+    ],
+  },
+  {
+    basic: {
+      name: 'Mahakaleshwar Jyotirlinga',
+      bio: "Mahakaleshwar Jyotirlinga is a Hindu temple dedicated to Shiva and is one of the twelve Jyotirlingas, shrines which are said to be the most sacred abodes of Shiva. It is located in the ancient city of Ujjain in the state of Madhya Pradesh, India. The temple is situated on the side of the holy river Shipra. ",
+      location: {
+        pin: ' Jaisinghpura',
+        dist: ' 	Ujjain',
+        state: ' Madhya Pradesh',
+        iframe:"https://www.mappls.com/65tbft",
+      },
+      coordinates: {
+        x: 23.182778,
+        y: 75.768333,
+      },
+      website:'https://shrimahakaleshwar.com/'
+    },
+    Architecture: {
+      style: 'Chalukya and Maratha ',
+      creator: 'Prajapati Brahma ',
+      completed: '  Original date unknown',
+      inscriptions: 'None',
+      elevation: 491,
+    },
+    about: {
+      basic_info:
+        "      Mahakaleshwar Jyotirlinga is a Hindu temple dedicated to Shiva and is one of the twelve Jyotirlingas, shrines which are said to be the most sacred abodes of Shiva. It is located in the ancient city of Ujjain in the state of Madhya Pradesh, India. The temple is situated on the side of the holy river Shipra. The presiding deity, Shiva in the lingam form is believed to be Swayambhu, deriving currents of power (Shakti) from within itself as against the other images and lingams that are ritually established and invested with mantra-shakti.Madhya Pradesh has two Jyotirlingas, the second one, Omkareshwar Jyotirlinga, is situated about 140 km south of Mahakaleshwar Jyotirlinga.",
+
+      history:
+        "According to the Puranas, the city of Ujjain was called Avantika and was famous for its beauty and its status as a devotional epicenter. It was also one of the primary cities where students went to study holy scriptures. According to legend, there was a ruler of Ujjain called Chandrasena, who was a pious devotee of Shiva and worshiped him all the time. One day, a farmer's boy named Shrikhar was walking on the grounds of the palace and heard the King chant the Shiva's name and rushed to the temple to start praying with him. However, the guards removed him by force and sent him to the outskirts of the city near the river Kshipra. Rivals of Ujjain, primarily King Ripudamana and King Singhaditya of the neighboring kingdoms decided to attack the Kingdom and take over its treasures around this time. Hearing this, Shrikhar started to pray and the news spread to a priest named Vridhi. He was shocked to hear this and upon the urgent pleas of his sons, started to pray to Shiva at the river Kshipra. The Kings chose to attack and were successful; with the help of the powerful demon Dushan, who was blessed by Brahma to be invisible, they plundered the city and attacked all the devotees of Shiva.Upon hearing the pleas of His helpless devotees, Shiva appeared in his Mahakala form and destroyed the enemies of King Chandrasena. Upon the request of his devotees Shrikhar and Vridhi, Shiva agreed to reside in the city and become the chief deity of the Kingdom and take care of it against its enemies and to protect all His devotees. From that day on, Shiva resided in His light form as Mahakala in a Lingam that was formed on its own from the powers of Shiva and his consort, Parvati. Shiva also blessed his devotees and declared that people who worshipped Him in this form would be free from the fear of death and diseases. Also, they would be granted worldly treasures and be under the protection of the Shiva himself.Bharthari was the elder son of King Gandharva-Sena, and received the kingdom of Ujjain from the celestial god Indra and the King of Dhara.When Bharthari was king of 'Ujjayani' (modern-day Ujjain) in his state there lived a Brahman who after years of austerities was given the fruit of immortality from the celestial tree of Kalpavriksha. The Brahman presented the same to his monarch, Raja Bharthari, who in turn, passed it on to his love, the beautiful, Pinglah Rani or Ananga Sena Raja Bhartrhari's last and youngest wife. The queen, being in love with the Head police officer of the state, Mahipaala, presented the fruit to him, who further passed it on to his beloved, Lakha, one of the maids of honour. Eventually, Lakha being in love with the king presented the fruit back to the king. Having completed the circle, the fruit revealed the downsides of infidelity to the king, he summoned the queen and ordered her beheading, and ate the fruit himself. After that, he abdicated the throne, and became a religious mendicant.He later became a disciple of Pattinatthar who first indulged in an argument about samsari and sanyasi with king Bhartrhari. Later during the conversation pattinathar said that all women have 'dual mind' and it might be the true case even with Parameswari. King conveyed this news to Rani Pingalah and she ordered Pattinathar to get punished and to sit in kalu maram (tree, whose top portion would be sharpened like a pencil and whole tree is fully coated with oil, a person who is punished to sit in the top will be split into two pieces), they tried to kill Pattinathar, but Kalu Maram started burning and nothing happened to Pattinathar, the king received the news and went directly to Pattinathar and asked him to get ready to die the next day, but Pattinathar replied, 'I'm ready right now, to die'. The next day king came with tears in his eyes and released saint from jail because he actually noticed Queen Pingalah in love with horsemen that night, He threw away his empire, wealth, even full coat dress and dressed in a simple kovanam (loincloth), the king became a disciple of Pattinatthar and got moksha (salvation) in the Srikalahasteeshwara Temple in Andhra Pradesh which houses the Vayu Lingam, a part of the Pancha Bhoota Sthalams of Shiva.Kalidasa, the great Sanskrit poet of the times who was probably a contemporary of king Pushyamitra Sunga, has mentioned about the rituals of the temple in his works in Meghadūta. He mentions about the nada-aradhana, the performance of art and dance during the evening rituals.The temple complex was destroyed by Iltutmish during his raid of Ujjain in 1234–35. The Jyotirlinga was dismantled and believed to be thrown into a nearby 'Kotiteerth Kunda' (a pond neighbouring the temple) with the Jaladhari (a structure supporting the Lingam) stolen during the invasion.The present structure was built by the Maratha general Ranoji Shinde in 1734 CE after Baji Rao I appointed him to collect taxes in malwa region. Further developments and management was done by other members of shinde dynasty, including Mahadji Shinde (1730 – 12 February 1794) and Daulat Rao Shinde's wife Baiza Bai. (1827–1863). During the reign of Jayajirao Shinde (until 1886), major programs of the then Gwalior State used to be held at this temple.The Maratha Empire regime was established in Ujjain in the 4th decade of the 18th century. The administration of Ujjain was assigned by Peshwa Bajirao-I to his faithful commander Ranoji Shinde, the Diwan of Ranoji was Sukhatanakar Ramchandra Baba Shenavi who was very wealthy he decided to invest his wealth for religious purposes. In this connection, he re-built the Mahakaleshwar Temple during the 4th and 5th decades of the 18th century.After India became independent in 1947, the Mahakaleshwar Dev Sthan Trust was replaced by the municipal corporation of Ujjain. Nowadays it is under the collectorate office of Ujjain district.",
+
+      architecture:
+        "The idol of Mahakaleshwar is known to be dakshinamukhi, which means that it is facing the south. This is a unique feature, upheld by the tantric shivnetra tradition to be found only in Mahakaleshwar among the 12 Jyotirlingas. The idol of Omkareshwar Mahadev is consecrated in the sanctum above the Mahakal shrine. The images of Ganesh, Parvati and Karttikeya are installed in the west, north, and east of the sanctum sanctorum. To the south is the image of Nandi, the vehicle of Shiva. The idol of Nagchandreshwar on the third storey is open for darshan only on the day of Nag Panchami. The temple has five levels, one of which is underground. The temple itself is located in a spacious courtyard surrounded by massive walls near a lake. The shikhar or the spire is adorned with sculptural finery. Brass lamps light the way to the underground sanctum. It is believed that prasada (holy offering) offered here to the deity can be re-offered unlike all other shrines.The presiding deity of time, Shiva, in all his splendor, reigns eternally in the city of Ujjain. The temple of Mahakaleshwar, its shikhar soaring into the sky, an imposing façade against the skyline, evokes primordial awe and reverence with its majesty. The Mahakal dominates the life of the city and its people, even in the midst of the busy routine of modern preoccupations, and provides an unbreakable link with ancient Hindu traditions.On the day of Maha Shivaratri, a huge fair is held near the temple, and worship goes on through the night.Devotees are not allowed to bring bags , mobile phones and cameras during the visit. Lockers and Cloak Rooms are there for devotees where they can keep their belongings.Also an awesome spectacle, with huge participation of devotees, is the procession of God Mahakaal in his Palanquin, called Shahi Savaari, to the river Kshipra, on last Monday of the holy period of Sawaan during the months of Shraavana or Bhadrapada.The Temple has a Shrine for Parvati known as avantika devi(goddess of ujjain city) behind the palki dwar at the back side of Ram Temple.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahakal_Temple_Ujjain.JPG',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahakal_Temple_Ujjain.JPG',
+    },
+    trip:{
+      best_time:"October to March",
+      nearest_road:" Buses ply to the temple from Ujjain, which is well connected through road network to various cities close-by",
+      nearest_railway:" Book tickets to Ujjain railway station and from there reach the temple via bus or taxi",
+      by_air:"Get to the Devi Ahilyabai Holkar Airport Indore and then reach the temple by bus or taxi",
+      festivals:"In the month of Shravan-Bhado, Mahakaleshwar Baba rides out. It starts riding every Monday with the start of the month.Every year panchkroshi yatra takes place in ujjain which has great religious significance. Thousands of people come in city of.On the day of Mahashivaratri, a huge fair is held near the temple, Thousands of pilgrims flock to the fair grounds near the Mahakaleshwar temple and do their worship throughout the night.The Mahakaleshwar Jyotirlinga Bhasma aarti, which takes place every day at 4 am, is one of the main draws of Mahakaleshwar Mandir. The divine ceremony is applying holy ash that has been taken from the ghats to the idol while reciting religious chants"
+  },
+  contact:{
+    address:"Jaisinghpura, Ujjain, Madhya Pradesh 456001",
+    phone:"7342550563"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahakal_Temple_Ujjain.JPG',
+      'https://upload.wikimedia.org/wikipedia/commons/b/ba/Sarayu_River_night_view%2C_Ayodhya_001.jpg',
+     
+
     ],
   },
   
