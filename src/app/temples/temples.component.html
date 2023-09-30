@@ -11,20 +11,36 @@
         placeholder="Type to Search..."
       />
     </div>
-    <p-speedDial
+    <!-- <p-speedDial
       [model]="items"
       direction="down"
       showIcon="pi pi-caret-down "
       [transitionDelay]="100"
       hideIcon="pi pi-caret-up"
       buttonClassName="p-button-secondary"
-      class="button-small "
+      class="button-small"
       [mask]="true"
     >
-    <ng-template let-item pTemplate="item">
-      <button [ngClass]="'custom-speed-dial-button'" pButton type="button">{{ item.label }}</button>
-  </ng-template>
-  </p-speedDial>
+      <ng-template let-item pTemplate="item">
+        <button [ngClass]="'custom-speed-dial-button'" pButton type="button">
+          {{ item.label }}
+        </button>
+      </ng-template>
+    </p-speedDial> -->
+
+    <p-splitButton
+      class="button-small"
+      styleClass="p-button-raised p-button-plain p-button-text mr-2 mb-2"
+      label="Filter"
+      [model]="items"
+      ><p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        styleClass="mr-2"
+        size="xlarge"
+        shape="circle"
+      ></p-avatar
+      >-</p-splitButton
+    >
   </div>
   <div class="not-found" *ngIf="!found">Not Found</div>
   <div class="temple-list" style="padding-bottom: 80px">
@@ -140,11 +156,18 @@
                               [icon]="faMapLocation"
                             ></fa-icon
                           ></span>
-                          <span style="margin-left: 10px"
-                            >x: {{ temple.basic.coordinates.x }}</span
+                          <span
+                            style="margin-left: 10px"
+                            placement="top"
+                            ngbTooltip="Latitude"
+                            >Lat: {{ temple.basic.coordinates.x }}</span
                           >
-                          <span style="margin-left: 10px">
-                            y: {{ temple.basic.coordinates.y }}
+                          <span
+                            style="margin-left: 10px"
+                            placement="top"
+                            ngbTooltip="Longitude"
+                          >
+                            Lon: {{ temple.basic.coordinates.y }}
                           </span>
                         </div>
                       </div>
@@ -165,7 +188,7 @@
                     <h2>History</h2>
                     <p><span class="tab"></span>{{ temple.about.history }}</p>
                   </div>
-                  <div>
+                  <div style="min-height: 650px">
                     <h2>Architecture</h2>
                     <p>
                       <span class="tab"></span>{{ temple.about.architecture }}
@@ -176,10 +199,7 @@
                   <hr style="margin-top: 60px" />
                 </div>
                 <div class="info-card">
-                  <div
-                  class="acco-card"
-                    
-                  >
+                  <div class="acco-card">
                     <h5 style="text-align: center; padding: 10px">
                       HOW TO REACH
                     </h5>
@@ -225,9 +245,7 @@
                       </mat-expansion-panel>
                     </mat-accordion>
                   </div>
-                  <div
-                  class="acco-card"
-                  >
+                  <div class="acco-card">
                     <h5 style="text-align: center; padding: 10px">
                       Best Time to Visit
                     </h5>
@@ -248,9 +266,7 @@
                       </mat-expansion-panel>
                     </mat-accordion>
                   </div>
-                  <div
-                  class="acco-card"
-                  >
+                  <div class="acco-card">
                     <h5 style="text-align: center; padding: 10px">Contact</h5>
                     <mat-accordion>
                       <mat-expansion-panel hideToggle>
@@ -281,10 +297,6 @@
                       </mat-expansion-panel>
                     </mat-accordion>
                   </div>
-
-                 
-
-                  
                 </div>
                 <div>
                   <div style="margin-top: 30px">

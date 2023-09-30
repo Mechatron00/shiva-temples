@@ -327,5 +327,60 @@ export const templesData = [
 
     ],
   },
+  {
+    basic: {
+      name: 'Mallikarjuna Temple',
+      bio: "Mallikarjun Temple is situated on Shri Shaila Mountain by the banks of the Patal Ganga, Krishna River in the southern state of Andhra Pradesh. Also known as Kailash of the South, Mallikarjuna constitutes one of the 12 Jyotirlingam shrines of Shiva and is one of the greatest Shaivaite shrines in India.",
+      location: {
+        pin: ' Srisailam',
+        dist: ' 	Nandyala',
+        state: ' Andhra Pradesh',
+        iframe:"https://www.mappls.com/ss2557",
+      },
+      coordinates: {
+        x: 16.074167,
+        y: 78.868056,
+      },
+      website:'https://www.srisailadevasthanam.org/en-in/home'
+    },
+    Architecture: {
+      style: 'Dravidian style,Vijayanagar architecture.',
+      creator: 'Queen Loka Mahadevi(wife of King Vikramaditya II)',
+      completed: ' 740 A.D.',
+      inscriptions: 'None',
+      elevation: 457,
+    },
+    about: {
+      basic_info:
+        "      Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess.[1] Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.Srisailam Sri Mallikarjuna Swamy Temple is located around 180 kilometers from the Kurnool district headquarters, and 213 kilometers from Hyderabad. Pilgrims coming by train would need to alight at the railway station in either Markapur or Tarlupadu. These stations are between 2 and 2.5 hours by road. The Kacheguda-Guntur passenger passes through the Giddalur railway station that is 139 kilometers from the temple",
+
+      history:
+        "Sri Bhramaramba Mallikarjuna Temple or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh.It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti Peethas, centres of the Hindu Goddess.[1] Shiva is worshiped as Mallikarjuna, and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.There are inscriptional evidence from the Satavahana dynasty which place the temple to be existent from the 2nd century. Most modern additions were done during the time of king Harihara I of Vijayanagara Empire.[3] The veerasheromandapam and paathalaganga steps was constructed during the time of Reddi Kingdom.",
+
+      architecture:
+        "The temple complex covers 2 hectares and houses four gateway towers known as gopurams. The temple has numerous shrines, with those of Mallikarjuna and Bhramaramba being the most prominent. The temple complex houses many halls; the most notable is the Mukha Mandapa built during the Vijayanagar period. The temple is situated facing East. The center mandapam has several pillars, with a huge idol of Nadikeshwara. The temple is enclosed by tall walls measuring 183 m (600 ft) by 152 m (499 ft) and 8.5 m (28 ft) tall. There are a number of sculptures in the precinct each rising above another. The Mukamandapa, the hall leading to the sanctum, has intricately sculpted pillars. The shrine where Mallikarjuna is housed is considered the oldest in the temple, dating back to the 7th century. There is a Sahasra linga (1000 linga), believed to have been commissioned by Rama and five other lingams believed to have been commissioned by Pandavas. A mirror hall in the first precinct has images of Nataraja.[3]Bhramaramba Shrine is Located adjacent to the Mallikarjun Temple is a shrine dedicated to Goddess Jagdamba who is known as Bhramaramba here. The Bhramaramba shrine is considered to be of great significance. Legend has it that Durga is said to have assumed the shape of a bee and worshipped Shiva here, and chose this place as her abode.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
+    },
+    trip:{
+      best_time:"November to February",
+      nearest_road:"165km from Mangalore and 455km from Bangalore.",
+      nearest_railway:"Murudeshwara station is only 2 km away from the temple.",
+      by_air:"The nearest airport from the temple is Mangalore International airport which is situated at a distance of about 165km from the temple.",
+      festivals:"Maha Shivaratri (February or March) and Karthik (November to December) Purnima is celebrated in the temple with full fervour and enthusiasm."
+  },
+  contact:{
+    address:"Somnath Mandir Rd, Somnath, Prabhas Patan, Gujarat 362268",
+    phone:"9428214914"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
+     
+    ],
+  },
   
 ];

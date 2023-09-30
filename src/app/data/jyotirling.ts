@@ -67,7 +67,7 @@ export const jyotirlingas = [
         pin: ' Srisailam',
         dist: ' 	Nandyala',
         state: ' Andhra Pradesh',
-        iframe:"https://www.mappls.com/2s4a75",
+        iframe:"https://www.mappls.com/ss2557",
       },
       coordinates: {
         x: 16.074167,
@@ -94,9 +94,9 @@ export const jyotirlingas = [
     },
     photos: {
       cover:
-        'https://upload.wikimedia.org/wikipedia/commons/a/ac/Somanath_Temple.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
       profile:
-        'https://upload.wikimedia.org/wikipedia/commons/d/d7/Somanath_mandir.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
     },
     trip:{
       best_time:"November to February",
@@ -110,13 +110,8 @@ export const jyotirlingas = [
     phone:"9428214914"
 },
     gallery: [
-      'https://upload.wikimedia.org/wikipedia/commons/a/ac/Somanath_Temple.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/d/d7/Somanath_mandir.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/a/a2/2015_Somnath_Jyotirlinga_temple_Prabhas_Patan.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/f/f2/Somnath_temple_ruins_%281869%29.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/c/c1/Somnath_temple_Prabhas_Veraval_Gujarat%2C_artwork_1_with_captions.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/c/ce/Somnathtempledawn.JPG',
-
+      'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
+     
     ],
   },
   {

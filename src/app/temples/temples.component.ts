@@ -105,53 +105,40 @@ export class TemplesComponent implements OnInit {
     });
 
     this.items = [
+     
       {
-        icon: 'one',
-        styleClass: 'jyot',
-        tooltipOptions: {
-          tooltipLabel: '12 Jyotirlingas',
-        },
+        
+        label:'12 Jyotirlingas',
+        
+       
 
         command: () => {
           this.templesData = jyotirlingas;
         },
       },
       {
-        icon: 'two',
-        tooltipOptions: {
-          tooltipLabel: 'Pancha Bhooth Temples',
-        },
+       
+        label:'Pancha Mahabhooth',
 
         command: () => {},
       },
       {
-        tooltipOptions: {
-          tooltipLabel: 'Panchaaraama Temples',
-        },
-        icon: 'three',
+        label:'Pancharaam',
         command: () => {},
       },
       {
-        tooltipOptions: {
-          tooltipLabel: 'Sabha Temples',
-        },
-        icon: 'four',
+        label:'Pancha Sabha',
         command: () => {},
       },
       {
-        tooltipOptions: {
-          tooltipLabel: 'Ashta Veeratta Temples',
-        },
-        icon: 'five',
+        label:'Ashth Veeratta',
         command: () => {},
       },
       {
-        tooltipOptions: {
-          tooltipLabel: 'Shani parihara temples',
-        },
-        icon: 'six',
+        label:'Char Shani Parihara',
         command: () => {},
       },
+   
     ];
   }
 
