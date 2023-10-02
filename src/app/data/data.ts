@@ -439,5 +439,141 @@ export const templesData = [
 
     ],
   },
+  {
+    basic: {
+      name: 'Omkareshwar Jyotirlinga',
+      bio: "Omkareshwar is a Hindu temple dedicated to Shiva, located in Mandhata, nearby Khandwa city in Khandwa district of the Indian state of Madhya Pradesh. It is one of the 12 revered Jyotirlinga shrines of Shiva.",
+      location: {
+        pin: ' 	Mandhata',
+        dist: ' 	 Khandwa',
+        state: ' Madhya Pradesh',
+        iframe:"https://www.mappls.com/ym796c",
+      },
+      coordinates: {
+        x: 22.245583,
+        y: 76.151056,
+      },
+      website:'https://www.shriomkareshwar.org/'
+    },
+    Architecture: {
+      style: ' Nagara architecture style',
+      creator: 'Shivaram Bhat ',
+      completed: ' between 1740 and 1760',
+      inscriptions: 'None',
+      elevation: 193,
+    },
+    about: {
+      basic_info:
+        "      Omkareshwar (IAST: Ōṃkārēśvar) is a Hindu temple dedicated to Shiva, located in Mandhata, nearby Khandwa city in Khandwa district of the Indian state of Madhya Pradesh. It is one of the 12 revered Jyotirlinga shrines of Shiva. It is on an island called Mandhata, near Khandwa city in the Narmada river at Khandwa district in Madhya Pradesh, India; the shape of the island is said to be like the Devanagari ॐ symbol.There are two main temples of Shiva here, one to Omkareshwar (whose name means Lord of Omkara or the Lord of the Om sound) located in the island and one to Mamleshwar (Amaleshwar) (whose name means Immortal Lord or lord of the Immortals or Devas) located on the southern bank of the Narmada River on the mainland. Madhya Pradesh has two Jyotirlingas, the second one, Mahakaleshwar Jyotirlinga, is situated about 140 km north of Omkareshwar Jyotirlinga.It is situated in the Mandhata city (also known as Omkareshwar) in Khandwa district of Madhya Pradesh state in India. It is about 16 km from Barwaha in Madhya Pradesh. Omkareshwar is formed by the sacred river Narmada. This is one of the most sacred rivers in India and is now home to one of the world's biggest dam projects. The temple is situated on Mandhata or Shivpuri island on the banks of Narmada and Kaveri river (a tributary of Narmada). The island is 4 KM long and 2.6 km2 (2,600,000 m2) in area and can be approached by boats and bridge",
+
+      history:
+        "As per Hindu legend, Vindhya, the deity controlling the Vindhyachal mountain range was worshipping Shiva to propitiate himself from the sins committed. He created a sacred geometrical diagram and a Lingam made of sand and clay. Shiva was pleased with the worship and believed to have appeared in two forms, namely Omkareshwar and Amaleswara. Since the mud mound appeared in the form of Om, the island came to be known as Omkareswar. There is a shrine for Parvati and Ganapati in the temple.The second story relates to Mandhata and his son's penance. King Mandhata of Ikshvaku clan (an ancestor of Ram) worshipped Shiva here until the Lord manifested himself as a Jyotirlinga. Some scholars also narrate the story about Mandhata's sons-Ambarish and Muchukunda, who had practiced severe penance and austerities here and pleased Shiva. Because of this, the mountain is named Mandhata.The third story from Hindu scriptures says that once upon a time there was a great war between Devas (gods) and Danavas (demons), in which Danavas won. This was a major setback for Devas and hence Devas prayed to Shiva. Pleased with their prayer, Shiva emerged in the form of Omkareshwar Jyotirlinga and defeated Danavas.Philosophy of Omkaar - Advait Matt says Omkaar is composed of two words, Om (sound) and Akaar (srishti). Both are one not two since Advait means'not two'. Om beej mantra of Srishti, itself is creator of Srishti.Adi Shankara's Cave – Omkareshwar is said to be the place where Adi Sankara met his guru Govinda Bhagavatpada in a cave. This cave can be found even today just below the Shiva temple where an image of Adi Shankara has been installed",
+
+      architecture:
+        "Omkareshwara Temple is located at a distance of about 12 miles from Mortakka in Madhya Pradesh. A special feature of the location of Omkareshwar Temple is that the river Narmada branches into two and forms an island Mandhata or Shivapuri in the center. The shape of the island resembles that of the visual representation of the Omkara sound, Om. There are two temples here, one to Omkareshwar and one to Amareshwar.The Omkareshwar Temple is built in the Nagara style and is characterized by a lofty shikhara. There are also shrines to Annapurna and Ganesha here. Before entering the temple one has to pass through two rooms. The Omkareshwar is not affixed to the ground but is naturally installed there. There is always water around it. The significance of this linga is that the linga is not situated below the cupola. The idol of Lord Shiva is situated on the top of the temple. The temple can be reached by ferry from the banks of the river. A huge fair is organized here on the day of Kartik Poornima.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c3/Omkareshwar2.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/8/88/Omkareshwar_Temple_02.jpg',
+    },
+    trip:{
+      best_time:"The best time to visit Omkareshwar is from October to March. However, you can also visit during the monsoons as rains are mostly average here. The town is also very attractive during the festive season of Dusshera and if possible, you should visit this place during that time to see the illuminated town",
+      nearest_road:"  Arrive by taxi or bus at the temple from Indore, which is well connected with cities close by through a network of roads",
+      nearest_railway:" Arrive at the Omkareshwar Road Railway Station and the take a taxi or bus to reach the temple",
+      by_air:" Reach the Devi Ahilyabai Holkar Airport and arrive at the temple which is 83km from it by bus or taxi",
+      festivals:"Maha Shivratri:One of the most celebrated festival during the Phalgun month of the Hindu calendar. During this festival the whole island is beautifully illuminated. Pilgrims visit this place in large numbers and perform Shiv Puja after bathing in the river Narmada.Makar Sankranti:Makar Sankranti is a festival of harvest held in the month of January. During Makar Sankranti people fly kits in the island with lot of gusto.Kartik Poornima:Kartik Poornima is a festival celebrated on the full moon day in the November at the end of Chaturmas. It is a 10-day festival. On Somvati Amasvya, large number of devotees bathe in the river Narmada. A huge fair is organized during Kartik Poornima and people attend the fair in large numbers.Narmada Jayanti:This is a festival dedicated to Narmada. It is celebrated on the Magh month of the Hindu calendar. The birthday of Narmada is celebrated at 12 noon on this day. The entire island is illuminated with diyas and there is a firework displays"
+  },
+  contact:{
+    address:"Tehasil Punasa, Omkareshwar, Madhya Pradesh, 451115",
+    phone:"917280271228"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/f/fe/Mamleshwar_Temple_01.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5e/Omkareshwar1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/ec/Mamleshwar_093840.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/c/c3/Omkareshwar2.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5a/Mamleshwar_Jyotirlinga.JPG',
+      'https://upload.wikimedia.org/wikipedia/commons/8/88/Omkareshwar_Temple_02.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/88/Omkareshwar3.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/8b/Gomukh_ghat%2C_Omkareshwar_02.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/0/05/Narmada_in_Omkareshwar.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/c/c6/Shore_of_Narmada_at_Omkareshwar.jpg',
+     
+
+    ],
+  },
+  {
+    basic: {
+      name: 'Kedarnath Jyotirlinga',
+      bio: "Kedarnath Temple ('temple of the God of the field') is a Hindu temple, one of the twelve jyotirlinga of Shiva. The temple is located on the Garhwal Himalayan range near the Mandakini river, in the state of Uttarakhand, India.",
+      location: {
+        pin: ' 	Kedarnath',
+        dist: ' 	 	Rudraprayag',
+        state: ' 	Uttarakhand',
+        iframe:"https://www.mappls.com/bdbf37",
+      },
+      coordinates: {
+        x: 30.735194,
+        y: 79.066917,
+      },
+      website:'https://badrinath-kedarnath.gov.in/'
+    },
+    Architecture: {
+      style: ' 	North-Indian Himalayan Architecture',
+      creator: 'Pandavas ',
+      completed: ' No Data',
+      inscriptions: 'None',
+      elevation: 3583,
+    },
+    about: {
+      basic_info:
+        "     Kedarnath Temple ('temple of the God of the field') is a Hindu temple, one of the twelve jyotirlinga of Shiva. The temple is located on the Garhwal Himalayan range near the Mandakini river, in the state of Uttarakhand, India. Due to extreme weather conditions, the temple is open to the general public only between the months of April (Akshaya Tritiya) and November (Kartik Purnima, the autumn full moon). During the winters, the vigraha (deity) of the temple is carried down to Ukhimath to be worshipped for the next six months. Kedarnath is seen as a homogenous form of Shiva, the 'Lord of Kedarkhand', the historical name of the region.The temple is not directly accessible by road and has to be reached by a 22 kilometres (14 mi) uphill trek from Gaurikund. Pony, mule and manchan service is available to reach the temple. According to Hindu legends, the temple was initially built by the Pandavas, and is one of the twelve Jyotirlingas, the holiest Hindu shrines of Shiva. The Pandavas were supposed to have pleased Shiva by doing penance in Kedarnath. The temple is one of the four major sites in India's Chota Char Dham pilgrimage of Northern Himalayas and is the first of the Panch Kedar pilgrimage sites. This temple is the highest among the 12 Jyotirlingas. It is one of the 275 paadal petra sthalams expounded in the Tevaram, a sacred Tamil Shaivite text written during the 6th and 7th centuries by 63 saints called Nayanars. This temple is sung of by Thirugnanasambandar, Appar, Sundarar and Sekkizhar in their Tevaram texts.Kedarnath was the worst affected area during the 2013 flash floods in North India. The temple complex, surrounding areas, and Kedarnath town suffered extensive damage, but the temple structure did not suffer any major damage, apart from a few cracks on one side of the four walls which was caused by the flowing debris from the higher mountains. A large rock among the debris acted as a barrier, protecting the temple from the flood. The surrounding premises and other buildings in the market area were heavily damaged.",
+
+      history:
+        "At a height of 3,583 m (11,755 ft), 223 km (139 mi) from Rishikesh, on the shores of Mandakini river, a tributary of Ganga, is a stone edifice of unknown date. It is not certain who built the original Kedarnath temple and when. The name 'Kedarnath' means 'the lord of the field': it derives from the Sanskrit words kedara (field) and natha (lord). The text Kashi Kedara Mahatmya states that it is so called because' the crop of liberation' grows here.Many folk legends related to the Garhwal region, Lord Shiva and the creation of the Panch Kedar temples are narrated.A folk legend about Panch Kedar relates to the Pandavas, the heroes of the Hindu epic Mahabharata. The Pandavas defeated and slew their cousins — the Kauravas in the epic Kurukshetra war. They wished to atone for the sins of committing fratricide (gotra hatya) and Brāhmanahatya (killing of Brahmins — the priest class) during the war. Thus, they handed over the reins of their kingdom to their kin and left in search of the lord Shiva and to seek his blessings. First, they went to the holy city of Varanasi (Kashi), believed to be Shiva's favourite city and known for its Kashi Vishwanath Temple. But, Shiva wanted to avoid them as he was deeply incensed by the death and dishonesty at the Kurukshetra war and was, therefore, insensitive to Pandavas' prayers. Therefore, he assumed the form of a bull (Nandi) and hid in the Garhwal region.Not finding Shiva in Varanasi, the Pandavas went to Garhwal Himalayas. Bhima, the second of the five Pandava brothers, then standing astride two mountains started to look for Shiva. He saw a bull grazing near Guptakashi (hidden Kashi — the name derived from the hiding act of Shiva). Bhima immediately recognized the bull to be Shiva. Bhima caught hold of the bull by its tail and hind legs. But the bull-formed Shiva disappeared into the ground to later reappear in parts, with the hump raising in Kedarnath, the arms appearing in Tungnath, the face showing up at Rudranath, the nabhi (navel) and stomach surfacing in Madhyamaheshwar and the hair appearing in Kalpeshwar. The Pandavas pleased with this reappearance in five different forms, built temples at the five places for venerating and worshipping Shiva.A variant of the tale credits Bhima for not only catching the bull but also stopping it from disappearing. Consequently, the bull was torn asunder into five parts and appeared at five locations in the Kedar Khand of Garhwal region of the Himalayas. After building the Panch Kedar Temples, the Pandavas meditated at Kedarnath for salvation, performed yagna (fire sacrifice) and then through the heavenly path called the Mahapanth (also called Swargarohini), attained heaven or salvation. The Panch Kedar Temples are constructed in the North-Indian Himalayan Temple architecture with the Kedarnath, Tungnath and Madhyamaheshwar temples looking similar. After completing the pilgrimage of Lord Shiva's darshan at the Panch Kedar Temples, it is an unwritten religious rite to visit Lord Vishnu at the Badrinath Temple, as a final affirmatory proof by the devotee that he has sought blessings of Lord Shiva.The Mahabharata, which gives the account of the Pandavas and the Kurukshetra War, does not mention any place called Kedarnath. One of the earliest references to Kedarnath occurs in the Skanda Purana (c. 7th-8th century), which contains a story describing the origin of the Ganges river. The text names Kedara (Kedarnath) as the place where Shiva released the holy water from his matted hair.According to the hagiographies based on Madhava's Sankshepa-shankara-vijaya, the 8th century philosopher Adi Shankara died at the mountains near Kedarnath; although other hagiographies, based on Anandagiri's Prachina-Shankara-Vijaya, state that he died at Kanchipuram. The ruins of a monument marking the purported death place of Shankara are located at Kedarnath. Kedarnath was definitely a prominent pilgrimage centre by the 12th century, when it is mentioned in Kritya-kalpataru written by the Gahadavala minister Bhatta Lakshmidhara.Kedarnath Teerth Purohits are the ancient Brahmins of this region, their ancestors (Rishi-Muni) have been worshiping the lingam since the time of Nara-Narayana and Daksh Prajapati. King Janmejay, grandson of the Pandavas, gave them the right of worshiping this temple and donate the whole Kedar region, and they have been worshiping pilgrims ever since.According to a tradition recorded by the English mountaineer Eric Shipton (1926), many hundreds of years ago one priest used to hold services at both the Kedarnath and Badrinath temples, travelling between the two places daily.The Kedarnath valley, along with other parts of the state of Uttarakhand, was hit with unprecedented flash floods on 16 and 17 June 2013. On 16 June, at about 7:30 p.m. a landslide and mudslides occurred near Kedarnath Temple with loud peals of thunder. An enormously loud peal was heard and huge amounts of water started gushing from Chorabari Tal or Gandhi Tal down Mandakini river at about 8:30 p.m. washing everything away in its path. On 17 June 2013 at about 6:40 a.m. waters again started cascading at a huge speed from river Swaraswati and Chorabari Tal or Gandhi Tal bringing along with its flow huge amount of silt, rocks, and boulders. A huge rock got stuck behind Kedarnath Temple and protected it from the ravages of the flood. The waters gushed on both the sides of the temple destroying everything in their path. Even eyewitness observed that one large rock got carried to the rear side of Kedarnath Temple, thus causing obstruction to the debris, diverting the flow of river and debris to the sides of the temple avoiding damage. The rock which protected the temple is worshipped as the God's Rock (भीम शीला).Another theory for the temple not being destroyed is because of its construction.Although the temple withstood the severity of the floods, the complex and surrounding area were destroyed, resulting in the death of hundreds of pilgrims and locals. Shops and hotels in Kedarnath were destroyed and all roads were broken. People took shelter inside the temple for several hours, until the Indian Army airlifted them to safer places. The Uttarakhand Chief Minister announced that the Kedarnath shrine would remain closed for a year for clearing the debris.The experts, who were asked by the Archaeological Survey of India to examine the condition of the foundation in wake of the floods have arrived at the conclusion that there was no danger to the temple. The IIT Madras experts visited the temple thrice for the purpose. Non-destructive testing instruments that do not disturb the structure of the temple were used by the IIT-team for assessing the health of the structure, foundation, and walls. They have submitted their interim report that the temple is stable and there was no major danger.Nehru Institute of Mountaineering (NIM) was given the responsibility of rebuilding Kedarnath. Although the institute did not have the expertise in urban planning or construction, they mastered in high altitude training. Under the leadership of veteran mountaineer, Colonel Ajay Kothiyal, NIM rigorously worked for a year and made the pilgrimage yatra possible from the next year.",
+
+      architecture:
+        "The presiding image of Kedarnath in the form of lingam is of irregular shape with a pedestal 3.6 m (12 ft) in circumference and 3.6 m (12 ft) in height. There is a small pillared hall in front of the temple, that has images of Parvati and of the five Pandava princes. There are four temples around Kedarnath itself, namely- Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar which form the Panch Kedar pilgrimage sites. The first hall inside Kedarnath Temple contains statues of the five Pandava brothers, Krishna, Nandi, the vehicle of Shiva and Virabhadra, one of the guards of Shiva. Statues of Draupadi and other deities are also installed in the main hall. An unusual feature of the temple is the head of a man carved in the triangular stone lingam. Such a head is seen carved in another temple nearby constructed on the site where the marriage of Shiva and Parvati was held. Adi Shankara was believed to have revived this temple, along with Badrinath and other temples of Uttarakhand; he is believed to have attained Mahasamadhi at Kedarnath. Behind the temple is the samādhi mandir of Adi Sankara.Front view of the Kedarnath Temple in October 2022The head priest (Raval) of the Kedarnath temple belongs to the Veerashaiva community from Karnataka. However, unlike in Badrinath temple, the Raval of Kedarnath temple does not perform the pujas. The pujas are carried out by Raval's assistants on his instructions. The Raval moves with the deity to Ukhimath during the winter season. There are five main priests for the temple, and they become head priests for one year by rotation. The present (2013) Raval of Kedarnath temple is Shri Vageesha Lingacharya from Davanagere district, Karnataka. Surrounding Kedarnath, there are many symbols of the Pandavas. Raja Pandu died at Pandukeshwar. The tribals here perform a dance called 'Pandav Lila'. The mountain top where the Pandavas went to Swarga, is known as 'Swargarohini', which is located off Badrinath. When Yudhishtira, the eldest of the Pandavas, was leaving for the heaven, one of his fingers fell on the earth. At that place, Yudhishtira installed a Shiva Linga, which is the size of the thumb. To gain Mashisharupa, Lord Shiva and Bheema fought with maces. Bheema was struck with remorse. He started to massage Shiva's body with ghee. In memory of this event, even today, this triangular Shiva lingam is massaged with ghee. Water and bilva-patra leaves are used for worship.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg',
+    },
+    trip:{
+      best_time:"The best time to visit Kedarnath is either between May and June or between September and November. The Kedarnath Temple is open for visitors just for 6 months in the complete year. The opening date of this temple is announced on the auspicious occasion of Maha Shivratri.",
+      nearest_road:" When it comes to how to reach Kedarnath, you must know that Gaurikund is the last motorable road from Kedarnath. From there, it is a trek along the Himalayas.",
+      nearest_railway:" There is no railway station at Kedarnath. Rishikesh Railway Station is the nearest railway head from Kedarnath. Located about 210 km from Gaurikund, Rishikesh Railway Station is well connected to almost all the major cities of India and has a regular trains on a daily basis. From Rishikesh, one can take a bus to Gaurikund.",
+      by_air:" Kedarnath does not have an airport of its own which makes Jolly Grant Airport in Dehradun the nearest civil airhead. Located around 250 km from Kedarnath, Jolly Grant Airport is connected to the major cities of India including New Delhi, Mumbai, Kolkata and Chennai. There are plenty of flights operating to and fro from these cities and provide a lot of options in terms of flight timing and fares. Almost all the major airlines have flights to Jolly Grant Airport. Once you are in Dehradun, you can either take a bus or hire a cab to reach Kedarnath.",
+      festivals:"Badri-Kedar Festival-Held in the month of June, this festival lasts for eight days. One of the major festival celebrated in the Badrinath, Kedarnath temples. Many renowned artists from all parts of the country flock to the temple to take part in the cultural festival.Shravani Annakoot Mela-This festival is held in the harvesting season in the month of August. It is celebrated one day before the Raksha Bandhan day. On this day the ritual is to prepare food from the new harvested paddy and offer it to the Lord. And the Shivling is decked with a mixture of rice, wheat, other grains and pulses.Samadhi Puja-This puja is performed on the day the first day of Kartik when the Kedarnath Temple closes."
+  },
+  contact:{
+    address:"Rudraprayag Gaurikund Road, Kedarnath, Uttarakhand, 246445",
+    phone:"+911389222083"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/88/Yamunotri_temple_and_ashram.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/b/b2/Gangotri_%28ganga_river%29.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/3/30/Kedarnath_Temple.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/7/70/Panda_visit_Kedarnath.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/fc/Tungnath_temple.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5f/Rudranath_temple.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5f/Madhyamaheshwar_Temple%2C_Uttarakhand.JPG',
+      'https://upload.wikimedia.org/wikipedia/commons/0/01/Kalpehswar.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/49/Kedarnath_Temple_in_Uttarakhand%2C_India%2C_by_Yogabrata_Chakraborty.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/3/3a/Way_to_kedarnathm.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/b/bd/Temple_in_the_aftermath_of_the_flood.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/64/Kedarnath_Temple_in_2014.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/b/b6/Kedarnath_Temple_-_OCT_2014.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/a/a2/Kedarnath_Temple_at_Dawn_-_OCT_2014.jpg',
+     
+
+    ],
+  },
   
 ];
