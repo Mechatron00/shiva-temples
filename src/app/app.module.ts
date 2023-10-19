@@ -23,8 +23,8 @@ import { SpeedDialModule } from 'primeng/speeddial';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SplitButtonModule } from 'primeng/splitbutton';
-import { AvatarModule } from 'primeng/avatar';
-import { AvatarGroupModule } from 'primeng/avatargroup';
+import { ToastModule } from 'primeng/toast';
+import { MessagesModule } from 'primeng/messages';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,8 +55,8 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     SpeedDialModule,
     MatExpansionModule,
     SplitButtonModule,
-    AvatarModule,
-    AvatarGroupModule,
+    ToastModule,
+    MessagesModule
    
   ],
   providers: [],

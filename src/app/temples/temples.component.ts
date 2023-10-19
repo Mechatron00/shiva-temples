@@ -27,13 +27,13 @@ import {
 } from '@angular/animations';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FormControl } from '@angular/forms';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, MessageService } from 'primeng/api';
 import { jyotirlingas } from '../data/jyotirling';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
   styleUrls: ['./temples.component.css'],
-
+  providers: [MessageService],
   animations: [
     trigger('animation', [
       transition('void => visible', [
@@ -86,9 +86,12 @@ export class TemplesComponent implements OnInit {
   controls = true;
   totalImageCount = 0;
   num = 0;
-
+  filter = false;
   items: MenuItem[] = [];
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    private modalService: NgbModal,
+    private messageService: MessageService
+  ) {}
 
   ngOnInit(): void {
     this.templesData = templesData.sort((a, b) => {
@@ -105,40 +108,44 @@ export class TemplesComponent implements OnInit {
     });
 
     this.items = [
-     
       {
-        
-        label:'12 Jyotirlingas',
-        
-       
+        label: 'All',
 
         command: () => {
-          this.templesData = jyotirlingas;
+          this.templesData = templesData;
+          
         },
       },
       {
-       
-        label:'Pancha Mahabhooth',
+        label: '12 Jyotirlingas',
+
+        command: () => {
+          
+          this.templesData = jyotirlingas;
+         
+        },
+      },
+      {
+        label: 'Pancha Mahabhooth',
 
         command: () => {},
       },
       {
-        label:'Pancharaam',
+        label: 'Pancharaam',
         command: () => {},
       },
       {
-        label:'Pancha Sabha',
+        label: 'Pancha Sabha',
         command: () => {},
       },
       {
-        label:'Ashth Veeratta',
+        label: 'Ashth Veeratta',
         command: () => {},
       },
       {
-        label:'Char Shani Parihara',
+        label: 'Char Shani Parihara',
         command: () => {},
       },
-   
     ];
   }
 

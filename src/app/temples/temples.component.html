@@ -11,40 +11,20 @@
         placeholder="Type to Search..."
       />
     </div>
-    <!-- <p-speedDial
-      [model]="items"
-      direction="down"
-      showIcon="pi pi-caret-down "
-      [transitionDelay]="100"
-      hideIcon="pi pi-caret-up"
-      buttonClassName="p-button-secondary"
-      class="button-small"
-      [mask]="true"
-    >
-      <ng-template let-item pTemplate="item">
-        <button [ngClass]="'custom-speed-dial-button'" pButton type="button">
-          {{ item.label }}
-        </button>
-      </ng-template>
-    </p-speedDial> -->
-
+    
     <p-splitButton
       class="button-small"
       styleClass="p-button-raised p-button-plain p-button-text mr-2 mb-2"
-      label="Filter"
+      icon="pi pi-filter"
+      pTooltip="Filter" 
+      tooltipPosition="top"
       [model]="items"
-      ><p-avatar
-        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-        styleClass="mr-2"
-        size="xlarge"
-        shape="circle"
-      ></p-avatar
-      >-</p-splitButton
+      >
+      </p-splitButton
     >
   </div>
   <div class="not-found" *ngIf="!found">Not Found</div>
   <div class="temple-list" style="padding-bottom: 80px">
-    <!-- <div class="img-overlay"></div> -->
     <div style="padding-top: 0px">
       <div class="aligning">
         <div *ngFor="let temple of templesData">
@@ -188,7 +168,7 @@
                     <h2>History</h2>
                     <p><span class="tab"></span>{{ temple.about.history }}</p>
                   </div>
-                  <div style="min-height: 650px;">
+                  <div style="min-height: 650px">
                     <h2>Architecture</h2>
                     <p>
                       <span class="tab"></span>{{ temple.about.architecture }}

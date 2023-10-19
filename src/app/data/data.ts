@@ -308,9 +308,9 @@ export const templesData = [
     },
     trip:{
       best_time:"November to February",
-      nearest_road:"165km from Mangalore and 455km from Bangalore.",
-      nearest_railway:"Murudeshwara station is only 2 km away from the temple.",
-      by_air:"The nearest airport from the temple is Mangalore International airport which is situated at a distance of about 165km from the temple.",
+      nearest_road:"A good network of roads connects Somnath to the different important places in the state of Gujarat. The state capital Ahmedabad is 400 km away; Junagadh, Bhavnagar and Porbandar are at a distance of 85, 266 and 122 km respectively but all of them are well linked to Somnath by roads and buses ply on these road routes.",
+      nearest_railway:"Veraval is the nearest rail head which is merely 7 km from Somnath. A special train 'Somnath Express' runs from Ahmedabad to Veraval. Ahmedabad is the state capital of Gujarat and is well linked by rail not only to different places in the state of Gujarat but also to many of the prime cities in India.",
+      by_air:"The nearest airport is Keshod. Located at a distance of about 55 km from Somnath, this domestic airport is well connected to Mumbai. There are flights at regular intervals from Mumbai to Keshod.",
       festivals:"Maha Shivaratri (February or March) and Karthik (November to December) Purnima is celebrated in the temple with full fervour and enthusiasm."
   },
   contact:{
@@ -575,5 +575,124 @@ export const templesData = [
 
     ],
   },
-  
+  {
+    basic: {
+      name: 'Vaidyanath Jyotirlinga',
+      bio: "The Vaidyanath or Baidyanatha temple, also called Baba Baidyanath Dham is a Hindu Temple dedicated to Lord Shiva. It is located in Deoghar, in the Santhal Parganas division of the state of Jharkhand, India. It is one of the twelve Jyotirlingas, and considered to be the most revered places where Shiva lives.",
+      location: {
+        pin: 'Baba Baidyanath Dham',
+        dist: 'Deoghar',
+        state: 'Jharkhand',
+        iframe:"https://www.mappls.com/ftcdca",
+      },
+      coordinates: {
+        x: 24.4925,
+        y: 86.7,
+      },
+      website:'https://babadham.org/'
+    },
+    Architecture: {
+      style: 'Nagara style',
+      creator: 'Raja Puran Mal ',
+      completed: 'Reconstructed in 16th-19th',
+      inscriptions: 'None',
+      elevation:254,
+    },
+    about: {
+      basic_info:
+        "     The Baidyanatha temple, also called Baba Baidyanath Dham is a Hindu Temple dedicated to Lord Shiva. It is located in Deoghar, in the Santhal Parganas division of the state of Jharkhand, India. It is one of the twelve Jyotirlingas, and considered to be the most revered places where Shiva lives.The temple complex comprises the central shrine of Baba Baidyanath, housing the revered Dham, along with additional 21 other temples.According to Hindu beliefs, it is said that the demon king Ravana worshipped Shiva at this location to gain divine blessings, which he used to cause chaos and destruction in the world. Ravana offered his ten heads as a symbol of sacrifice to Lord Shiva. Pleased with this gesture, Lord Shiva descended Ravana's injuries. As Lord Shiva acted as a doctor, he is also referred to as Vaidya ('doctor'). The temple is named after this aspect of Shiva.Kanwar Yatra (Devanagari: कांवड़ यात्रा) is an annual pilgrimage for the devotees of Shiva, known as Kānvarias (कांवड़िया) or 'Bhole' (भोले). They visit the Hindu pilgrimage sites of Ajgaibinath, and Sultanganj in Bihar to collect the sacred waters of the Ganges. Millions of people gather holy water from the Ganga and carry it as an offering for 105 km to the Baidyanath Temple in Deoghar, Jharkhand.                                                                           ",
+
+      history:
+        "According to the legends, Ravana was performing penance in the Himalayan region to appease Lord Shiva. He offered nine of his heads as an offering to Lord Shiva. As he was to sacrifice his tenth head, Lord Shiva appeared before him and expressed satisfaction with the offering, Then, Shiva asked what boon he desired. Ravana asked to take the 'Atma Linga' to the island of Lanka and expressed his desire to take Lord Shiva from Kailash to Lanka.Lord Shiva agreed to Ravana's request but with a condition. He said that if the lingam was placed en route, it would become the permanent abode of the deity and could never be moved.Celestial gods became worried upon hearing that Lord Shiva had departed from his abode on Mount Kailash. They sought a resolution from Lord Vishnu. Then, Lord Vishnu asked Varuna, the deity associated with water, to enter Ravana's stomach through achamana, a ritual which involves sipping water from the palm of one's hand. As a consequence of performing achaman, Ravana departed for Lanka with the lingam and felt the need to urinate in the vicinity of Deoghar.The story goes that Lord Vishnu took the form of a cowherd named Baiju. While Ravana was off to urinate, he gave a lingam to this cowherd. Baiju positioned the lingam on the ground. Upon Ravana's return, he attempted to displace the lingam, but he was unsuccessful in his endeavor. He became upset and proceeded to press his thumb onto the lingam before departing. The Shiva lingam was then worshipped by Brahma, Vishnu, and other deities. Since then, Mahadev has taken up residence in Deoghar as the embodiment of the Atma Linga.Vaidyanatham Chitabhoomau  and Shivamaha puran Shatarudra Samhita  are the ancient verses that identify the location of Vaidyanth Jyotirlinga. According to which Shri Vaidyanatham is in 'Chitabhoomi', Dwadasha jyotirlinga stotram, Adi Sankaracharya has praised Shri Vaidyanath Jyotirlinga location in following verses, before Shivamaha puran Shatarudra Samhita as following:'Parlyam Vaidyanatham cha' instead of 'Vaidyanatham Chitabhumi' is an alternative reading for it.Adi Shankaracharya further evaluates the above main verse as :  पूर्वोत्तरे प्रज्वलिकानिधाने सदा वसन्तं गिरिजासमेतम्। सुरासुराराधितपादपद्मं श्रीवैद्यनाथं तमहं नमामि ॥भावार्थ:जो भगवान् शंकर पूर्वोत्तर दिशा में चिताभूमि वैद्यनाथ धाम के अन्दर सदा ही पार्वती सहित विराजमान हैं, और देवता व दानव जिनके चरणकमलों की आराधना करते हैं, उन्हीं ‘श्री वैद्यनाथ’ नाम से विख्यात शिव को मैं प्रणाम करता हूँ।This states that:I salute that Vaidyanatha, Whose lotus feet are worshipped By all asuras and devas And who lives in place of eternal shine,in the north east of (Vaidyanatham) of Chitabhoomi, along with his consort Parvathi. Also, Chitabhoomi indicates that, in olden days, this was a funeral place, where corpses were burnt, and post-death ceremonies were performed. This place could have been a center of tantric cults like Kapalika/Bhairava where Lord Shiva is worshipped significantly as shmashaan vaasin (meaning, one who resides in a crematorium), and a bhasma bhushita (meaning, smearing body with ashes of burnt bodies).The Dvadashalinga Smaranam also mentions its location as the verse is Prachikam Vaidyanatham, i.e., Vaidyanatham is in east (prachi means east). Another version of Dvadasalinga Smaranam mentions its location in the verse Paralyam Vaidyanatham, i.e.,Vaidyanatham is in Parali.The names and the locations of the 12 Jyotirlingas mentioned in the distorted version of Dvadasalinga Smaranam.Thus, the three temples claiming their shrines as 'real' jyotirlinga of Vaidyanath are Baidyanath temple at Deoghar, Jharkhand,Shri Vaijnath Temple at Parli, Maharashtra and Baijnath temple at Baijnath, Himachal Pradesh.Bhavishyapurana also describes Baidyanath as follows:Narikhande is district abounding in thickets. It lies west of the Dwarikashwari River. It extends along the Panchakuta hills on its west, and approaches Kikta on the north. The forests are very extensive, chiefly of Sakhota, Arjuna and Sal trees with a plentiful addition of brushwood. The district is celebrated for the shrine of Baidyanath. The deity is worshiped by people from all quarters and is the source of every good in the present age.It is believed that Shiva first manifested himself as a Jyotirlinga on the night of the Aridra Nakshatra, thus the special reverence for the Jyotirlinga. The same shrine of Vaidyanath is considered one of 51 Shakti Peethas, where 'heart' of Sati (goddess) fell, after being broken apart by the Sudarshana Chakra of Lord Vishnu, from the body of Dakshayani (Sati), carried by the lovelorn, distraught Shiva, at the location on which the respective temple is built. Since the heart of Sati fell here, the place is also called as Hardapeetha. Here Sati is worshipped as Jayaa Durga (Victorious Durga) and Lord Bhairava as Vaidyanath or Baidyanath. Dakshayani was reborn as Parvati, daughter of Himaavat, king of the mountains, and his wife, the Devi Mena.",
+
+      architecture:
+        "The Maa Parvati temple is tied up with the main temple, with huge red sacred threads which is unique and worthy of reverence, showing the unity of Shiva and Shakti. According to the stories narrated in the Shiva Purana, the holy Baidyanath temple resembles the unity of souls and thus fits marriage for Hindus.The nearest railway station is Jasidih railway station, which is 7 km from Vaidyanath temple. Jasidh is 311 km from Howrah/Sealdah on Patna route. On a normal day, the worshipping of Baidyanath Jyotirlingam begins at 4 AM. The temple doors open at this time. At 4:00 am the 'patt' of Baidyanath Jyotirlingam opens and for the very sharp 15 minutes the 'Panda' (priest's families) offer Kacha Jal to LORD SHIVA, during 4:15am to 5:40 am, the Head priest worships with Shodashopachar. Locals also call it Sarkari Pooja. Then the devotees begin their worship of the Shivalinga. The most interesting tradition is that priests of the temple pour kuchcha Jal upon the lingam first, and later on, the pilgrims pour water and offer flowers and Bilva leaf, upon the lingam. The Puja rituals continue until 3.30 PM. After this, the temple doors are closed. In the evening at 6 PM the doors are opened again for devotees/ pilgrims and the process of worshipping begins again. At this time Shringar Puja takes place. The temple closes at 9:00 pm on a normal day, but during Holy Shravan month, the timings are extended. Unlike Somnath or Rameshwaram or Srisailam, here the devotees can get satisfaction by offering Abhishek themselves on Jyotirlinga. The devotee can also buy Peda as prasad from Babadham. Peda is a local sweet and is the speciality of Deoghar. Babadham has a regular and well-maintained office to accept offerings and donations.The Matsyapuran narrates the place as Arogya Baidyanathitee, the holy place where Shakti lives and assists Shiva in freeing people from incurable diseases. This whole area of Deoghar was under the rule of the Kings of Gidhaur who were much attached with this temple. Raja Bir Vikram Singh founded this princely state in 1266. In 1757 after the Battle of Plassey the officers of the East India Company paid their attention to this temple. An English man, Keating was sent to look at the administration of the temple. Mr. Keating, the first English collector of Birbhum, took interest in the administration of the temple. In 1788, under Mr. Keating's order Mr.Hesilrigg, his assistant, who was probably the first English man to visit the holy city, set out to supervise personally the collection of the pilgrim offerings and dues. Later, when Mr. Keating himself visited Babadham, he was convinced and forced to abandon his policy of direct interference. He handed over the full control of the temple to the hands of the high priest.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/b/b3/Baidyanathdham.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/0/04/Temples_at_Deorgag%2C_Santal_Parhanas%2C_Bihar_-_William_Hodges%2C_1782_-_BL_Foster_396.jpg',
+    },
+    trip:{
+      best_time:"The best time for visiting the holy pilgrimage of Deoghar is in winters, especially during the months from October until March. The summers are unbearably hot while the monsoons might dampen your plans.",
+      nearest_road:" This area connects well by road to cities like Kolkata, Patna and Ranchi.",
+      nearest_railway:"The best way to reach Baidyanath Temple from Ranchi is by Train. The best railway station for this purpose is the Jasidih railway station which is at 8 kilometers. ",
+      by_air:" Lok Nayak Jayaprakash Airport, Patna, located around 272 km away is the nearest airport.",
+      festivals:"Millions of pilgrims visit this shrine every year. It is famous for the mela of Shraavana (a month of the Hindu calendar), between July and August. About 8 to 10 million devotees visit the place from various parts of India and offer holy water of Ganges (Uttarvahini Ganga) to the deity collected from Ajgaibinath , Sultanganj, which is almost 108 km from Deoghar and Baidyanath. The water is also brought by the Kānvarias, who carry the water in Kavadi, and walk all the distance, on barefoot. You will find large crowds walking all the way carrying water. An unbroken line of people in saffron-dyed clothes stretches over the full 108 km for the month. The pilgrims are called Dak Bam and they do not stop even once in their journey from Ajgaibinath Temple located at Sultanganj , Bhagalpur district to Vaidyanath. Pilgrims to the temple later visit the Basukinath temple"
+  },
+  contact:{
+    address:"Shivganga Muhalla, Deoghar, Jharkhand 814112",
+    phone:"Not Available"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/0/04/Temples_at_Deorgag%2C_Santal_Parhanas%2C_Bihar_-_William_Hodges%2C_1782_-_BL_Foster_396.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/9/9f/Priests_conducting_worship_inside_the_Baijnath_temple.jpg',
+    ],
+  },
+  {
+    basic: {
+      name: 'Bhimashankar Jyotirlinga',
+      bio: "The Bhimashankar Mandir (also known Bhimashankar Jyotirlinga) is a Shiva mandir situated in its eponymous village, Bhimashankar, in Pune district of Maharashtra.It is a key pilgrimage centre and one of the 12 Jyotirlinga in the world",
+      location: {
+        pin: 'Bhimashankar village,Khed',
+        dist: 'Pune',
+        state: 'Maharashtra',
+        iframe:"https://www.mappls.com/8c5f5a",
+      },
+      coordinates: {
+        x: 19.072,
+        y: 73.536,
+      },
+      website:'https://www.bhimashankar.co.in/'
+    },
+    Architecture: {
+      style: 'Nagara style',
+      creator: 'Reconstructed by Nana Phadanavis in 18th cent.',
+      completed: '13th CE(Original)',
+      inscriptions: 'None',
+      elevation:934,
+    },
+    about: {
+      basic_info:
+        "   The Bhimashankar Mandir (also known as Bhimashankar or Bhimashankar Jyotirlinga) is a Shiva mandir situated in its eponymous village, Bhimashankar, in Pune district of Maharashtra. It is a key pilgrimage centre and one of the 12 Jyotirlinga in the world. The temple's Shiva lingam is one of the three Jyotirlinga of Maharashtra.The mandir is situated on a mountain. It is 110 kilometers away from Pune. The temple's vicinity has rare plant and animal species. The mandir is located in Khed taluka, in the Bhimashankar forest range.The Bhima River originates from the Bhimashankar village, and the hills of the Manmad village are present near it, there are old rock carvings of the God Bhimashankar, Bhootas and Amba-Ambika on these hills.",
+
+      history:
+        "The shrine is linked to the legendary asura known as Tripura. The story goes that Tripura did penance, and Brahma, delighted with Tripura's penance, manifests and grants him three wishes. Tripura demanded that he be invulnerable to the gods, devils, yakshas, and gandharvas. His three 'puras' should be unbreakable, and he should be able to travel anywhere in the universe. All his desires were fulfilled. Tripura embarked on a conquest to subjugate three Loka. Indra, the deity associated with the heavens, was also vanquished. Indra made the decision to seek blessings from the deity Shiva and performed penance. Shiva made a vow to annihilate Tripura.On the peak of the Sahyadri hills, it is said that Shiva assumed the form of 'Bhīmā Shankara' at the behest of the Gods, and the sweat that spilled from his body after the battle is said to have formed the Bhimarathi riverAccording to Namdev, a saint in the medieval era, Saint Jnaneshwar went to Tryambakeshwar and then Bhimashankar. Namdev himself has also visited this place.Bhimashankaram shrine and the Bhimarathi river have been talked about in writings as far back as the 13th century; however, the current construction of the temple seems to be fairly new.The temple is built in the Nagrara style, which combines traditional and modern designs. The temple hall was constructed during the 18th century by Nāna Phadnavis of Peshwa.The Gopura-shikhara of the temple was built by Nāna Phadnavis. The village of Kharosi was granted to the temple by King Shivaji. The daily religious observance was funded through the financial resources which derived from the people of the area.He offered one here at Bhimashankar and the others in Menavali, near Wai, in front of a Shiva temple on the banks of the Krishna River, the Banshanker Temple in Pune, the Omkareshwar Temple in Pune, and the Ramlinga Temple in Pune (Shirur).Portuguese church's bell of Vasai donated by Chimaji Appa in 1739.Chimaji Appa (Brother of Bajirao I) donated a big bell to the temple, which is visible in front of the temple. This is one of the many Portuguese colonists' church's bell, which Chimaji - Maratha Empire army brought it from Vasai as souvenirs after defeating Portuguese at the Battle of Baçaim on 16-17 February 1739. This type of bell also present at the Khandoba temple and Naro Shankar mandir in Nashik",
+
+      architecture:
+        "The architectural style of Bhimashankar is characterised by the use of the Nagara style, which is commonly found in northern India. The building style has some similarities to the Hemadpanthi style, which is common in the Deccan region. It is claimed that the old temple was built on a Swayambhu Shiva Linga.Furthermore, it can be seen that the Ling is located precisely in the center of the Garbhagriha (Sanctum sanctorum) of the temple. The garbhagriha and antarala are constructed using indigenous stone in the Indo-Aryan architectural style, which is also commonly found in Jain temples. The pillars and door frames of the temple are covered with intricate carvings of deities and human figures.In the 18th century, Nāna Phadnavis built the Sabhamandap; he also designed and built the shikhara. The Maratha King Chattrapati Shivaji Maharaj endowed this temple to facilitate religious ceremonies.In addition to the Bhimashankar Mandir, devotees also take darshan of the deities of temples present in the vicinity. There is a shrine for Siva Ganams, Shaakini and Daakini, who assisted Shiva in the battle against the demon Tripurasur.There are other temples near the main temple, such as Kamalaja mata, who is an incarnation of Goddess Parvathi and who aided Shiva in his battle against Tripurasur. Behind the Bhimashankar temple is Mokshakund Tirtha. The custom is to take a bath in the kund before proceeding to the temple. The kund is the result of Maha-muni Kaushika's legendary penance here. Additionally, there are the Jnyankund that Dattatreya created and the Sarvatirth connected to the goddess Bhashitadevi. Kusharanya tirth is located to the south of the temple, and it is from here that the Bhima River begins to flow eastward.A minor shrine dedicated to Lord Shani can be seen within the temple's grounds. There is a statue of Nandi in front of the Bhimashankar Shiva Linga.The 'Shani Temple' is situated within the main complex of the Bhimashankar temple.Between the two pillars in front of the 'Shani' shrine, there is an enormous antique Portuguese church bell. Behind the temple, there is a narrow walk that goes to the riverbanks. Outside the temple, there is a large area of forest that is sometimes broken up by forts on the mountains nearby.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/0/09/Bhimashankar_temple_front.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/9/9f/Temple_front_view_2.jpg',
+    },
+    trip:{
+      best_time:"The best season to visit Bhimashankar is the Monsoon season. The temperature remains comfortable and is apt for visiting the wildlife and other places of interest in Bhimashankar. The best months to visit are October, November, December, January, February and March.",
+      nearest_road:" Bhimashankar is located in the Bhorgiri village which is at a distance of only 50km from Khed, Rajguru Nagar. It is at a distance of 125km from Pune and takes around three and a half to four hours to reach. Road distance from Mumbai and Nasik is around 240km and 215 km respectively and Bhimashankar can be reached from this two places in well within 6 hours.",
+      nearest_railway:"Pune at a distance of 125km is the nearest railhead to Bhimashankar. Pune is not only well connected by rail to other Maharashtra cities but also with most of the major cities in India. ",
+      by_air:" Pune, at a distance of 125km is the nearest domestic airport to Bhimashankar while Mumbai is the nearest international airport at a distance of 240km.",
+      festivals:"Kartik Poornima: It falls on a full moon day on the fifth lunar day of Kartik, in the month of November/ December. This day is celebrated with lot of enthusiasm.Mahashivratri: This day comes in the month of February, and according to Hindu calendar in the month of Magh on the day of Krishna Paksh Chaturdashi.Ganesh ChaturthiThis festival is celebrated in the month of August/September with great splendour and grandeur.Diwali: The festival of Lights is celebrated in the month of October/ November at Bhimashankar with great pomp and show."
+  },
+  contact:{
+    address:" Village Bhavagiri,Bhimashankar, Khed, Pune District, Maharashtra, 410509",
+    phone:"+919421034485, +917038555248, +919970045972"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/0/09/Bhimashankar_temple_front.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/9/9f/Temple_front_view_2.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/Temple_entry_gate.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/6c/Bhimashankar_Naagphani_kada4.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/e5/Bhimashankar_Naagphani_kada3.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/84/Temple_front_view3.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/b/b0/Bhimashankar_Naagphani_kada2.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/da/Bhimashankar_Naagphani_kada1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/2/29/Temple_top_view1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/d7/Edited_temple_kalash.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/0/09/Bhimashankar_temple_front.jpg',
+    
+    ],
+  },
 ];
