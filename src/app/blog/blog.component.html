@@ -1,4 +1,26 @@
-
 <div class="back">
-    <p class="test">Blogs comming soon!</p>
+  <div *ngFor="let blog of blogs">
+    <p-card
+      header="{{ blog.title }}"
+      subheader="{{ blog.date | date }}"
+      [style]="{ width: '300px' }"
+    >
+      <ng-template pTemplate="header">
+        <img alt="Card" src="{{ blog.image }}" height="140px" />
+      </ng-template>
+      <p>
+        {{ blog.description }}
+      </p>
+      <ng-template pTemplate="footer">
+        <div style="display: flex; justify-content: center; width: 100%">
+          <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer"
+            ><p-button
+              label="Read On Medium"
+              styleClass="p-button-secondary p-button-raised p-button-plain p-button-text mr-2 mb-2"
+            ></p-button>
+          </a>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
 </div>

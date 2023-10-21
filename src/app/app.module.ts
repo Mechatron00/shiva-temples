@@ -6,15 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { MantraSectionComponent } from './mantra-section/mantra-section.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
-import {MatGridListModule} from '@angular/material/grid-list';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { SearchPipe } from './search-pipe/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,6 +20,10 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
 import { BlogComponent } from './blog/blog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardModule } from 'primeng/card';
+import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,12 +41,7 @@ import { BlogComponent } from './blog/blog.component';
     BrowserAnimationsModule,
     NgbModule,
     FontAwesomeModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
     MatIconModule,
-    MatListModule,
-    MatGridListModule,
     NgxExtendedPdfViewerModule,
     ReactiveFormsModule,
     FormsModule,
@@ -56,7 +50,11 @@ import { BlogComponent } from './blog/blog.component';
     MatExpansionModule,
     SplitButtonModule,
     ToastModule,
-    MessagesModule
+    MessagesModule,
+    HttpClientModule,
+    CardModule,
+    TagModule,
+    ButtonModule
    
   ],
   providers: [],

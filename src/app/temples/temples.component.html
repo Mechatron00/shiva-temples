@@ -11,17 +11,16 @@
         placeholder="Type to Search..."
       />
     </div>
-    
+
     <p-splitButton
       class="button-small"
       styleClass="p-button-raised p-button-plain p-button-text mr-2 mb-2"
       icon="pi pi-filter"
-      pTooltip="Filter" 
+      pTooltip="Filter"
       tooltipPosition="top"
       [model]="items"
-      >
-      </p-splitButton
     >
+    </p-splitButton>
   </div>
   <div class="not-found" *ngIf="!found">Not Found</div>
   <div class="temple-list" style="padding-bottom: 80px">
