@@ -29,6 +29,7 @@ import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FormControl } from '@angular/forms';
 import { MenuItem, MessageService } from 'primeng/api';
 import { jyotirlingas } from '../data/jyotirling';
+import { NgOptimizedImage } from '@angular/common'
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',

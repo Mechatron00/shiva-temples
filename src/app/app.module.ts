@@ -16,7 +16,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-import { AboutComponent } from './about/about.component';
 import { SearchPipe } from './search-pipe/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpeedDialModule } from 'primeng/speeddial';
@@ -25,6 +24,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
+import { BlogComponent } from './blog/blog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,7 @@ import { MessagesModule } from 'primeng/messages';
     MantraSectionComponent,
     NavBarComponent,
     TemplesComponent,
-    AboutComponent,
+   BlogComponent,
     SearchPipe,
     
   ],

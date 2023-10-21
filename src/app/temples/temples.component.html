@@ -60,7 +60,7 @@
               <button
                 type="button"
                 class="btn btn-outline-dark"
-                (click)="modal.close()"
+                (click)="modal.dismiss()"
               >
                 Close
               </button>
@@ -290,6 +290,7 @@
                         class="gallery-img"
                       >
                         <img
+                          loading="lazy"
                           (click)="onPreviewImage(i)"
                           [src]="data"
                           [alt]="i"
@@ -316,7 +317,7 @@
                         (@animation.done)="onAnimationEnd($event)"
                         class="lightbox-img"
                       >
-                        <img [src]="temple.gallery[num]" />
+                        <img [src]="temple.gallery[num]" loading="lazy" />
                         <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
                         <div
                           class="bottom-left"
