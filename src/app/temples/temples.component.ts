@@ -126,27 +126,27 @@ export class TemplesComponent implements OnInit {
          
         },
       },
-      {
-        label: 'Pancha Mahabhooth',
+      // {
+      //   label: 'Pancha Mahabhooth',
 
-        command: () => {},
-      },
-      {
-        label: 'Pancharaam',
-        command: () => {},
-      },
-      {
-        label: 'Pancha Sabha',
-        command: () => {},
-      },
-      {
-        label: 'Ashth Veeratta',
-        command: () => {},
-      },
-      {
-        label: 'Char Shani Parihara',
-        command: () => {},
-      },
+      //   command: () => {},
+      // },
+      // {
+      //   label: 'Pancharaam',
+      //   command: () => {},
+      // },
+      // {
+      //   label: 'Pancha Sabha',
+      //   command: () => {},
+      // },
+      // {
+      //   label: 'Ashth Veeratta',
+      //   command: () => {},
+      // },
+      // {
+      //   label: 'Char Shani Parihara',
+      //   command: () => {},
+      // },
     ];
   }
 

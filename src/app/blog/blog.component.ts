@@ -26,11 +26,109 @@ export class BlogComponent implements OnInit{
     
       this.blogs = data.dataMedium.reverse();
       // console.log(this.blogs);
-      
+      // this.blogs = this.blogsArray.reverse();
       
       
     }
    )
   }
+// blogsArray=[
+//   {
+//     date: new Date(),
+//     description: "description 1",
+//     image: "",
+//     link: "",
+//     tags:['shiva','spiritual','temples',],
+//     title:"Title 1"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 2",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 2"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 2",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 2"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 3",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 3"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 4",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 4"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 5"
+//   },
+//   {
+//     date: new Date(),
+//     description: "description 5",
+//     image: "",
+//     link: "",
+//     tags:['shiva, spiritual, temples, hinduism'],
+//     title:"Title 5"
+//   },
 
+// ]
 }
