@@ -1,26 +1,44 @@
 <div class="back">
-  <div *ngFor="let blog of blogs">
-    <p-card
-      header="{{ blog.title }}"
-      subheader="{{ blog.date | date }}"
-      [style]="{ width: '300px' }"
-    >
-      <ng-template pTemplate="header">
-        <img alt="Card" src="{{ blog.image }}" height="140px" />
-      </ng-template>
-      <p>
-        {{ blog.description }}
-      </p>
-      <ng-template pTemplate="footer">
-        <div style="display: flex; justify-content: center; width: 100%">
-          <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer"
-            ><p-button
-              label="Read On Medium"
-              styleClass="p-button-secondary p-button-raised p-button-plain p-button-text mr-2 mb-2"
-            ></p-button>
-          </a>
-        </div>
-      </ng-template>
-    </p-card>
+  <div style="margin: 150px 30px auto 30px" class="grid-container">
+    <div *ngFor="let blog of blogs">
+      <p-card
+        header="{{ blog.title }}"
+        subheader="{{ blog.date | date }}"
+        [style]="{ width: '300px' }"
+      >
+        <ng-template pTemplate="header">
+          <img alt="Card" src="{{ blog.image }}" height="140px" />
+        </ng-template>
+        <p>
+          {{ blog.description }}
+        </p>
+        <ng-template pTemplate="footer">
+          <div style="display: flex; margin: 5px 0 5px 0">
+            <div *ngFor="let tag of blog.tags">
+              <!-- <p-tag styleClass="me-2" value={{tag}}></p-tag> -->
+              <p-tag
+                styleClass="me-2"
+                [style]="{
+                  background:
+                    'linear-gradient(-225deg,#FFD200 0%,#FEB800 25%,#FA9E00 50%, #F48401 75%, #EB6A12 100%)'
+                }"
+              >
+                <div class="flex align-items-center gap-2">
+                  <span style="color: black;text-transform: capitalize;" class="text-base ">{{ tag }}</span>
+                </div>
+              </p-tag>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; width: 100%">
+            <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer"
+              ><p-button
+                label="Read On Medium"
+                styleClass="p-button-secondary p-button-raised p-button-plain p-button-text mr-2 mb-2"
+              ></p-button>
+            </a>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
   </div>
 </div>
