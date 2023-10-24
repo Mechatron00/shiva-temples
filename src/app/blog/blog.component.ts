@@ -32,6 +32,7 @@ export class BlogComponent implements OnInit{
     }
    )
   }
+  //dummy data
 // blogsArray=[
 //   {
 //     date: new Date(),
@@ -124,9 +125,13 @@ export class BlogComponent implements OnInit{
 //   {
 //     date: new Date(),
 //     description: "description 5",
-//     image: "",
+//     image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Temple_front_view_2.jpg",
 //     link: "",
-//     tags:['shiva, spiritual, temples, hinduism'],
+//     tags:['Shiva',
+//      ' Spiritual Awakening',
+//       'Spirituality',
+//       'Spiritual Growth',
+//       'Spiritual'],
 //     title:"Title 5"
 //   },
 

@@ -1,5 +1,5 @@
 <div class="back">
-  <div style="margin: 150px 30px 0 30px" class="grid-container">
+  <div  class="grid-container">
     <div *ngFor="let blog of blogs" style="margin: 0 auto">
       <p-card
         header="{{ blog.title }}"
@@ -8,27 +8,28 @@
         [style]="{ width: '300px' }"
       >
         <ng-template pTemplate="header">
-          <img
+          <div
             *ngIf="blog.image"
             alt="Card"
-            src="{{ blog.image }}"
-            height="140px"
-          />
+            style="background-image: url('{{ blog.image }}');"
+            class="blog-img"
+          ></div>
         </ng-template>
         <p>
           {{ blog.description }}
         </p>
         <ng-template pTemplate="footer">
-          <div style="display: flex; margin: 5px 0 10px 0">
-            <div *ngFor="let tag of blog.tags">
-              <!-- <p-tag styleClass="me-2" value={{tag}}></p-tag> -->
+          
+            <div style="display: grid; margin: 0 0 10px 0;
+            ">
               <p-tag
+              *ngFor="let tag of blog.tags"
                 styleClass="me-2"
                 [style]="{
                   background:
                     'linear-gradient(-225deg,#FFD200 0%,#FEB800 25%,#FA9E00 50%, #F48401 75%, #EB6A12 100%)'
                 }"
-                [rounded]="true"
+                [rounded]="false"
               >
                 <span
                   style="
@@ -41,11 +42,10 @@
                 >
               </p-tag>
             </div>
-          </div>
+          
           <div style="display: flex; justify-content: center; width: 100%">
             <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer"
               ><p-button
-              
                 label="Read On Medium"
                 styleClass="p-button-secondary p-button-raised  p-button-plain p-button-text mr-2 mb-2"
               ></p-button>
