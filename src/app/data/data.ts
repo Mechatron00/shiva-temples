@@ -749,4 +749,62 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/e/eb/Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg',
     ],
   },
+  {
+    basic: {
+      name: 'Trimbakeshwar Jyotirlinga',
+      bio: "The Shri Trimbakeshwar Shiva Temple  is an ancient Hindu temple in the town of Trimbak, in the Trimbakeshwar tehsil in the Nashik District of Maharashtra, India, 28 km from the city of Nashik and 40 km from Nashik road.",
+      location: {
+        pin: '	Trimbak',
+        dist: '	Nashik',
+        state: '	Maharashtra',
+        iframe:"https://www.mappls.com/26a2e1",
+      },
+      coordinates: {
+        x: 19.932222,
+        y: 73.530833,
+      },
+      website:'https://www.trimbakeshwartrust.com/'
+    },
+    Architecture: {
+      style: '	Hemadpanthi',
+      creator: '	Balaji Baji Rao',
+      completed: '1740-1760 AD',
+      inscriptions: 'None',
+      elevation:915,
+    },
+    about: {
+      basic_info:
+        "The Shri Trimbakeshwar Shiva Temple (श्री त्र्यंबकेश्वर ज्योतिर्लिंग मंदिर) is an ancient Hindu temple in the town of Trimbak, in the Trimbakeshwar tehsil in the Nashik District of Maharashtra, India, 28 km from the city of Nashik and 40 km from Nashik road. It is dedicated to Hindu god Shiva and is one of the twelve jyotirlingas where the Hindu genealogy registers at Trimbakeshwar, Maharashtra are kept. The origin of the sacred Godavari river is near Trimbak.Kusavarta kunda (sacred pond) in the temple premises, built by Shrimant Sardar Raosaheb Parnerkar who was the Fadnavis of Indore State, is the source of the Godavari River, the second longest river in peninsular India. A bust of Sardar Fadnavis and his wife can be seen on the edge of the kunda. The current temple was built by Peshwa Balaji Baji Rao after it was destroyed by Mughal ruler Aurangzeb.",
+
+      history:
+        "Brahma worshipped God Trivikram when he came to Satya Loka (on earth) with the same holy water of the Ganges, to get the river Ganges held up by Shiva on his head, to flow. There was a famine of 24 years and people were affected by the pangs of hunger. However, Varuna - the God of Rains, pleased with Sage Gautama arranged rains every day in Maharishi Gautama's Ashram (dwelling place) which was in Trimbakeshwar. Maharishi Gautama used to sow rice in the surrounding fields of his Ashram in the morning, reap the crop in the afternoon and with it fed a large group of Hrishis, who took shelter in his Ashram on account of the famine. The blessings of the group of rishis increased the merit (Punya) of Sage Gautama. Indra's position became shaky because of his increased merit. So Indra ordered clouds to rain all over Trimbakeshwar, so that the famine will be over and rishis will go back and the increasing merits of Maharishi Gautama will be weakened. Although the famine was over, Maharishi Gautama urged the Rishis to stay back and kept on feeding them and gaining merit. Once he saw a cow grazing in the paddy field and he drove her away by throwing Darbha (sharp, pointed grass). The slender cow died by this. It was Devi Jaya - Mata Parvati's friend, who had taken the form of a cow. This news upset the Rishis and they refused to luncheon at his Ashram. Maharishi Gautama requested Rishis to show a way out of this sin. He was advised to approach Shiva and request him to release the Ganges and a bath in the Ganges would set him free of his sins. Maharishi Gautama then practiced penance by going to the peak of Brahmagiri for 1000 years. Shiva was pleased by his worships and gave him the Ganges.Kusavarta, a place where river Godavari takes course.However, Ganges was not prepared to part with Shiva, which irritated him. He made TandavNrutya (dance) on the peak of Brahmagiri and dashed his jata there. Frightened by this action, Ganges appeared on Brahmagiri. Later on, Ganges appeared in the Trimbak Tirtha. Maharishi Gautama praised her but she appeared on the mountain at various places and disappeared in anger. Maharishi Gautama could not bathe in her waters. The Ganges then appeared in Gangadwar, Varaha-tirtha, Rama-Laxman tirtha, Ganga Sagar tirtha. Still, Maharishi Gautama could not bathe in her waters. Then, Maharishi Gautama surrounded the river with enchanted grass and put a vow to her. The flow stopped there and the tirtha thus came to be called Kushavarta. It is from this Kushavarta that the river Godavari flows up to the sea. The sin of killing a cow by Maharishi Gautama was wiped off here.This place is famous for its many religious rituals (vidhis). Narayan Nagbali, Kalsarpa Shanti, Tripindi Vidhi are done here. Narayan Nagbali puja is performed at Trimbakeshwar only. This puja is performed in three days. This puja is performed on special dates. Some days are not suitable to perform this puja. This puja is performed for many reasons like to cure an illness, going through bad times, killing a Cobra (Nag), childless couples, financial crisis or you want to perform some religious puja to have everything.Trimbakeshwar town has a large number of Brahmin households and is also a centre for Vedic Gurukuls (kind of boarding school). It also has ashrams and Muths devoted to Ashtanga Yoga, the Hindu art of living.The existing temple was built out of basalt after it was commissioned by Peshwa Nanasaheb. It so happens that the Peshwa made a bet on whether the stone surrounding the Jyotirlinga, is hollow from the inside or not. The stone was proved to be hollow, and on losing the bet, the Peshwa built a marvelous temple out of it.The Shiva deity of the temple consisted of the world-famous Nassak Diamond. It was looted by the British in The Third Anglo-Maratha War and lies with one owner or the other ever since. The diamond presently lies with Edward J. Hand, a trucking firm executive from Greenwich, Connecticut, USA.The place is known for its scenic beauty in rainy/monsoon season and is surrounded by lush green hills untouched by pollution. Anjaneri mountain, the birthplace of Hanuman, is 7 km from Trimbakeshwar.Shri Trimbakeshwar is a religious center having one of the twelve Jyotirlingas. The extraordinary feature of the Jyotirlinga located here is its three faces embodying Brahma, Vishnu, and Shiva. Due to the excessive use of water, the linga has started to erode. It is said that this erosion symbolizes the eroding nature of human society. The Lingas are covered by a jeweled crown which is placed over the Gold Mask of Trideva (Brahma Vishnu Shiva). The crown is said to be from the age of Pandavas and consists of diamonds, emeralds, and many precious stones. The crown is displayed every Monday from 4-5 pm (Shiva).All other Jyotirlingas have Shiva as the main deity. The entire black stone temple is known for its appealing architecture and sculpture and is at the foothills of a mountain called Brahmagiri. Three sources of the Godavari originate from the Brahmagiri mountain.",
+
+      architecture:
+        "The temple is located between three hills namely Brahmagiri, Nilagiri and Kalagiri. The temple has three lingas (an iconic form of Shiva) representing Shiva, Vishnu and Brahma. The temple tank is called Amritavarshini, which measured 28 m (92 ft) by 30 m (98 ft). There are three other bodies of water, namely, Bilvatirtha, Viswanantirtha and Mukundatirtha. There are images of various deities, namely, Ganga, Jaleswara, Rameswara, Gautameswara, Kedarnatha, Rama, Krishna, Parashurama and Lakshmi Narayana. The temple has also several monasteries and samadhis of saints.The Trimbakeshwar temple is considered to be the 8th Jyotirlinga. The entire temple is built with only black stones that elevate its architecture. The temple was built in the 18th century and in the Nagara-styled that houses a spacious courtyard too. The temple is on an elevated platform, also known as the Shikhara, with a stone plate carved that is shaped into a lotus. The Garbagriha is the innermost part of the temple, and the raised walls of the temple guard the temple deity. The Garbagriha has a hall that has a mandap in front of it, with three entrances.The walls and the pillars of the temple are adorned with designs of Hindu figures, deities, flowers, humans, and animals. The alluring architecture of the Trimbakeshwar Temple is intricate and displays a rich sense of the culture of that century. This temple also has a mirror that is placed at a height, which helps devotees to take a peek at the deity’s reflection.",
+    },
+    photos: {
+      cover:
+        'https://upload.wikimedia.org/wikipedia/commons/1/12/Trimbakeshwar_Temple-Nashik-Maharashtra-1.jpg',
+      profile:
+        'https://upload.wikimedia.org/wikipedia/commons/0/08/Trimbakweshwar_Temple_Entrance.jpg',
+    },
+    trip:{
+      best_time:"Early morning is the best time to visit the temple. Month wise the best time to visit Trimbakeshwar Jyotirlinga Nashik is October to March as the weather is pleasant and it is bearable to stand in the sun. but keep in mind that this is a high tourist season. If you want to beat the crowds, visit in monsoon.",
+      nearest_road:" Shri Trimbakeshwar Shiva Temple is 30 kilometers on road from Nashik.",
+      nearest_railway:"The closest railway station is the Nashik Road Railway Station that is 39 kilometers by road.",
+      by_air:" Nashik Airport is located at Ozar, 20 kilometers (12 mi) northeast of Nashik, Maharashtra.",
+      festivals:"Maha Shivaratri: Maha Shivaratri, meaning the “Great Night of Shiva,” is one of the most important festivals celebrated at Trimbakeshwar Temple. It usually occurs in February or March, depending on the Hindu lunar calendar. The temple premises are adorned with decorations, and various rituals and cultural performances are held throughout the night, creating a vibrant and spiritual atmosphere.Shravan Somvar: Shravan Somvar is observed during the holy month of Shravan (July or August) and is dedicated to Lord Shiva. Devotees undertake fasting and visit Trimbakeshwar Temple every Monday of the month, offering prayers and performing special rituals.Kumbh Mela: Trimbakeshwar is one of the four cities that host the grand Kumbh Mela, a Hindu pilgrimage of immense significance. The Kumbh Mela occurs every 12 years, rotating between four locations, including Trimbakeshwar. The Kumbh Mela at Trimbakeshwar is an extraordinary experience, showcasing a convergence of faith, culture, and devotion.Navratri: Navratri is a nine-night festival dedicated to the worship of Goddess Durga. It usually falls in September or October. Trimbakeshwar Temple witnesses special ceremonies and performances during Navratri. The temple premises are adorned with colorful decorations, and cultural programs like Garba, and Dandiya Raas are organized, creating a lively and spirited ambiance."
+  },
+  contact:{
+    address:" Trimbak, Nashik,  Maharashtra 422212",
+    phone:"+912594234335, +912594233215, +912594234251"
+},
+    gallery: [
+      'https://upload.wikimedia.org/wikipedia/commons/1/12/Trimbakeshwar_Temple-Nashik-Maharashtra-1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/0/08/Trimbakweshwar_Temple_Entrance.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/f6/Trimbhakeshwar_Temple.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/65/Tryambakeshwar_Kund.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/dc/Mahadeva_Temple_Nashik.jpg',
+    ],
+  },
 ];

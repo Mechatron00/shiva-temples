@@ -24,8 +24,10 @@ export class BlogComponent implements OnInit{
    this.blogService.getPost().subscribe(
     data=>{
     
-      this.blogs = data.dataMedium.reverse();
-      // console.log(this.blogs);
+      console.log(data);
+      
+      this.blogs = data.dataMedium;
+      console.log(this.blogs);
       // this.blogs = this.blogsArray.reverse();
       
       
