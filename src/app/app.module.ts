@@ -24,8 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     LandingPageComponent,
     MantraSectionComponent,
@@ -33,8 +35,8 @@ import { ButtonModule } from 'primeng/button';
     TemplesComponent,
    BlogComponent,
     SearchPipe,
-    
-  ],
+      PhotoGalleryComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,7 +56,8 @@ import { ButtonModule } from 'primeng/button';
     HttpClientModule,
     CardModule,
     TagModule,
-    ButtonModule
+    ButtonModule,
+    ProgressSpinnerModule
    
   ],
   providers: [],

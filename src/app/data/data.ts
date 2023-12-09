@@ -665,7 +665,7 @@ export const templesData = [
     },
     photos: {
       cover:
-        'https://upload.wikimedia.org/wikipedia/commons/0/09/Bhimashankar_temple_front.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Bhimashankar_temple_front.jpg/512px-Bhimashankar_temple_front.jpg',
       profile:
         'https://upload.wikimedia.org/wikipedia/commons/9/9f/Temple_front_view_2.jpg',
     },
