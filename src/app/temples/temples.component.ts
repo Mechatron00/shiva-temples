@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, inject } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { temples } from '../data/temple-data';
 import { templesData } from '../data/data';
 import { FormControl } from '@angular/forms';
 import { MenuItem } from 'primeng/api';
-import { jyotirlingas } from '../data/jyotirling';
 import { ModuleService } from '../service/module.service';
+import { TempleInfoModalComponent } from '../temple-info-modal/temple-info-modal.component';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -13,48 +13,44 @@ import { ModuleService } from '../service/module.service';
   providers: [],
 })
 export class TemplesComponent implements OnInit {
-  active = 'top';
-  closeResult = '';
-  isCollapsed = false;
   templesData: temples[] = [];
   filteredData: temples[] = [];
-  previewImage = false;
-  showMask = false;
-
   galleryData: string[] = [];
-
-  faClose = this.moduleService.faClose;
-  faRoad = this.moduleService.faRoad;
-  faTrain = this.moduleService.faTrain;
-  faPlane = this.moduleService.faPlane;
-  faClock = this.moduleService.faClock;
-  faLocation = this.moduleService.faLocation;
-  faPhone = this.moduleService.faPhone;
-  faMapLocation = this.moduleService.faMapLocation;
-  faGopuram = this.moduleService.faGopuram;
-  faCreator = this.moduleService.faCreator;
-  faCalendar = this.moduleService.faCalendar;
-  faInscriptions = this.moduleService.faInscriptions;
-  faElevation = this.moduleService.faElevation;
-  faGlobe = this.moduleService.faGlobe;
   faSearch = this.moduleService.faSearch;
-
-  currentLightboxImage: string = this.galleryData[0];
-  currentIndex = 0;
-  controls = true;
-  totalImageCount = 0;
-  num = 0;
   filter = false;
   items: MenuItem[] = [];
+  inputControl = new FormControl('');
+  found: boolean = true;
+  private modalService = inject(NgbModal);
   constructor(
-    private modalService: NgbModal,
-    private moduleService:ModuleService
+    // private modalService: NgbModal,
+    private moduleService: ModuleService
   ) {}
 
   ngOnInit(): void {
+    this.sortData();
+    this.initializeItems();
+  }
+
+  loading(tag: string) {
+    this.filter = true;
+    setTimeout(() => {
+      this.filterTemple(tag);
+      this.filter = false;
+    }, 1000);
+  }
+  open(temple: temples) {
+    const modalRef = this.modalService.open(TempleInfoModalComponent, {
+      fullscreen: true,
+      scrollable: true,
+    });
+    modalRef.componentInstance.temple = temple;
+  }
+
+  sortData() {
     this.templesData = templesData.sort((a, b) => {
-      const nameA = a.basic.name.toUpperCase();
-      const nameB = b.basic.name.toUpperCase();
+      const nameA = a.basic.name.toLowerCase();
+      const nameB = b.basic.name.toLowerCase();
 
       if (nameA < nameB) {
         return -1;
@@ -64,18 +60,19 @@ export class TemplesComponent implements OnInit {
       }
       return 0;
     });
-
+  }
+  initializeItems() {
     this.items = [
       {
         label: 'All',
         command: () => {
-          this.loading(templesData);  
+          this.loading('');
         },
       },
       {
         label: '12 Jyotirlingas',
         command: () => {
-          this.loading(jyotirlingas)
+          this.loading('jyotirlinga');
         },
       },
       // {
@@ -102,44 +99,7 @@ export class TemplesComponent implements OnInit {
     ];
   }
 
-  loading(data:temples[]){
-    this.filter = true;
-    setTimeout(() => {
-     
-      this.templesData = data;
-      this.filter = false;
-    }, 1000);
-   
-    
-  }
-  open(content: any) {
-    this.modalService
-      .open(content, { fullscreen: true, scrollable: true })
-      .result.then(
-        (result) => {
-          this.closeResult = `Closed with: ${result}`;
-        },
-        (reason) => {
-          this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-        }
-      );
-  }
-  closeModal(reason: any) {
-    this.modalService.dismissAll(reason);
-  }
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return `with: ${reason}`;
-    }
-  }
-  
-  inputControl = new FormControl('');
-  found: boolean = true;
-  filterTemple() {
+  searchTemple() {
     if (this.inputControl.valueChanges) {
       const input: string = this.inputControl.value as string;
 
@@ -152,14 +112,32 @@ export class TemplesComponent implements OnInit {
           );
         });
 
-        if (this.filteredData.length === 0) {
-          this.found = false;
-        } else this.found = true;
-        this.templesData = this.filteredData;
+        if (this.filteredData.length > 0) {
+          this.found = true;
+          this.templesData = this.filteredData;
+        } else this.found = false;
       } else {
-        this.found = true;
         this.templesData = templesData;
       }
     }
+  }
+  filterTemple(tag: string) {
+    this.filteredData = templesData.filter((data) => {
+      const num = parseInt(data.tag[1]);
+      return data.tag[0].toLowerCase().match(tag.toLowerCase())?.sort();
+    });
+    this.filteredData = this.filteredData.sort((a, b) => {
+      const nameA = a.tag[1];
+      const nameB = b.tag[1];
+
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    });
+    this.templesData = this.filteredData;
   }
 }

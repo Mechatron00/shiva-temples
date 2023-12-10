@@ -61,6 +61,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/d/d4/Murudeswar_Shiva_Panoramic_view.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/6/64/Murudeshwar_Temple_Shiva.jpg',
     ],
+    tag:['']
   },
   {
     basic: {
@@ -150,6 +151,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/0/0f/A_yoga_and_meditation_relief.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/e/e6/Ta-scr.jpg',
     ],
+    tag:['']
   },
   {
     basic: {
@@ -209,7 +211,8 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/d/dd/Ellora_Cave_16_si0300.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/2/22/Mahabharata_relief_panel_at_Kailasha_temple.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/2/27/Ellora-10-Kailasa-Tempel-Skulpturengruppe-1976-gje.jpg'
-    ]
+    ],
+    tag:['']
    
   },
   {
@@ -264,12 +267,13 @@ export const templesData = [
     gallery: [
       'https://upload.wikimedia.org/wikipedia/commons/6/65/Kotappa_konda_4.jpg',
     
-    ]
+    ],
+    tag:['']
    
   },
   {
     basic: {
-      name: 'Somnath temple',
+      name: 'Somnath Jyotirlinga',
       bio: "The Somnath temple, also called Somanātha temple or Deo Patan, is a Hindu temple located in Prabhas Patan, Veraval in Gujarat, India. It is one of the most sacred pilgrimage sites for Hindus and is the first among the twelve jyotirlinga shrines of Shiva",
       location: {
         pin: ' Prabhas Patan',
@@ -326,6 +330,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/c/ce/Somnathtempledawn.JPG',
 
     ],
+    tag:['Jyotirlinga','1']
   },
   {
     basic: {
@@ -381,6 +386,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/c/c0/Srisailam.jpg',
      
     ],
+    tag:['jyotirlinga','2']
   },
   {
     basic: {
@@ -438,6 +444,7 @@ export const templesData = [
      
 
     ],
+    tag:['jyotirlinga','3']
   },
   {
     basic: {
@@ -500,9 +507,8 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/8/8b/Gomukh_ghat%2C_Omkareshwar_02.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/0/05/Narmada_in_Omkareshwar.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/c/c6/Shore_of_Narmada_at_Omkareshwar.jpg',
-     
-
     ],
+    tag:['jyotirlinga','4']
   },
   {
     basic: {
@@ -574,6 +580,7 @@ export const templesData = [
      
 
     ],
+    tag:['jyotirlinga','5']
   },
   {
     basic: {
@@ -629,6 +636,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/0/04/Temples_at_Deorgag%2C_Santal_Parhanas%2C_Bihar_-_William_Hodges%2C_1782_-_BL_Foster_396.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/9/9f/Priests_conducting_worship_inside_the_Baijnath_temple.jpg',
     ],
+    tag:['jyotirlinga','6']
   },
   {
     basic: {
@@ -694,6 +702,7 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/0/09/Bhimashankar_temple_front.jpg',
     
     ],
+    tag:['jyotirlinga','7']
   },
   {
     basic: {
@@ -748,6 +757,7 @@ export const templesData = [
     gallery: [
       'https://upload.wikimedia.org/wikipedia/commons/e/eb/Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg',
     ],
+    tag:['jyotirlinga','8']
   },
   {
     basic: {
@@ -806,5 +816,6 @@ export const templesData = [
       'https://upload.wikimedia.org/wikipedia/commons/6/65/Tryambakeshwar_Kund.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/d/dc/Mahadeva_Temple_Nashik.jpg',
     ],
+    tag:['jyotirlinga','9']
   },
 ];

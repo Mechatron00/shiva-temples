@@ -51,6 +51,7 @@ export interface temples
     gallery:string[
 
     ]
+    tag:any[]
 
 }
 

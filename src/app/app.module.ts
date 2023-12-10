@@ -26,8 +26,9 @@ import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.component';
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
     LandingPageComponent,
     MantraSectionComponent,
@@ -35,7 +36,8 @@ import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
     TemplesComponent,
    BlogComponent,
     SearchPipe,
-      PhotoGalleryComponent
+      PhotoGalleryComponent,
+      TempleInfoModalComponent
    ],
   imports: [
     BrowserModule,

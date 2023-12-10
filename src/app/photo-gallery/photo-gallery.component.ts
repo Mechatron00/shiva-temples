@@ -35,11 +35,7 @@ import { ModuleService } from '../service/module.service';
   ],
 })
 export class PhotoGalleryComponent implements OnInit {
-  active = 'top';
-  closeResult = '';
-  isCollapsed = false;
   templesData: temples[] = [];
-  filteredData: temples[] = [];
   previewImage = false;
   showMask = false;
   @Input() galleryData: string[] = [];
