@@ -11,14 +11,10 @@ import { MantraSectionComponent } from './mantra-section/mantra-section.componen
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TemplesComponent } from './temples/temples.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-import { SearchPipe } from './search-pipe/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SpeedDialModule } from 'primeng/speeddial';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SplitButtonModule } from 'primeng/splitbutton';
-import { ToastModule } from 'primeng/toast';
-import { MessagesModule } from 'primeng/messages';
 import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
@@ -35,7 +31,6 @@ import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.
     NavBarComponent,
     TemplesComponent,
    BlogComponent,
-    SearchPipe,
       PhotoGalleryComponent,
       TempleInfoModalComponent
    ],
@@ -50,19 +45,18 @@ import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.
     ReactiveFormsModule,
     FormsModule,
     MatAutocompleteModule,
-    SpeedDialModule,
     MatExpansionModule,
     SplitButtonModule,
-    ToastModule,
-    MessagesModule,
     HttpClientModule,
     CardModule,
     TagModule,
     ButtonModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+   
    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
