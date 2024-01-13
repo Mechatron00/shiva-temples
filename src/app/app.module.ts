@@ -15,7 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SplitButtonModule } from 'primeng/splitbutton';
-import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { TagModule } from 'primeng/tag';
@@ -30,7 +29,6 @@ import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.
     MantraSectionComponent,
     NavBarComponent,
     TemplesComponent,
-   BlogComponent,
       PhotoGalleryComponent,
       TempleInfoModalComponent
    ],

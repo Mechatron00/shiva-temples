@@ -153,7 +153,7 @@
   z-index: 99;
 }
 .paginator {
-  background-color: rgba(255, 255, 255, 0.47);
+  background-color: rgba(0, 0, 0, 0.293);
   height: 7rem;
   display: flex;
   justify-content: center;
@@ -163,6 +163,12 @@
 
   bottom: 1px;
 }
+.spinner {
+  margin: 7rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* ***************************************************** */
 .search-box {
@@ -465,9 +471,4 @@
 
     
   }
-}
-.spinner {
-  margin: 7rem 0 0 0;
-  display: flex;
-  justify-content: center;
 }

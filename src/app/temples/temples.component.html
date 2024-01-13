@@ -28,14 +28,14 @@
 </div>
 <div class="spinner">
   <p-progressSpinner
-    *ngIf="filter"
-    styleClass="w-4rem h-4rem"
+    *ngIf="isLoading"
+    styleClass="w-4rem h-4rem "
     strokeWidth="4"
     animationDuration=".4s"
   ></p-progressSpinner>
 </div>
 <div class="not-found" *ngIf="!found">Not Found</div>
-<div *ngIf="!filter" class="temple-list" style="padding-bottom: 5rem;">
+<div *ngIf="!isLoading" class="temple-list" style="padding-bottom: 5rem;">
   <div class="aligning">
     <div *ngFor="let temple of filteredData">
       <div class="card" (click)="open(temple)">
@@ -60,7 +60,7 @@
       <ng-template let-modal> </ng-template>
     </div>
   </div>
-  <div class="paginator">
+  <div *ngIf="!isFilter" class="paginator">
     <div style="width: 10rem; display: flex; justify-content: space-between">
       <button
         [disabled]="startIndex == 0"
@@ -79,7 +79,7 @@
         <i class="pi pi-chevron-right" style="font-size: 1rem"></i>
       </button>
     </div>
-    <div style="margin-left: 2rem; width: 1rem">
+    <div style="margin-left: 2rem; width: 1rem;color: #ffff;">
       {{ startIndex + filteredData.length }}/{{ totalRecords }}
     </div>
   </div>

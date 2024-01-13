@@ -25,7 +25,9 @@ export class TemplesComponent implements OnInit {
   filteredData: temples[] = [];
   galleryData: string[] = [];
   faSearch = this.moduleService.faSearch;
-  filter = false;
+  isFilter = false;
+  isLoading =false;
+
   items: MenuItem[] = [];
   inputControl = new FormControl('');
   found: boolean = true;
@@ -47,10 +49,10 @@ export class TemplesComponent implements OnInit {
   }
 
   loading(tag: string) {
-    this.filter = true;
+    this.isLoading = true;
     setTimeout(() => {
       this.filterTemple(tag);
-      this.filter = false;
+      this.isLoading = false;
     }, 1000);
    
   }
@@ -61,23 +63,8 @@ export class TemplesComponent implements OnInit {
     });
     modalRef.componentInstance.temple = temple;
   }
-  length = 50;
-  pageSize = 10;
-  pageIndex = 0;
-  pageSizeOptions = [5, 10, 25];
-  pageEvent!: PageEvent;
-
-  handlePageEvent(e: PageEvent) {
-    this.pageEvent = e;
-    console.log(e);
-    
-    this.length = e.length;
-    this.pageSize = e.pageSize;
-    this.pageIndex = e.pageIndex;
-    this.scrollToTemplesList()
-  }
   getSortedTemples(startIndex: number, endIndex: number) {
-    this.filteredData = this.templesData.sort((a, b) => {
+    this.filteredData = (this.templesData.sort((a, b) => {
       const nameA = a.basic.name.toLowerCase();
       const nameB = b.basic.name.toLowerCase();
 
@@ -88,20 +75,24 @@ export class TemplesComponent implements OnInit {
         return 1;
       }
       return 0;
-    });
-    this.filteredData = this.templesData.slice(startIndex, endIndex);
+    })).slice(startIndex, endIndex);
+  
+    //this.filteredData = this.templesData.slice(startIndex, endIndex);
   }
   initializeItems() {
     this.items = [
       {
         label: 'All',
         command: () => {
-          this.loading('');
+          this.isFilter=false;
+          this.getSortedTemples(this.startIndex, this.endIndex);
+         //this.loading('');
         },
       },
       {
         label: '12 Jyotirlingas',
         command: () => {
+          this.isFilter=true;
           this.loading('jyotirlinga');
         },
       },
@@ -166,6 +157,7 @@ export class TemplesComponent implements OnInit {
       }
       return 0;
     });
+
     // this.templesData = this.filteredData;
   }
 
