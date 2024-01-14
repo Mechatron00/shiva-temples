@@ -48,6 +48,8 @@ export class PhotoGalleryComponent implements OnInit {
   constructor(private moduleService:ModuleService) { }
 
   ngOnInit() {
+  
+    
   }
   onPreviewImage(index: number) {
     this.showMask = true;
@@ -62,7 +64,24 @@ export class PhotoGalleryComponent implements OnInit {
       this.showMask = false;
     }
   }
-
+  prev() {
+    
+    
+    this.currentIndex = this.currentIndex - 1;
+    if (this.currentIndex < 0) {
+      this.currentIndex = this.galleryData.length - 1;
+    }
+    this.currentLightboxImage = this.galleryData[this.currentIndex];
+  }
+  next() {
+    
+    
+    this.currentIndex = this.currentIndex + 1;
+    if (this.currentIndex > this.galleryData.length - 1) {
+      this.currentIndex = 0;
+    }
+    this.currentLightboxImage = this.galleryData[this.currentIndex];
+  }
   onClosePreview() {
     this.previewImage = false;
   }

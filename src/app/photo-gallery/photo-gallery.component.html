@@ -1,29 +1,31 @@
 <div class="gallery-lightbox-container">
   <div class="gallery">
-    <div
-      *ngFor="let data of galleryData; let i = index"
-      class="gallery-img"
-    >
-      <img
-        loading="lazy"
-        (click)="onPreviewImage(i)"
-        [src]="data"
-        [alt]="i"
-      />
+    <div *ngFor="let data of galleryData; let i = index" class="gallery-img">
+      <img loading="lazy" (click)="onPreviewImage(i)" [src]="data" [alt]="i" />
     </div>
   </div>
   <div *ngIf="showMask" class="lightbox" @animation2>
     <button
-      *ngIf="previewImage"
-      type="button"
-      class="close-btn"
-      (click)="onClosePreview()"
-      mat-icon-button
-      color="warn"
+    *ngIf="previewImage"
+    class="btn-lightbox-carousel btn-close"
+    (click)="onClosePreview()"
+  >
+  <strong><i class="pi pi-times" style="font-size: 1.2rem;color: #ff0000;"></i></strong>
+    
+  </button>
+    <button
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-prev"
+      (click)="prev()"
     >
-      <mat-icon
-        ><fa-icon class="fa-solid" [icon]="faClose"></fa-icon
-      ></mat-icon>
+      <i class="pi pi-angle-left" style="font-size: 1.2rem;"></i>
+    </button>
+    <button
+      *ngIf="controls"
+      class="btn-lightbox-carousel btn-next"
+      (click)="next()"
+    >
+      <i class="pi pi-angle-right" style="font-size: 1.2rem;"></i>
     </button>
 
     <div
@@ -32,13 +34,9 @@
       (@animation.done)="onAnimationEnd($event)"
       class="lightbox-img"
     >
-      <img [src]="galleryData[num]" loading="lazy" />
+      <img [src]="currentLightboxImage" />
       <!-- <div class="bottom-left">&copy; Dinesh Dixit</div> -->
-      <div
-        class="bottom-left"
-        style="color: rgb(0, 255, 132)"
-        mat-flat-button
-      >
+      <div class="bottom-left" style="color: rgb(0, 255, 132)" mat-flat-button>
         {{ num + 1 }}/{{ galleryData.length }}
       </div>
     </div>
