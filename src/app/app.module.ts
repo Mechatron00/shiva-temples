@@ -22,15 +22,19 @@ import { ButtonModule } from 'primeng/button';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.component';
+import { PdfReaderComponent } from './pdf-reader/pdf-reader.component';
+import { TempleComponent } from './temple/temple.component';
 @NgModule({
-  declarations: [			
+  declarations: [					
     AppComponent,
     LandingPageComponent,
     MantraSectionComponent,
     NavBarComponent,
     TemplesComponent,
       PhotoGalleryComponent,
-      TempleInfoModalComponent
+      TempleInfoModalComponent,
+      PdfReaderComponent,
+      TempleComponent
    ],
   imports: [
     BrowserModule,

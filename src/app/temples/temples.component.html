@@ -1,4 +1,6 @@
-<img
+
+<div *ngIf="!isNavigated">
+  <img
   class="outer-container"
   src="../../assets/kailash.jpg"
   style="object-fit: cover; height: 100%; width: 100%"
@@ -38,7 +40,7 @@
 <div *ngIf="!isLoading" class="temple-list" style="padding-bottom: 5rem;">
   <div class="aligning">
     <div *ngFor="let temple of filteredData">
-      <div class="card" (click)="open(temple)">
+      <div class="card" (click)="openTemple(temple)">
         <div class="inner_part">
           <img
             loading="lazy"
@@ -53,11 +55,11 @@
             <div class="text">
               {{ temple.basic.bio }}
             </div>
-            <button class="card-btn" (click)="open(temple)">Read More</button>
+            <button class="card-btn" (click)="openTemple(temple)">Read More</button>
           </div>
         </div>
       </div>
-      <ng-template let-modal> </ng-template>
+      <!-- <ng-template let-modal> </ng-template> -->
     </div>
   </div>
   <div *ngIf="!isFilter" class="paginator">
@@ -83,5 +85,8 @@
       {{ startIndex + filteredData.length }}/{{ totalRecords }}
     </div>
   </div>
+  
 </div>
 
+</div>
+<router-outlet></router-outlet>

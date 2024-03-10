@@ -14,6 +14,7 @@ import { TempleInfoModalComponent } from '../temple-info-modal/temple-info-modal
 import * as temple from 'src/app/temples.json';
 import { TemplesService } from '../service/temples.service';
 import { PageEvent } from '@angular/material/paginator';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -27,7 +28,7 @@ export class TemplesComponent implements OnInit {
   faSearch = this.moduleService.faSearch;
   isFilter = false;
   isLoading =false;
-
+  isNavigated:boolean=false;
   items: MenuItem[] = [];
   inputControl = new FormControl('');
   found: boolean = true;
@@ -36,7 +37,8 @@ export class TemplesComponent implements OnInit {
     // private modalService: NgbModal,
     private moduleService: ModuleService,
     private templesService: TemplesService,
-    private el: ElementRef
+    private el: ElementRef,
+    private router:Router
   ) {}
 
   startIndex: number = 0;
@@ -46,6 +48,7 @@ export class TemplesComponent implements OnInit {
   ngOnInit(): void {
     this.getSortedTemples(this.startIndex, this.endIndex);
     this.initializeItems();
+    
   }
 
   loading(tag: string) {
@@ -186,5 +189,11 @@ export class TemplesComponent implements OnInit {
   
       behavior: 'smooth',
     });
+  }
+  openTemple(temple:temples){
+    
+    this.templesService.temple = temple
+    this.router.navigate([`temples/temple/${temple.basic.name}`])
+
   }
 }

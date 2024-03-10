@@ -56,11 +56,12 @@
 
       border-radius: 100%;
       padding: 0.7rem;
-      background-color: transparent;
+      background-color: rgb(255, 255, 255);
       box-shadow: 0 0 10px 0.2px rgba(220, 20, 60, 0.548);
     }
     .btn-close:hover {
       border-radius: 100%;
+      background-color: rgb(255, 255, 255);
       box-shadow: 0 0 15px 0.8px rgba(220, 20, 60);
     }
 
@@ -84,7 +85,7 @@
       border-radius: 100%;
       padding: 0.5rem;
       background-color: transparent;
-      box-shadow: 0 0 10px 0.5px #00ff6276;
+      box-shadow: 0 0 2px 0.5px #00ff62;
     }
     .btn-next {
      
@@ -96,14 +97,16 @@
       border-radius: 100%;
       padding: 0.5rem;
       background-color: transparent;
-      box-shadow: 0 0 10px 0.5px #00ff626c;
+      box-shadow: 0 0 2px 0.5px #00ff62;
     }
     .btn-prev:hover {
       opacity: 1;
+      background-color: rgb(255, 255, 255);
       box-shadow: 0 0 15px 0.5px #00ff63;
     }
     .btn-next:hover {
       opacity: 1;
+      background-color: rgb(255, 255, 255);
       box-shadow: 0 0 15px 0.5px #00ff63;
     }
     .lightbox-img img {

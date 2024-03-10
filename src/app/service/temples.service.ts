@@ -11,6 +11,7 @@ export class TemplesService {
   filteredData: temples[] = [];
   templesData: temples[] = templesData;
   found:boolean = false;
+  temple!:temples;
 constructor(private http:HttpClient) { }
 
 
