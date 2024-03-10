@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModuleService } from '../service/module.service';
 import { temples } from '../data/temple-data';
 import { TemplesService } from '../service/temples.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-temple',
@@ -28,11 +29,15 @@ export class TempleComponent implements OnInit {
 
   temple!: temples
   constructor(private moduleService: ModuleService,
-    private templeService:TemplesService
+    private templeService:TemplesService,
+    private router:Router
     ) { }
 
   ngOnInit() {
-    this,this.temple=this.templeService.temple
+    this.temple=this.templeService.temple
+    if (!this.temple) {
+      this.router.navigate(['temples'])
+    }
   }
 
 }

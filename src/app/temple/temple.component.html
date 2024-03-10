@@ -5,17 +5,22 @@
     background-color: rgb(255, 255, 255);
     padding: 1rem;
     margin-top: -7rem;
+    font-family:Playfair Display;
+    font-family: Inconsolata, monospace;
   "
 >
-  <div class="modal-header">
-    <h4 class="modal-title">
+  <div  style="position: static;">
+
+    <h4 >
       {{ temple.basic.name | titlecase }} -
       {{ temple.basic.location.pin | titlecase }},{{
         temple.basic.location.dist | titlecase
       }},{{ temple.basic.location.state | titlecase }}
     </h4>
+    
   </div>
-  <hr style="margin-top: 1.2rem; margin-bottom: 3rem" />
+  <hr style="margin-top: 1.5rem; margin-bottom: 3rem;" />
+  
   <div>
     <div style="padding-left: 0px; padding-right: 0px">
       <div class="align-inner-card">
@@ -131,7 +136,7 @@
         <div class="acco-card">
           <h5 style="text-align: center; padding: 10px">HOW TO REACH</h5>
           <mat-accordion>
-            <mat-expansion-panel expanded="true">
+            <mat-expansion-panel >
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <fa-icon class="fa fa-xl" [icon]="faRoad"></fa-icon>
@@ -140,7 +145,7 @@
               </mat-expansion-panel-header>
               <p>{{ temple.trip.nearest_road }}</p>
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel >
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <fa-icon class="fa fa-xl" [icon]="faTrain"></fa-icon>
@@ -149,7 +154,7 @@
               </mat-expansion-panel-header>
               <p>{{ temple.trip.nearest_railway }}</p>
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel >
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <fa-icon class="fa fa-xl" [icon]="faPlane"></fa-icon>
@@ -163,14 +168,14 @@
         <div class="acco-card">
           <h5 style="text-align: center; padding: 10px">Best Time to Visit</h5>
           <mat-accordion>
-            <mat-expansion-panel expanded="true">
+            <mat-expansion-panel  >
               <mat-expansion-panel-header>
                 <mat-panel-title> Best Time </mat-panel-title>
                 <mat-panel-description> </mat-panel-description>
               </mat-expansion-panel-header>
               <p>{{ temple.trip.best_time }}</p>
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel  >
               <mat-expansion-panel-header>
                 <mat-panel-title> Festival </mat-panel-title>
                 <mat-panel-description> </mat-panel-description>
@@ -182,7 +187,7 @@
         <div class="acco-card">
           <h5 style="text-align: center; padding: 10px">Contact</h5>
           <mat-accordion>
-            <mat-expansion-panel expanded="true">
+            <mat-expansion-panel  >
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <fa-icon class="fa fa-lg" [icon]="faLocation"></fa-icon>
@@ -222,6 +227,7 @@
     padding: 1rem;
     border-radius: .5rem .5rem 0 0;
    margin:  0 -1rem -1rem -1rem;
+   background-color: rgba(0, 0, 0, 0.9);
   "
 >
   <div
@@ -241,7 +247,7 @@
         ngbTooltip="Open in map"
         [icon]="faMapLocation"
         class="fa-xl"
-        style="color: rgb(0, 0, 0)"
+        style="color: rgb(255, 255, 255)"
       ></fa-icon
     ></a>
 
@@ -255,7 +261,7 @@
         ngbTooltip="Website"
         [icon]="faGlobe"
         class="fa-xl"
-        style="color: rgb(0, 0, 0)"
+        style="color: rgb(255, 255, 255)"
       ></fa-icon
     ></a>
   </div>
