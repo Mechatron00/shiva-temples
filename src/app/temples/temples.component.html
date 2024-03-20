@@ -5,7 +5,7 @@
   src="../../assets/kailash.jpg"
   style="object-fit: cover; height: 100%; width: 100%"
 />
-<div class="search-div">
+<div  class="search-div">
   <div style="z-index: 2" class="search-box">
     <button class="btn-search"><fa-icon [icon]="faSearch"></fa-icon></button>
     <input
@@ -36,14 +36,14 @@
     animationDuration=".4s"
   ></p-progressSpinner>
 </div>
-<div class="not-found" *ngIf="!found">Not Found</div>
-<div *ngIf="!isLoading" class="temple-list" style="padding-bottom: 5rem;">
-  <div class="aligning">
+<div  class="not-found" *ngIf="!found">Not Found</div>
+<div  *ngIf="!isLoading" class="temple-list" style="padding-bottom: 5rem;">
+  <div #searchbox class="aligning">
     <div *ngFor="let temple of filteredData">
       <div class="card" (click)="openTemple(temple)">
         <div class="inner_part">
           <img
-            loading="lazy"
+           
             src="{{ temple.photos.cover }}"
             class="card-img"
             style="object-fit: cover"
@@ -80,6 +80,7 @@
       >
         <i class="pi pi-chevron-right" style="font-size: 1rem"></i>
       </button>
+      
     </div>
     <div style="margin-left: 2rem; width: 1rem;color: #ffff;">
       {{ startIndex + filteredData.length }}/{{ totalRecords }}

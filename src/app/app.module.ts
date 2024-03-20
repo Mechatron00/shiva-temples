@@ -24,8 +24,10 @@ import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { TempleInfoModalComponent } from './temple-info-modal/temple-info-modal.component';
 import { PdfReaderComponent } from './pdf-reader/pdf-reader.component';
 import { TempleComponent } from './temple/temple.component';
+import { ShivaComponent } from './shiva/shiva.component';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     LandingPageComponent,
     MantraSectionComponent,
@@ -34,7 +36,8 @@ import { TempleComponent } from './temple/temple.component';
       PhotoGalleryComponent,
       TempleInfoModalComponent,
       PdfReaderComponent,
-      TempleComponent
+      TempleComponent,
+      ShivaComponent
    ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { TempleComponent } from './temple/temple.component';
     TagModule,
     ButtonModule,
     ProgressSpinnerModule,
+    AnimateOnScrollModule
    
    
   ],

@@ -2,6 +2,7 @@ import {
   Component,
   ElementRef,
   OnInit,
+  ViewChild,
   inject,
 } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -22,6 +23,7 @@ import { Router } from '@angular/router';
   providers: [],
 })
 export class TemplesComponent implements OnInit {
+  @ViewChild('searchbox') searchbox!: ElementRef;
   templesData: temples[] = templesData;
   filteredData: temples[] = [];
   galleryData: string[] = [];
@@ -169,7 +171,7 @@ export class TemplesComponent implements OnInit {
       this.startIndex = this.endIndex;
       this.endIndex = this.endIndex + 5;
       this.getSortedTemples(this.startIndex, this.endIndex);
-      
+      this.scrollToTemplesList()
     }
   }
   prevPage() {
@@ -177,18 +179,14 @@ export class TemplesComponent implements OnInit {
       this.startIndex = this.startIndex - 5;
       this.endIndex = this.endIndex - 5;
       this.getSortedTemples(this.startIndex, this.endIndex);
-     
+      this.scrollToTemplesList()
     }
   }
 
   scrollToTemplesList() {
-    console.log('scrolling called...');
-    
-    window.scrollTo({
-      top: 500,
-  
-      behavior: 'smooth',
-    });
+    if (this.searchbox.nativeElement) {
+      this.searchbox.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
   openTemple(temple:temples){
     

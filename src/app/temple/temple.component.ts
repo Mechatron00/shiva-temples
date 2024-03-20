@@ -35,6 +35,7 @@ export class TempleComponent implements OnInit {
 
   ngOnInit() {
     this.temple=this.templeService.temple
+    
     if (!this.temple) {
       this.router.navigate(['temples'])
     }

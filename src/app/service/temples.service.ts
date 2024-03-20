@@ -16,7 +16,7 @@ constructor(private http:HttpClient) { }
 
 
 getTemples(){
-  return this.http.get<temples[]>('src/app/temples.json')
+  return this.http.get<temples[]>('https://api.npoint.io/d6eda1d536bc9f381182')
 }
 
 getSortedTemples(startIndex: number, endIndex: number) {
