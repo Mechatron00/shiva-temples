@@ -818,4 +818,5 @@ export const templesData = [
     ],
     tag:['jyotirlinga','9']
   },
+  
 ];

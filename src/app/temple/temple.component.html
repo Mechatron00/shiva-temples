@@ -1,0 +1,270 @@
+<div
+  style="
+    z-index: 99;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-top: -7rem;
+    
+    
+  "
+>
+  <div  style="position: static;font-family: Inconsolata, monospace;">
+
+    <h4 >
+      {{ temple.basic.name | titlecase }} -
+      {{ temple.basic.location.pin | titlecase }},{{
+        temple.basic.location.dist | titlecase
+      }},{{ temple.basic.location.state | titlecase }}
+    </h4>
+    
+  </div>
+  <hr style="margin-top: 1.5rem; margin-bottom: 3rem;" />
+  
+  <div>
+    <div style="padding-left: 0px; padding-right: 0px;">
+      <div class="align-inner-card">
+        <div class="card-inner">
+          <div style="padding: 10px">
+            <div>
+              <h4 style="text-align: center">Architecture</h4>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Style"
+                    [icon]="faGopuram"
+                  ></fa-icon></span
+                ><span style="margin-left: 10px">{{
+                  temple.Architecture.style
+                }}</span>
+              </div>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Creator"
+                    [icon]="faCreator"
+                  ></fa-icon
+                ></span>
+                <span style="margin-left: 10px">{{
+                  temple.Architecture.creator
+                }}</span>
+              </div>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Completed"
+                    [icon]="faCalendar"
+                  ></fa-icon></span
+                ><span style="margin-left: 10px">{{
+                  temple.Architecture.completed
+                }}</span>
+              </div>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Inscriptions"
+                    [icon]="faInscriptions"
+                  ></fa-icon></span
+                ><span style="margin-left: 10px">{{
+                  temple.Architecture.inscriptions
+                }}</span>
+              </div>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Sea level Height"
+                    [icon]="faElevation"
+                  ></fa-icon></span
+                ><span style="margin-left: 10px">
+                  {{ temple.Architecture.elevation }}m
+                </span>
+              </div>
+              <div>
+                <span style="font-weight: 600"
+                  ><fa-icon
+                    placement="top"
+                    ngbTooltip="Co-ordinates"
+                    [icon]="faMapLocation"
+                  ></fa-icon
+                ></span>
+                <span
+                  style="margin-left: 10px"
+                  placement="top"
+                  ngbTooltip="Latitude"
+                  >Lat: {{ temple.basic.coordinates.x }}</span
+                >
+                <span
+                  style="margin-left: 10px"
+                  placement="top"
+                  ngbTooltip="Longitude"
+                >
+                  Lon: {{ temple.basic.coordinates.y }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        loading="lazy"
+        src="{{ temple.photos.profile }}"
+        class="profile-image"
+        style="object-fit: cover"
+      />
+      <div class="info">
+        <div>
+          <p><span class="tab"></span>{{ temple.about.basic_info }}</p>
+        </div>
+        <div>
+          <h2>History</h2>
+          <p><span class="tab"></span>{{ temple.about.history }}</p>
+        </div>
+        <div style="min-height: 650px">
+          <h2>Architecture</h2>
+          <p><span class="tab"></span>{{ temple.about.architecture }}</p>
+        </div>
+      </div>
+      <div>
+        <hr style="margin-top: 60px" />
+      </div>
+      <div class="info-card">
+        <div class="acco-card">
+          <h5 style="text-align: center; padding: 10px">HOW TO REACH</h5>
+          <mat-accordion>
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <fa-icon class="fa fa-xl" [icon]="faRoad"></fa-icon>
+                </mat-panel-title>
+                <mat-panel-description> By Road </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.trip.nearest_road }}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <fa-icon class="fa fa-xl" [icon]="faTrain"></fa-icon>
+                </mat-panel-title>
+                <mat-panel-description> By Train </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.trip.nearest_railway }}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <fa-icon class="fa fa-xl" [icon]="faPlane"></fa-icon>
+                </mat-panel-title>
+                <mat-panel-description> By Plane </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.trip.by_air }}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <div class="acco-card">
+          <h5 style="text-align: center; padding: 10px">Best Time to Visit</h5>
+          <mat-accordion>
+            <mat-expansion-panel  >
+              <mat-expansion-panel-header>
+                <mat-panel-title> Best Time </mat-panel-title>
+                <mat-panel-description> </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.trip.best_time }}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel  >
+              <mat-expansion-panel-header>
+                <mat-panel-title> Festival </mat-panel-title>
+                <mat-panel-description> </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.trip.festivals }}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <div class="acco-card">
+          <h5 style="text-align: center; padding: 10px">Contact</h5>
+          <mat-accordion>
+            <mat-expansion-panel  >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <fa-icon class="fa fa-lg" [icon]="faLocation"></fa-icon>
+                </mat-panel-title>
+                <mat-panel-description> Address </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.contact.address }}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <fa-icon class="fa fa-lg" [icon]="faPhone"></fa-icon>
+                </mat-panel-title>
+                <mat-panel-description> Phone </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{ temple.contact.phone }}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+      </div>
+      <div>
+        <div style="margin-top: 30px">
+          <div class="gallery-heading">Gallery</div>
+          <hr />
+        </div>
+        <app-photo-gallery [galleryData]="temple.gallery"></app-photo-gallery>
+      </div>
+    </div>
+  </div>
+  <!-- <hr style="margin-top: 1.2rem; margin-bottom: 0.5rem" /> -->
+  <div
+  style="
+    
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    position: relative;
+    padding: 1rem;
+    border-radius: .5rem .5rem 0 0;
+   margin:  0 -1rem -1rem -1rem;
+   background-color: rgba(0, 0, 0, 0.9);
+  "
+>
+  <div
+    style="
+      padding-left: 10px;
+      display: flex;
+      width: 150px;
+      justify-content: space-around;
+    "
+  >
+    <a
+      href="{{ temple.basic.location.iframe }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><fa-icon
+        placement="top"
+        ngbTooltip="Open in map"
+        [icon]="faMapLocation"
+        class="fa-xl"
+        style="color: rgb(255, 255, 255)"
+      ></fa-icon
+    ></a>
+
+    <a
+      *ngIf="temple.basic.website"
+      href="{{ temple.basic.website }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><fa-icon
+        placement="top"
+        ngbTooltip="Website"
+        [icon]="faGlobe"
+        class="fa-xl"
+        style="color: rgb(255, 255, 255)"
+      ></fa-icon
+    ></a>
+  </div>
+</div>
+
+</div>

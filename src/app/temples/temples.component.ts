@@ -2,6 +2,7 @@ import {
   Component,
   ElementRef,
   OnInit,
+  ViewChild,
   inject,
 } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +15,7 @@ import { TempleInfoModalComponent } from '../temple-info-modal/temple-info-modal
 import * as temple from 'src/app/temples.json';
 import { TemplesService } from '../service/temples.service';
 import { PageEvent } from '@angular/material/paginator';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-temples',
   templateUrl: './temples.component.html',
@@ -21,13 +23,14 @@ import { PageEvent } from '@angular/material/paginator';
   providers: [],
 })
 export class TemplesComponent implements OnInit {
+  @ViewChild('searchbox') searchbox!: ElementRef;
   templesData: temples[] = templesData;
   filteredData: temples[] = [];
   galleryData: string[] = [];
   faSearch = this.moduleService.faSearch;
   isFilter = false;
   isLoading =false;
-
+  isNavigated:boolean=false;
   items: MenuItem[] = [];
   inputControl = new FormControl('');
   found: boolean = true;
@@ -36,7 +39,8 @@ export class TemplesComponent implements OnInit {
     // private modalService: NgbModal,
     private moduleService: ModuleService,
     private templesService: TemplesService,
-    private el: ElementRef
+    private el: ElementRef,
+    private router:Router
   ) {}
 
   startIndex: number = 0;
@@ -46,6 +50,7 @@ export class TemplesComponent implements OnInit {
   ngOnInit(): void {
     this.getSortedTemples(this.startIndex, this.endIndex);
     this.initializeItems();
+    
   }
 
   loading(tag: string) {
@@ -166,7 +171,7 @@ export class TemplesComponent implements OnInit {
       this.startIndex = this.endIndex;
       this.endIndex = this.endIndex + 5;
       this.getSortedTemples(this.startIndex, this.endIndex);
-      
+      this.scrollToTemplesList()
     }
   }
   prevPage() {
@@ -174,17 +179,19 @@ export class TemplesComponent implements OnInit {
       this.startIndex = this.startIndex - 5;
       this.endIndex = this.endIndex - 5;
       this.getSortedTemples(this.startIndex, this.endIndex);
-     
+      this.scrollToTemplesList()
     }
   }
 
   scrollToTemplesList() {
-    console.log('scrolling called...');
+    if (this.searchbox.nativeElement) {
+      this.searchbox.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  openTemple(temple:temples){
     
-    window.scrollTo({
-      top: 500,
-  
-      behavior: 'smooth',
-    });
+    this.templesService.temple = temple
+    this.router.navigate([`temples/temple/${temple.basic.name}`])
+
   }
 }

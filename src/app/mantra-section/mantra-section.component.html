@@ -1,16 +1,16 @@
-<div class="container-box">
+<div class="container-box" >
   <div
     style="margin: 150px 30px 0px 30px; "
     class="grid-container"
   >
     <div *ngFor="let data of mantras ; index as i">
-      <button class="card" (click)="open(content)" >
+      <button class="card" (click)="onClick(data)" >
         <div class="card-inner" style=" background-image: url({{data.cover}});">
           <div class="text">{{data.name}}</div>
         </div>
       </button>
 
-      <ng-template #content let-modal>
+      <!-- <ng-template #content let-modal>
         <div class="modal-header">
           <h4 class="modal-title" id="modal-basic-title">{{data.name}}</h4>
           <button
@@ -38,7 +38,10 @@
           >
           </ngx-extended-pdf-viewer>
         </div>
+        
       </ng-template>
+      -->
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>
