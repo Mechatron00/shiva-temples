@@ -63,7 +63,7 @@
     </div>
   </div>
   <div *ngIf="!isFilter" class="paginator">
-    <div style="width: 10rem; display: flex; justify-content: space-between">
+    <div style="width: 10rem; display: flex; justify-content: space-between;align-items: center;">
       <button
         [disabled]="startIndex == 0"
         class="btn btn-light"
@@ -71,7 +71,9 @@
         type="button"
       >
         <i class="pi pi-chevron-left" style="font-size: 1rem"></i>
-      </button>
+      </button> 
+      
+      
       <button
         [disabled]="endIndex >= totalRecords"
         class="btn btn-light"

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { temples } from '../data/temple-data';
 import { templesData } from '../data/data';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -15,8 +16,8 @@ export class TemplesService {
 constructor(private http:HttpClient) { }
 
 
-getTemples(){
-  return this.http.get<temples[]>('https://api.npoint.io/d6eda1d536bc9f381182')
+getTemples():Observable<temples[]>{  //key=nEgqLqM5VjNj2vXfspyAOliXul10nhPagXsGsKDfrI
+  return this.http.get<temples[]>('https://api.jsonsilo.com/public/6d3f54ba-49e8-4f4a-a833-da5f1c2edb6d')
 }
 
 getSortedTemples(startIndex: number, endIndex: number) {

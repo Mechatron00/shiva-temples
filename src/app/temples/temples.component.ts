@@ -50,6 +50,12 @@ export class TemplesComponent implements OnInit {
   ngOnInit(): void {
     this.getSortedTemples(this.startIndex, this.endIndex);
     this.initializeItems();
+    // this.templesService.getTemples().subscribe(
+    //   data=>{
+    //     this.templesData = data
+      
+    //   }
+    // )
     
   }
 
